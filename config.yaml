@@ -15,15 +15,15 @@ docs: docs  # typically will be `docs` for real pipelines
 # ----------------------------------------------------------------------------
 
 # Name of your main GitHub repo, eg https://github.com/<my_organization>/<my_repo>
-github_repo_url: https://github.com/dms-vep/229E_spike_1984_DMS
+github_repo_url: 
 # GitHub blob path to where results files are stored. Typically "{repo}/blob/{branch}",
 # the "test_example" below is specific to this test example being within the pipeline
 # and should not be needed for other pipelines.
-github_blob_url: https://github.com/dms-vep/229E_spike_1984_DMS/blob/main/
+github_blob_url: 
 # Some descriptions and metadata about the analysis.
-description: Deep mutational scanning using HCoV-229E Spike strain 1984. Analysis uses dms-vep-pipeline-3
+description: Deep mutational scanning using RSV F strain Long. Analysis uses dms-vep-pipeline-3
 year: 2024
-authors: Sheri Harari
+authors: Cassandra Simonich, Teagan McMahon
 
 # ----------------------------------------------------------------------------
 # Site numbering, mutation classification, and neut standards
