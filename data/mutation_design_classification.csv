@@ -719,166 +719,166 @@
 61,V,F designed mutation
 61,W,F designed mutation
 61,Y,F designed mutation
-62,A,F designed mutation
-62,C,F designed mutation
-62,D,F designed mutation
-62,E,F designed mutation
-62,F,F designed mutation
-62,G,F designed mutation
-62,H,F designed mutation
-62,I,F designed mutation
-62,K,F designed mutation
-62,L,F designed mutation
-62,M,F designed mutation
-62,N,F designed mutation
-62,P,F designed mutation
-62,Q,F designed mutation
-62,R,F designed mutation
-62,S,F designed mutation
-62,T,F designed mutation
-62,V,F designed mutation
-62,W,F designed mutation
-62,Y,F designed mutation
-63,A,F designed mutation
-63,C,F designed mutation
-63,D,F designed mutation
-63,E,F designed mutation
-63,F,F designed mutation
-63,G,F designed mutation
-63,H,F designed mutation
-63,I,F designed mutation
-63,K,F designed mutation
-63,L,F designed mutation
-63,M,F designed mutation
-63,N,F designed mutation
-63,P,F designed mutation
-63,Q,F designed mutation
-63,R,F designed mutation
-63,S,F designed mutation
-63,T,F designed mutation
-63,V,F designed mutation
-63,W,F designed mutation
-63,Y,F designed mutation
-64,A,F designed mutation
-64,C,F designed mutation
-64,D,F designed mutation
-64,E,F designed mutation
-64,F,F designed mutation
-64,G,F designed mutation
-64,H,F designed mutation
-64,I,F designed mutation
-64,K,F designed mutation
-64,L,F designed mutation
-64,M,F designed mutation
-64,N,F designed mutation
-64,P,F designed mutation
-64,Q,F designed mutation
-64,R,F designed mutation
-64,S,F designed mutation
-64,T,F designed mutation
-64,V,F designed mutation
-64,W,F designed mutation
-64,Y,F designed mutation
-65,A,F designed mutation
-65,C,F designed mutation
-65,D,F designed mutation
-65,E,F designed mutation
-65,F,F designed mutation
-65,G,F designed mutation
-65,H,F designed mutation
-65,I,F designed mutation
-65,K,F designed mutation
-65,L,F designed mutation
-65,M,F designed mutation
-65,N,F designed mutation
-65,P,F designed mutation
-65,Q,F designed mutation
-65,R,F designed mutation
-65,S,F designed mutation
-65,T,F designed mutation
-65,V,F designed mutation
-65,W,F designed mutation
-65,Y,F designed mutation
-66,A,F designed mutation
-66,C,F designed mutation
-66,D,F designed mutation
-66,E,F designed mutation
-66,F,F designed mutation
-66,G,F designed mutation
-66,H,F designed mutation
-66,I,F designed mutation
-66,K,F designed mutation
-66,L,F designed mutation
-66,M,F designed mutation
-66,N,F designed mutation
-66,P,F designed mutation
-66,Q,F designed mutation
-66,R,F designed mutation
-66,S,F designed mutation
-66,T,F designed mutation
-66,V,F designed mutation
-66,W,F designed mutation
-66,Y,F designed mutation
-67,A,F designed mutation
-67,C,F designed mutation
-67,D,F designed mutation
-67,E,F designed mutation
-67,F,F designed mutation
-67,G,F designed mutation
-67,H,F designed mutation
-67,I,F designed mutation
-67,K,F designed mutation
-67,L,F designed mutation
-67,M,F designed mutation
-67,N,F designed mutation
-67,P,F designed mutation
-67,Q,F designed mutation
-67,R,F designed mutation
-67,S,F designed mutation
-67,T,F designed mutation
-67,V,F designed mutation
-67,W,F designed mutation
-67,Y,F designed mutation
-68,A,F designed mutation
-68,C,F designed mutation
-68,D,F designed mutation
-68,E,F designed mutation
-68,F,F designed mutation
-68,G,F designed mutation
-68,H,F designed mutation
-68,I,F designed mutation
-68,K,F designed mutation
-68,L,F designed mutation
-68,M,F designed mutation
-68,N,F designed mutation
-68,P,F designed mutation
-68,Q,F designed mutation
-68,R,F designed mutation
-68,S,F designed mutation
-68,T,F designed mutation
-68,V,F designed mutation
-68,W,F designed mutation
-68,Y,F designed mutation
-69,A,F designed mutation
-69,C,F designed mutation
-69,D,F designed mutation
-69,E,F designed mutation
-69,F,F designed mutation
-69,G,F designed mutation
-69,H,F designed mutation
-69,I,F designed mutation
-69,K,F designed mutation
-69,L,F designed mutation
-69,M,F designed mutation
-69,N,F designed mutation
-69,P,F designed mutation
-69,Q,F designed mutation
-69,R,F designed mutation
-69,S,F designed mutation
-69,T,F designed mutation
-69,V,F designed mutation
-69,W,F designed mutation
-69,Y,F designed mutation
+62,A,F spike in mutation
+62,C,F spike in mutation
+62,D,F spike in mutation
+62,E,F spike in mutation
+62,F,F spike in mutation
+62,G,F spike in mutation
+62,H,F spike in mutation
+62,I,F spike in mutation
+62,K,F spike in mutation
+62,L,F spike in mutation
+62,M,F spike in mutation
+62,N,F spike in mutation
+62,P,F spike in mutation
+62,Q,F spike in mutation
+62,R,F spike in mutation
+62,S,F spike in mutation
+62,T,F spike in mutation
+62,V,F spike in mutation
+62,W,F spike in mutation
+62,Y,F spike in mutation
+63,A,F spike in mutation
+63,C,F spike in mutation
+63,D,F spike in mutation
+63,E,F spike in mutation
+63,F,F spike in mutation
+63,G,F spike in mutation
+63,H,F spike in mutation
+63,I,F spike in mutation
+63,K,F spike in mutation
+63,L,F spike in mutation
+63,M,F spike in mutation
+63,N,F spike in mutation
+63,P,F spike in mutation
+63,Q,F spike in mutation
+63,R,F spike in mutation
+63,S,F spike in mutation
+63,T,F spike in mutation
+63,V,F spike in mutation
+63,W,F spike in mutation
+63,Y,F spike in mutation
+64,A,F spike in mutation
+64,C,F spike in mutation
+64,D,F spike in mutation
+64,E,F spike in mutation
+64,F,F spike in mutation
+64,G,F spike in mutation
+64,H,F spike in mutation
+64,I,F spike in mutation
+64,K,F spike in mutation
+64,L,F spike in mutation
+64,M,F spike in mutation
+64,N,F spike in mutation
+64,P,F spike in mutation
+64,Q,F spike in mutation
+64,R,F spike in mutation
+64,S,F spike in mutation
+64,T,F spike in mutation
+64,V,F spike in mutation
+64,W,F spike in mutation
+64,Y,F spike in mutation
+65,A,F spike in mutation
+65,C,F spike in mutation
+65,D,F spike in mutation
+65,E,F spike in mutation
+65,F,F spike in mutation
+65,G,F spike in mutation
+65,H,F spike in mutation
+65,I,F spike in mutation
+65,K,F spike in mutation
+65,L,F spike in mutation
+65,M,F spike in mutation
+65,N,F spike in mutation
+65,P,F spike in mutation
+65,Q,F spike in mutation
+65,R,F spike in mutation
+65,S,F spike in mutation
+65,T,F spike in mutation
+65,V,F spike in mutation
+65,W,F spike in mutation
+65,Y,F spike in mutation
+66,A,F spike in mutation
+66,C,F spike in mutation
+66,D,F spike in mutation
+66,E,F spike in mutation
+66,F,F spike in mutation
+66,G,F spike in mutation
+66,H,F spike in mutation
+66,I,F spike in mutation
+66,K,F spike in mutation
+66,L,F spike in mutation
+66,M,F spike in mutation
+66,N,F spike in mutation
+66,P,F spike in mutation
+66,Q,F spike in mutation
+66,R,F spike in mutation
+66,S,F spike in mutation
+66,T,F spike in mutation
+66,V,F spike in mutation
+66,W,F spike in mutation
+66,Y,F spike in mutation
+67,A,F spike in mutation
+67,C,F spike in mutation
+67,D,F spike in mutation
+67,E,F spike in mutation
+67,F,F spike in mutation
+67,G,F spike in mutation
+67,H,F spike in mutation
+67,I,F spike in mutation
+67,K,F spike in mutation
+67,L,F spike in mutation
+67,M,F spike in mutation
+67,N,F spike in mutation
+67,P,F spike in mutation
+67,Q,F spike in mutation
+67,R,F spike in mutation
+67,S,F spike in mutation
+67,T,F spike in mutation
+67,V,F spike in mutation
+67,W,F spike in mutation
+67,Y,F spike in mutation
+68,A,F spike in mutation
+68,C,F spike in mutation
+68,D,F spike in mutation
+68,E,F spike in mutation
+68,F,F spike in mutation
+68,G,F spike in mutation
+68,H,F spike in mutation
+68,I,F spike in mutation
+68,K,F spike in mutation
+68,L,F spike in mutation
+68,M,F spike in mutation
+68,N,F spike in mutation
+68,P,F spike in mutation
+68,Q,F spike in mutation
+68,R,F spike in mutation
+68,S,F spike in mutation
+68,T,F spike in mutation
+68,V,F spike in mutation
+68,W,F spike in mutation
+68,Y,F spike in mutation
+69,A,F spike in mutation
+69,C,F spike in mutation
+69,D,F spike in mutation
+69,E,F spike in mutation
+69,F,F spike in mutation
+69,G,F spike in mutation
+69,H,F spike in mutation
+69,I,F spike in mutation
+69,K,F spike in mutation
+69,L,F spike in mutation
+69,M,F spike in mutation
+69,N,F spike in mutation
+69,P,F spike in mutation
+69,Q,F spike in mutation
+69,R,F spike in mutation
+69,S,F spike in mutation
+69,T,F spike in mutation
+69,V,F spike in mutation
+69,W,F spike in mutation
+69,Y,F spike in mutation
 70,A,F designed mutation
 70,C,F designed mutation
 70,D,F designed mutation

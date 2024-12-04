@@ -1,4 +1,4 @@
-LOCUS       PacBio_amplicon       4185 bp DNA     linear   UNA 08-OCT-2024
+LOCUS       PacBio_amplicon       2442 bp DNA     linear   UNA 08-OCT-2024
 DEFINITION  PacBio amplicon of RSV F protein.
 FEATURES             Location/Qualifiers
     termini5         1..43 
