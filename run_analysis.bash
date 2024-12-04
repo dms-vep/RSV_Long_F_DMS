@@ -2,4 +2,4 @@
 #
 #SBATCH -c 16
 
-snakemake -j 16 -s dms-vep-pipeline-3/Snakefile --use-conda --rerun-incomplete
+snakemake -j 16 -s dms-vep-pipeline-3/Snakefile --rerun-incomplete

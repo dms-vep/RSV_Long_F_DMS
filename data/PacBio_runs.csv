@@ -1,9 +1,9 @@
 ﻿library,run,fastq,design
 RSVF-LibA-1.25,RSVF-LibA-1.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2129--bc2129/m64272e_241125_231924.hifi_reads.bc2129--bc2129.fastq.gz,PacBio
-RSVF-LibA-1,RSVF-LibA-1_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2130--bc2130/m64272e_241125_231924.hifi_reads.bc2130--bc2130.fastq.gz ,PacBio
-RSVF-LibA-0.5,RSVF-LibA-0.5_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2131--bc2131/m64272e_241125_231924.hifi_reads.bc2131--bc2131.fastq.gz ,PacBio
-RSVF-LibA-0.25,RSVF-LibA-0.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2132--bc2132/m64272e_241125_231924.hifi_reads.bc2132--bc2132.fastq.gz ,PacBio
-RSVF-LibB-1.25,RSVF-LibB-1.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2133--bc2133/m64272e_241125_231924.hifi_reads.bc2133--bc2133.fastq.gz ,PacBio
-RSVF-LibB-1,RSVF-LibB-1_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2134--bc2134/m64272e_241125_231924.hifi_reads.bc2134--bc2134.fastq.gz ,PacBio
-RSVF-LibB-0.5,RSVF-LibB-0.5_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2135--bc2135/m64272e_241125_231924.hifi_reads.bc2135--bc2135.fastq.gz ,PacBio
-RSVF-LibB-0.25,RSVF-LibB-0.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2136--bc2136/m64272e_241125_231924.hifi_reads.bc2136--bc2136.fastq.gz ,PacBio
+RSVF-LibA-1,RSVF-LibA-1_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2130--bc2130/m64272e_241125_231924.hifi_reads.bc2130--bc2130.fastq.gz,PacBio
+RSVF-LibA-0.5,RSVF-LibA-0.5_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2131--bc2131/m64272e_241125_231924.hifi_reads.bc2131--bc2131.fastq.gz,PacBio
+RSVF-LibA-0.25,RSVF-LibA-0.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2132--bc2132/m64272e_241125_231924.hifi_reads.bc2132--bc2132.fastq.gz,PacBio
+RSVF-LibB-1.25,RSVF-LibB-1.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2133--bc2133/m64272e_241125_231924.hifi_reads.bc2133--bc2133.fastq.gz,PacBio
+RSVF-LibB-1,RSVF-LibB-1_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2134--bc2134/m64272e_241125_231924.hifi_reads.bc2134--bc2134.fastq.gz,PacBio
+RSVF-LibB-0.5,RSVF-LibB-0.5_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2135--bc2135/m64272e_241125_231924.hifi_reads.bc2135--bc2135.fastq.gz,PacBio
+RSVF-LibB-0.25,RSVF-LibB-0.25_241125,/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSheri/r64272e_20241125_225937/1_A01/bc2136--bc2136/m64272e_241125_231924.hifi_reads.bc2136--bc2136.fastq.gz,PacBio

@@ -1,4 +1,4 @@
-# Pseudovirus deep mutational scanning of HCoV-229E Spike protein 
+# Pseudovirus deep mutational scanning of RSV Long F Protein 
 
 ## Organization of this repo
 
@@ -28,7 +28,7 @@ Input data utilized by the pipeline are located in [./data/](data).
 The results of running the pipeline are placed in [./results/](results).
 Due to space, only some results are tracked. For those that are not, see the [.gitignore](.gitignore) document.
 
-The pipeline builds HTML documentation for the pipeline in [./docs/](docs). These docs are rendered for viewing at [https://dms-vep.org/229E_spike_1984_DMS/](https://github.com/dms-vep/229E_spike_1984_DMS).
+The pipeline builds HTML documentation for the pipeline in [./docs/](docs). These docs are rendered for viewing at [https://dms-vep.org/RSV_Long_F_DMS/](https://github.com/dms-vep/RSV_Long_F_DMS).
 
 
 ## Running the pipeline (dry-run)
