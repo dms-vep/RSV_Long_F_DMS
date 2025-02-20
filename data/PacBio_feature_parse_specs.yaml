@@ -24,5 +24,9 @@ PacBio_amplicon:
   termini3:
     filter:
       clip3: 12
-      mutation_nt_count: 10
+      mutation_nt_count: 1
       mutation_op_count: null
+  variant_tag5:
+    return: sequence
+  variant_tag3:
+    return: sequence

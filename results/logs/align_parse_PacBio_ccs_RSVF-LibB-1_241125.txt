@@ -1,0 +1,5 @@
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/Bio/GenBank/Scanner.py:1525: BiopythonParserWarning: Attempting to parse malformed locus line:
+'LOCUS       PacBio_amplicon       2442 bp DNA     linear   UNA 08-OCT-2024\n'
+Found locus 'PacBio_amplicon' size '2442' residue_type 'DNA'
+Some fields may be wrong.
+  warnings.warn(

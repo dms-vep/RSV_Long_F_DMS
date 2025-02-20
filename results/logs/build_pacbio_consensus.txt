@@ -1,0 +1,81 @@
+Input Notebook:  dms-vep-pipeline-3/notebooks/build_pacbio_consensus.ipynb
+Output Notebook: results/notebooks/build_pacbio_consensus.ipynb
+Executing:   0%|          | 0/30 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   3%|▎         | 1/30 [00:03<01:34,  3.26s/cell]Executing:   7%|▋         | 2/30 [00:06<01:36,  3.43s/cell]Executing:  23%|██▎       | 7/30 [00:06<00:15,  1.47cell/s]Executing:  30%|███       | 9/30 [00:08<00:16,  1.29cell/s]Executing:  37%|███▋      | 11/30 [00:09<00:10,  1.81cell/s]Executing:  40%|████      | 12/30 [00:11<00:16,  1.08cell/s]
+Traceback (most recent call last):
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/bin/papermill", line 10, in <module>
+    sys.exit(papermill())
+             ^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/click/decorators.py", line 33, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/papermill/cli.py", line 235, in papermill
+    execute_notebook(
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File "/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [7]":
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+File /fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/pandas/core/indexes/base.py:3805, in Index.get_loc(self, key)
+   3804 try:
+-> 3805     return self._engine.get_loc(casted_key)
+   3806 except KeyError as err:
+
+File index.pyx:167, in pandas._libs.index.IndexEngine.get_loc()
+
+File index.pyx:196, in pandas._libs.index.IndexEngine.get_loc()
+
+File pandas/_libs/hashtable_class_helper.pxi:7081, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+
+File pandas/_libs/hashtable_class_helper.pxi:7089, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+
+KeyError: 'variant_tag5_sequence'
+
+The above exception was the direct cause of the following exception:
+
+KeyError                                  Traceback (most recent call last)
+Cell In[7], line 31
+     29 # assign strand exchange status
+     30 for tag, d in variant_tags_by_nt.items():
+---> 31     aligned_ccs[tag] = aligned_ccs[f"{tag}_sequence"].map(d).fillna("invalid")
+     32 aligned_ccs["strand_exchange"] = aligned_ccs.apply(classify_strand_exchange, axis=1)
+     34 # get summary stats
+
+File /fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/pandas/core/frame.py:4102, in DataFrame.__getitem__(self, key)
+   4100 if self.columns.nlevels > 1:
+   4101     return self._getitem_multilevel(key)
+-> 4102 indexer = self.columns.get_loc(key)
+   4103 if is_integer(indexer):
+   4104     indexer = [indexer]
+
+File /fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/pandas/core/indexes/base.py:3812, in Index.get_loc(self, key)
+   3807     if isinstance(casted_key, slice) or (
+   3808         isinstance(casted_key, abc.Iterable)
+   3809         and any(isinstance(x, slice) for x in casted_key)
+   3810     ):
+   3811         raise InvalidIndexError(key)
+-> 3812     raise KeyError(key) from err
+   3813 except TypeError:
+   3814     # If we have a listlike key, _check_indexing_error will raise
+   3815     #  InvalidIndexError. Otherwise we fall through and re-raise
+   3816     #  the TypeError.
+   3817     self._check_indexing_error(key)
+
+KeyError: 'variant_tag5_sequence'
+
