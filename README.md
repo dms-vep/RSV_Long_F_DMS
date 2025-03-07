@@ -28,7 +28,7 @@ Input data utilized by the pipeline are located in [./data/](data).
 The results of running the pipeline are placed in [./results/](results).
 Due to space, only some results are tracked. For those that are not, see the [.gitignore](.gitignore) document.
 
-The pipeline builds HTML documentation for the pipeline in [./docs/](docs). These docs are rendered for viewing at [https://dms-vep.org/RSV_Long_F_DMS/](https://github.com/dms-vep/RSV_Long_F_DMS).
+The pipeline builds HTML documentation for the pipeline in [./docs/](docs). These docs are rendered for viewing at [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS).
 
 
 ## Running the pipeline (dry-run)
@@ -39,8 +39,8 @@ To do a test run of the pipeline you can execute the following command
 To run the pipeline, build the conda environment `dms-vep-pipeline-3` in the `environment.yml` file of [dms-vep-pipeline-3](https://github.com/dms-vep/dms-vep-pipeline-3), activate it, and run [snakemake](https://snakemake.readthedocs.io/), such as:
 
     conda activate dms-vep-pipeline-3
-    snakemake -j 32 --use-conda -s dms-vep-pipeline-3/Snakefile
+    snakemake -j 16 --software-deployment-method conda -s dms-vep-pipeline-3/Snakefile
 
-To run on the Hutch cluster via [slurm](https://slurm.schedmd.com/), you can run the file [run_Hutch_cluster.bash](run_analysis.bash):
+To run on the Hutch cluster via [slurm](https://slurm.schedmd.com/), you can run the file [run_Hutch_cluster.bash](run_Hutch_cluster.bash):
 
-    sbatch -c 32 run_analysis.bash
+    sbatch run_Hutch_cluster.bash
