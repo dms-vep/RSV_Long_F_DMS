@@ -1,3 +1,0 @@
-[NbConvertApp] Converting notebook results/notebooks/build_codon_variants.ipynb to html
-[NbConvertApp] WARNING | Alternative text is missing on 19 image(s).
-[NbConvertApp] Writing 18373471 bytes to docs/notebooks/build_codon_variants.html
