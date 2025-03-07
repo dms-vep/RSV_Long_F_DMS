@@ -1,4 +1,5 @@
-# Pseudovirus deep mutational scanning of RSV Long F Protein 
+# Pseudovirus deep mutational scanning of RSV Long F protein 
+Study by Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org).
 
 ## Organization of this repo
 

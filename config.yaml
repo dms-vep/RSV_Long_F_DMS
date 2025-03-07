@@ -21,9 +21,9 @@ github_repo_url: https://github.com/dms-vep/RSV_Long_F_DMS
 # and should not be needed for other pipelines.
 github_blob_url: https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/
 # Some descriptions and metadata about the analysis.
-description: Deep mutational scanning using RSV F strain Long. Analysis uses dms-vep-pipeline-3
-year: 2024
-authors: Cassandra Simonich, Teagan McMahon
+description: Deep mutational scanning of the F protein from RSV Long strain
+year: 2025
+authors: Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org/)
 
 # ----------------------------------------------------------------------------
 # Site numbering, mutation classification, and neut standards
