@@ -1,9 +1,10 @@
-LOCUS       PacBio_amplicon        1902 bp DNA     linear   SYN 19-FEB-2025
+LOCUS       PacBio_amplicon                     1902 bp DNA     linear   SYN 19-FEB-2025
 DEFINITION  PacBio amplicon of RSV F protein
 FEATURES             Location/Qualifiers
      termini5        1..47
      variant_tag5    28..28
      gene            48..1760
+     gene_flank3     1761..1814
      barcode         1815..1830
      termini3        1831..1902
      variant_tag3    1857..1857

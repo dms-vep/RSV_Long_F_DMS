@@ -49,6 +49,3 @@ results/antibody_escape/*
 !results/antibody_escape/by_selection
 results/antibody_escape/by_selection/*.pickle
 results/antibody_escape/by_selection/*.csv
-
-!results/logs
-!results/logs/*

@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7510,7 +7511,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9ba61206">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b54b3770">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7521,7 +7522,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d5f27951">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4c41b860">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7529,32 +7530,30 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
-<span class="kn">import</span> <span class="nn">alignparse.targets</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">alignparse.targets</span>
 
-<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">altair</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">alt</span>
 
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-
-<span class="kn">import</span> <span class="nn">yaml</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e956a750">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b82910b0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Get configuration information:</p>
+<p>The next cell is tagged as <code>parameters</code> for <code>papermill</code> parameterization:</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=06bb605a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_parameters" id="cell-id=af1ff1bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7562,18 +7561,33 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># If you are running notebook interactively rather than in pipeline that handles</span>
-<span class="c1"># working directories, you may have to first `os.chdir` to appropriate directory.</span>
-
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"config.yaml"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">pacbio_amplicon</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pacbio_amplicon_specs</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">pacbio_runs_csv</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=bbbb153e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Parameters</span>
+<span class="n">pacbio_amplicon</span> <span class="o">=</span> <span class="s2">"data/PacBio_amplicon.gb"</span>
+<span class="n">pacbio_amplicon_specs</span> <span class="o">=</span> <span class="s2">"data/PacBio_feature_parse_specs.yaml"</span>
+<span class="n">pacbio_runs_csv</span> <span class="o">=</span> <span class="s2">"data/PacBio_runs.csv"</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8df02db">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=339794ea">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7583,16 +7597,16 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6d625d5c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=dbe39b66">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pacbio_runs</span> <span class="o">=</span> <span class="p">(</span>
-    <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">"pacbio_runs"</span><span class="p">])</span>
+    <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">pacbio_runs_csv</span><span class="p">)</span>
     <span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">subdir</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s2">"results/process_ccs/"</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="s2">"run"</span><span class="p">])</span>
     <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"run"</span><span class="p">:</span> <span class="s2">"pacbioRun"</span><span class="p">})</span>
 <span class="p">)</span>
@@ -7608,7 +7622,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7631,74 +7645,23 @@ a.anchor-link {
 <th>library</th>
 <th>pacbioRun</th>
 <th>fastq</th>
-<th>design</th>
 <th>subdir</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>0</th>
-<td>RSVF-LibA-1.25</td>
-<td>RSVF-LibA-1.25_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibA-1.25_241125</td>
+<td>RSV-F-LibA</td>
+<td>RSV-F-LibA_250219</td>
+<td>/fh/fast/bloom_j/SR/ngs/pacbio/250214_Cassandr...</td>
+<td>results/process_ccs/RSV-F-LibA_250219</td>
 </tr>
 <tr>
 <th>1</th>
-<td>RSVF-LibA-1</td>
-<td>RSVF-LibA-1_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibA-1_241125</td>
-</tr>
-<tr>
-<th>2</th>
-<td>RSVF-LibA-0.5</td>
-<td>RSVF-LibA-0.5_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibA-0.5_241125</td>
-</tr>
-<tr>
-<th>3</th>
-<td>RSVF-LibA-0.25</td>
-<td>RSVF-LibA-0.25_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibA-0.25_241125</td>
-</tr>
-<tr>
-<th>4</th>
-<td>RSVF-LibB-1.25</td>
-<td>RSVF-LibB-1.25_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibB-1.25_241125</td>
-</tr>
-<tr>
-<th>5</th>
-<td>RSVF-LibB-1</td>
-<td>RSVF-LibB-1_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibB-1_241125</td>
-</tr>
-<tr>
-<th>6</th>
-<td>RSVF-LibB-0.5</td>
-<td>RSVF-LibB-0.5_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibB-0.5_241125</td>
-</tr>
-<tr>
-<th>7</th>
-<td>RSVF-LibB-0.25</td>
-<td>RSVF-LibB-0.25_241125</td>
-<td>/fh/fast/bloom_j/SR/ngs/pacbio/241125_CassieSh...</td>
-<td>PacBio</td>
-<td>results/process_ccs/RSVF-LibB-0.25_241125</td>
+<td>RSV-F-LibB</td>
+<td>RSV-F-LibB_250219</td>
+<td>/fh/fast/bloom_j/SR/ngs/pacbio/250214_Cassandr...</td>
+<td>results/process_ccs/RSV-F-LibB_250219</td>
 </tr>
 </tbody>
 </table>
@@ -7708,7 +7671,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bdb0bb80">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c00f301a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7718,12 +7681,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e02b7f14">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5a350770">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">readstats</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span>
@@ -7765,31 +7728,32 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-d97bd3d911424d9e8abbe574097b06ff.vega-embed {
+  #altair-viz-8688bd15d1744c148f20eca33aebf9f9.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d97bd3d911424d9e8abbe574097b06ff.vega-embed details,
-  #altair-viz-d97bd3d911424d9e8abbe574097b06ff.vega-embed details summary {
+  #altair-viz-8688bd15d1744c148f20eca33aebf9f9.vega-embed details,
+  #altair-viz-8688bd15d1744c148f20eca33aebf9f9.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d97bd3d911424d9e8abbe574097b06ff"></div>
+<div id="altair-viz-8688bd15d1744c148f20eca33aebf9f9"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d97bd3d911424d9e8abbe574097b06ff") {
-      outputDiv = document.getElementById("altair-viz-d97bd3d911424d9e8abbe574097b06ff");
+    if (outputDiv.id !== "altair-viz-8688bd15d1744c148f20eca33aebf9f9") {
+      outputDiv = document.getElementById("altair-viz-8688bd15d1744c148f20eca33aebf9f9");
     }
+
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
       "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.15.1?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
       "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
     };
 
@@ -7822,22 +7786,23 @@ a.anchor-link {
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+      let deps = ["vega-embed"];
+      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
     } else {
       maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.15.1"))
+        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
         .then(() => maybeLoadScript("vega-embed", "6"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-87c16acfc8c54d3c4cc519aae72fb834"}, "mark": {"type": "bar"}, "encoding": {"facet": {"columns": 2, "field": "pacbioRun", "title": null, "type": "nominal"}, "tooltip": [{"field": "category", "type": "nominal"}, {"field": "count", "type": "quantitative"}, {"field": "pacbioRun", "type": "nominal"}, {"field": "library", "type": "nominal"}], "x": {"field": "count", "type": "quantitative"}, "y": {"axis": {"title": null}, "field": "category", "type": "nominal"}}, "height": 50, "resolve": {"scale": {"x": "independent", "y": "independent"}}, "width": 250, "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json", "datasets": {"data-87c16acfc8c54d3c4cc519aae72fb834": [{"category": "filtered PacBio_amplicon", "count": 16673, "pacbioRun": "RSVF-LibA-1.25_241125", "library": "RSVF-LibA-1.25"}, {"category": "aligned PacBio_amplicon", "count": 83385, "pacbioRun": "RSVF-LibA-1.25_241125", "library": "RSVF-LibA-1.25"}, {"category": "unmapped", "count": 1014, "pacbioRun": "RSVF-LibA-1.25_241125", "library": "RSVF-LibA-1.25"}, {"category": "filtered PacBio_amplicon", "count": 16325, "pacbioRun": "RSVF-LibA-1_241125", "library": "RSVF-LibA-1"}, {"category": "aligned PacBio_amplicon", "count": 81000, "pacbioRun": "RSVF-LibA-1_241125", "library": "RSVF-LibA-1"}, {"category": "unmapped", "count": 708, "pacbioRun": "RSVF-LibA-1_241125", "library": "RSVF-LibA-1"}, {"category": "filtered PacBio_amplicon", "count": 15537, "pacbioRun": "RSVF-LibA-0.5_241125", "library": "RSVF-LibA-0.5"}, {"category": "aligned PacBio_amplicon", "count": 79152, "pacbioRun": "RSVF-LibA-0.5_241125", "library": "RSVF-LibA-0.5"}, {"category": "unmapped", "count": 611, "pacbioRun": "RSVF-LibA-0.5_241125", "library": "RSVF-LibA-0.5"}, {"category": "filtered PacBio_amplicon", "count": 17694, "pacbioRun": "RSVF-LibA-0.25_241125", "library": "RSVF-LibA-0.25"}, {"category": "aligned PacBio_amplicon", "count": 86639, "pacbioRun": "RSVF-LibA-0.25_241125", "library": "RSVF-LibA-0.25"}, {"category": "unmapped", "count": 923, "pacbioRun": "RSVF-LibA-0.25_241125", "library": "RSVF-LibA-0.25"}, {"category": "filtered PacBio_amplicon", "count": 15743, "pacbioRun": "RSVF-LibB-1.25_241125", "library": "RSVF-LibB-1.25"}, {"category": "aligned PacBio_amplicon", "count": 85125, "pacbioRun": "RSVF-LibB-1.25_241125", "library": "RSVF-LibB-1.25"}, {"category": "unmapped", "count": 600, "pacbioRun": "RSVF-LibB-1.25_241125", "library": "RSVF-LibB-1.25"}, {"category": "filtered PacBio_amplicon", "count": 16271, "pacbioRun": "RSVF-LibB-1_241125", "library": "RSVF-LibB-1"}, {"category": "aligned PacBio_amplicon", "count": 78177, "pacbioRun": "RSVF-LibB-1_241125", "library": "RSVF-LibB-1"}, {"category": "unmapped", "count": 869, "pacbioRun": "RSVF-LibB-1_241125", "library": "RSVF-LibB-1"}, {"category": "filtered PacBio_amplicon", "count": 17735, "pacbioRun": "RSVF-LibB-0.5_241125", "library": "RSVF-LibB-0.5"}, {"category": "aligned PacBio_amplicon", "count": 87562, "pacbioRun": "RSVF-LibB-0.5_241125", "library": "RSVF-LibB-0.5"}, {"category": "unmapped", "count": 579, "pacbioRun": "RSVF-LibB-0.5_241125", "library": "RSVF-LibB-0.5"}, {"category": "filtered PacBio_amplicon", "count": 18076, "pacbioRun": "RSVF-LibB-0.25_241125", "library": "RSVF-LibB-0.25"}, {"category": "aligned PacBio_amplicon", "count": 85668, "pacbioRun": "RSVF-LibB-0.25_241125", "library": "RSVF-LibB-0.25"}, {"category": "unmapped", "count": 698, "pacbioRun": "RSVF-LibB-0.25_241125", "library": "RSVF-LibB-0.25"}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-e8e3d9267b4ea01231604c6c6243d38d"}, "mark": {"type": "bar"}, "encoding": {"facet": {"columns": 2, "field": "pacbioRun", "title": null, "type": "nominal"}, "tooltip": [{"field": "category", "type": "nominal"}, {"field": "count", "type": "quantitative"}, {"field": "pacbioRun", "type": "nominal"}, {"field": "library", "type": "nominal"}], "x": {"field": "count", "type": "quantitative"}, "y": {"axis": {"title": null}, "field": "category", "type": "nominal"}}, "height": 50, "resolve": {"scale": {"x": "independent", "y": "independent"}}, "width": 250, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-e8e3d9267b4ea01231604c6c6243d38d": [{"category": "filtered PacBio_amplicon", "count": 175194, "pacbioRun": "RSV-F-LibA_250219", "library": "RSV-F-LibA"}, {"category": "aligned PacBio_amplicon", "count": 845277, "pacbioRun": "RSV-F-LibA_250219", "library": "RSV-F-LibA"}, {"category": "unmapped", "count": 43563, "pacbioRun": "RSV-F-LibA_250219", "library": "RSV-F-LibA"}, {"category": "filtered PacBio_amplicon", "count": 140852, "pacbioRun": "RSV-F-LibB_250219", "library": "RSV-F-LibB"}, {"category": "aligned PacBio_amplicon", "count": 677587, "pacbioRun": "RSV-F-LibB_250219", "library": "RSV-F-LibB"}, {"category": "unmapped", "count": 107313, "pacbioRun": "RSV-F-LibB_250219", "library": "RSV-F-LibB"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f34a0cac">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=95da6402">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7847,17 +7812,17 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1eb6c4bc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a288d5b8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">targets</span> <span class="o">=</span> <span class="n">alignparse</span><span class="o">.</span><span class="n">targets</span><span class="o">.</span><span class="n">Targets</span><span class="p">(</span>
-    <span class="n">seqsfile</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">"pacbio_amplicon"</span><span class="p">],</span>
-    <span class="n">feature_parse_specs</span><span class="o">=</span><span class="n">config</span><span class="p">[</span><span class="s2">"pacbio_amplicon_specs"</span><span class="p">],</span>
+    <span class="n">seqsfile</span><span class="o">=</span><span class="n">pacbio_amplicon</span><span class="p">,</span>
+    <span class="n">feature_parse_specs</span><span class="o">=</span><span class="n">pacbio_amplicon_specs</span><span class="p">,</span>
 <span class="p">)</span>
 
 <span class="n">fig</span> <span class="o">=</span> <span class="n">targets</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
@@ -7877,25 +7842,14 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/Bio/GenBank/Scanner.py:1525: BiopythonParserWarning: Attempting to parse malformed locus line:
-'LOCUS       PacBio_amplicon       2442 bp DNA     linear   UNA 08-OCT-2024\n'
-Found locus 'PacBio_amplicon' size '2442' residue_type 'DNA'
-Some fields may be wrong.
-  warnings.warn(
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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RERERCIwaSIiIiISgUkTERERkQhMmoiIiIhEYNJEREREJAKTJiIiIiIRmDQRERERicCkiYiIiEgEJk1EREREIjBpIiIiIhKBSRMRERGRCEyaiIiIiERg0kREREQkApMmIiIiIhGYNBERERGJwKSJiIiISAQmTUREREQiMGkiIiIiEoFJExEREZEITJqIiIiIRGDSRERERCQCkyYiIiIiEZg0EREREYnApImIiIhIBCZNRERERCIwaSIiIiISgUkTERERkQhMmoiIiIhEYNJEREREJAKTJiIiIiIRmDQRERERicCkiYiIiEgEJk1EREREIjBpIiIiIhKBSRMRERGRCEyaiIiIiERg0kREREQkApMmIiIiIhGYNBERERGJwKSJiIiISAQmTUREREQiMGkiIiIiEoFJExEREZEITJqIiIiIRGDSRERERCQCkyYiIiIiEZg0EREREYnApImIiIhIBCZNRERERCIwaSIiIiISgUkTERERkQhMmoiIiIhEYNJEREREJAKTJiIiIiIR5LoOgIiIyp+cnByEhYXh2bNnUKlUug5HJ6RSKaysrODr6wtzc3Ndh0NlgEkTERGVqTNnzuD48eNQKpVQKEwgl7+dXzUqVR4yMjIhkUgQEBCAjh07QirlBR5D9nZ+komI6LW4ePEiDh8+jAb1a6JBA3/Y2lrpOiSdSk/PxI0bYTh85DwkEgk6deqk65DoFTDlJSKiMiEIAs6ePQt/f1+0bdv0rU+YAMDcXIFGjWohpGVDXL16FRkZGboOiV4BkyYiIioTsbGxSElJQe1aVXUdit7x9/eFIAgICwvTdSj0Cpg0ERFRmXj+/DkAwMHBRreB6CELCzOYmZmq3yMyTEyaiIioTOTl5QEAZDLtr5ahwz5FrdpBbziispGQkAiZ3AVr1m55peXIZLK39k7C8oJJExEREZEITJqIiMigZWVl6ToEekswaSIiojfmwIEjqFU7CGbmXqjfoA3On7+inrdu/VY0b94ZDo5+sHeohpYtu+Pixasa7adPXwQra29cvHgVTZt2hJm5F5Yv/wUAcPv2PfToOQwOjn6wsKyEOnVDsGnzLnXbrKwsjBv3DTwq1oHCzBO1A4KxcdNOrRhXrNyAyt71YWFZCa1b98L9++GF9mXN2i0IqNMSZuZe8KhYB199NRdKpbIM3iXSV3xOExERvRHR0XEY8/Ek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"/>
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,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"/>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aad077db">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9d91cc03">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7905,12 +7859,12 @@ Some fields may be wrong.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=992ad454">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e460a605">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># CSVs holding filtered reads</span>
@@ -7984,31 +7938,32 @@ Some fields may be wrong.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-ff88a61beff642e28e97b55b730cc693.vega-embed {
+  #altair-viz-ec9832216dcc4a0883bdf73010d51852.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ff88a61beff642e28e97b55b730cc693.vega-embed details,
-  #altair-viz-ff88a61beff642e28e97b55b730cc693.vega-embed details summary {
+  #altair-viz-ec9832216dcc4a0883bdf73010d51852.vega-embed details,
+  #altair-viz-ec9832216dcc4a0883bdf73010d51852.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ff88a61beff642e28e97b55b730cc693"></div>
+<div id="altair-viz-ec9832216dcc4a0883bdf73010d51852"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ff88a61beff642e28e97b55b730cc693") {
-      outputDiv = document.getElementById("altair-viz-ff88a61beff642e28e97b55b730cc693");
+    if (outputDiv.id !== "altair-viz-ec9832216dcc4a0883bdf73010d51852") {
+      outputDiv = document.getElementById("altair-viz-ec9832216dcc4a0883bdf73010d51852");
     }
+
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
       "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.15.1?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
       "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
     };
 
@@ -8041,22 +7996,23 @@ Some fields may be wrong.
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+      let deps = ["vega-embed"];
+      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
     } else {
       maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.15.1"))
+        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
         .then(() => maybeLoadScript("vega-embed", "6"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-4e5588cc704a90b95866d82bc25a8624"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "is_aligned", "type": "nominal"}, "facet": {"columns": 2, "field": "pacbioRun", "title": null, "type": "nominal"}, "tooltip": [{"field": "pacbioRun", "type": "nominal"}, {"field": "filter_reason", "type": "nominal"}, {"field": "count", "type": "quantitative"}, {"field": "total_counts", "type": "quantitative"}, {"field": "frac_counts", "type": "quantitative"}], "x": {"field": "count", "type": "quantitative"}, "y": {"axis": {"title": null}, "field": "filter_reason", "type": "nominal"}}, "height": 75, "resolve": {"scale": {"x": "independent", "y": "independent"}}, "transform": [{"filter": "(datum.frac_counts > 0.01)"}, {"calculate": "(datum.filter_reason === 'aligned')", "as": "is_aligned"}], "width": 250, "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json", "datasets": {"data-4e5588cc704a90b95866d82bc25a8624": [{"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "barcode clip3", "count": 7, "total_counts": 104333, "frac_counts": 6.709286611139333e-05}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "barcode mutation_nt_count", "count": 2021, "total_counts": 104333, "frac_counts": 0.01937066891587513}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "gene clip3", "count": 1989, "total_counts": 104333, "frac_counts": 0.019063958670794474}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "gene mutation_nt_count", "count": 513, "total_counts": 104333, "frac_counts": 0.004916948616449254}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "gene_flank3 clip3", "count": 51, "total_counts": 104333, "frac_counts": 0.0004888194530972942}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4568, "total_counts": 104333, "frac_counts": 0.04378288748526353}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "query_clip3", "count": 639, "total_counts": 104333, "frac_counts": 0.0061246202064543336}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "query_clip5", "count": 735, "total_counts": 104333, "frac_counts": 0.0070447509416963}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "termini3 clip3", "count": 619, "total_counts": 104333, "frac_counts": 0.005932926303278924}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3743, "total_counts": 104333, "frac_counts": 0.035875513979277886}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "termini5 clip5", "count": 2044, "total_counts": 104333, "frac_counts": 0.01959111690452685}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "termini5 mutation_nt_count", "count": 765, "total_counts": 104333, "frac_counts": 0.0073322917964594135}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "barcode clip3", "count": 15, "total_counts": 94689, "frac_counts": 0.00015841333206602668}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "barcode mutation_nt_count", "count": 1805, "total_counts": 94689, "frac_counts": 0.01906240429194521}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "gene clip3", "count": 1711, "total_counts": 94689, "frac_counts": 0.01806968074433144}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "gene mutation_nt_count", "count": 464, "total_counts": 94689, "frac_counts": 0.0049002524052424255}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "gene_flank3 clip3", "count": 42, "total_counts": 94689, "frac_counts": 0.00044355732978487467}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 3971, "total_counts": 94689, "frac_counts": 0.041937289442279466}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "query_clip3", "count": 541, "total_counts": 94689, "frac_counts": 0.005713440843181362}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "query_clip5", "count": 654, "total_counts": 94689, "frac_counts": 0.006906821278078763}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "termini3 clip3", "count": 482, "total_counts": 94689, "frac_counts": 0.005090348403721657}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3239, "total_counts": 94689, "frac_counts": 0.03420671883745736}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "termini5 clip5", "count": 1900, "total_counts": 94689, "frac_counts": 0.020065688728363378}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "termini5 mutation_nt_count", "count": 713, "total_counts": 94689, "frac_counts": 0.007529913717538468}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "barcode clip3", "count": 10, "total_counts": 100058, "frac_counts": 9.994203362050011e-05}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "barcode mutation_nt_count", "count": 1915, "total_counts": 100058, "frac_counts": 0.019138899438325772}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "gene clip3", "count": 1697, "total_counts": 100058, "frac_counts": 0.016960163105398867}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "gene mutation_nt_count", "count": 489, "total_counts": 100058, "frac_counts": 0.004887165444042455}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "gene_flank3 clip3", "count": 33, "total_counts": 100058, "frac_counts": 0.00032980871094765037}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4454, "total_counts": 100058, "frac_counts": 0.04451418177457075}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "query_clip3", "count": 742, "total_counts": 100058, "frac_counts": 0.007415698894641108}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "query_clip5", "count": 702, "total_counts": 100058, "frac_counts": 0.007015930760159108}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "termini3 clip3", "count": 758, "total_counts": 100058, "frac_counts": 0.007575606148433909}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3414, "total_counts": 100058, "frac_counts": 0.034120210278038736}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "termini5 clip5", "count": 1742, "total_counts": 100058, "frac_counts": 0.017409902256691118}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "termini5 mutation_nt_count", "count": 717, "total_counts": 100058, "frac_counts": 0.007165843810589858}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "barcode clip3", "count": 12, "total_counts": 97325, "frac_counts": 0.00012329822758797842}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "barcode mutation_nt_count", "count": 1874, "total_counts": 97325, "frac_counts": 0.01925507320832263}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "gene clip3", "count": 2042, "total_counts": 97325, "frac_counts": 0.020981248394554328}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "gene mutation_nt_count", "count": 461, "total_counts": 97325, "frac_counts": 0.004736706909838171}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "gene_flank3 clip3", "count": 48, "total_counts": 97325, "frac_counts": 0.0004931929103519137}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4167, "total_counts": 97325, "frac_counts": 0.04281530952992551}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "query_clip3", "count": 526, "total_counts": 97325, "frac_counts": 0.005404572309273054}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "query_clip5", "count": 663, "total_counts": 97325, "frac_counts": 0.006812227074235808}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "termini3 clip3", "count": 512, "total_counts": 97325, "frac_counts": 0.005260724377087079}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3262, "total_counts": 97325, "frac_counts": 0.03351656819933214}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "termini5 clip5", "count": 2049, "total_counts": 97325, "frac_counts": 0.021053172360647316}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "termini5 mutation_nt_count", "count": 709, "total_counts": 97325, "frac_counts": 0.0072848702799897256}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "barcode clip3", "count": 15, "total_counts": 103744, "frac_counts": 0.00014458667489204195}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "barcode mutation_nt_count", "count": 2133, "total_counts": 103744, "frac_counts": 0.020560225169648366}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "gene clip3", "count": 2374, "total_counts": 103744, "frac_counts": 0.022883251079580506}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "gene mutation_nt_count", "count": 527, "total_counts": 103744, "frac_counts": 0.005079811844540407}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "gene_flank3 clip3", "count": 56, "total_counts": 103744, "frac_counts": 0.00053979025293029}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4310, "total_counts": 103744, "frac_counts": 0.04154457125231339}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "query_clip3", "count": 609, "total_counts": 103744, "frac_counts": 0.0058702190006169035}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "query_clip5", "count": 750, "total_counts": 103744, "frac_counts": 0.007229333744602097}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "termini3 clip3", "count": 688, "total_counts": 103744, "frac_counts": 0.00663170882171499}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3549, "total_counts": 103744, "frac_counts": 0.03420920727945712}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "termini5 clip5", "count": 2310, "total_counts": 103744, "frac_counts": 0.02226634793337446}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "termini5 mutation_nt_count", "count": 755, "total_counts": 103744, "frac_counts": 0.007277529302899445}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "barcode clip3", "count": 11, "total_counts": 105297, "frac_counts": 0.00010446641404788361}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "barcode mutation_nt_count", "count": 2169, "total_counts": 105297, "frac_counts": 0.020598877460896323}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "gene clip3", "count": 2336, "total_counts": 105297, "frac_counts": 0.02218486756507783}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "gene mutation_nt_count", "count": 477, "total_counts": 105297, "frac_counts": 0.0045300435909854985}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "gene_flank3 clip3", "count": 52, "total_counts": 105297, "frac_counts": 0.0004938412300445407}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4215, "total_counts": 105297, "frac_counts": 0.040029630473802674}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "query_clip3", "count": 634, "total_counts": 105297, "frac_counts": 0.006021064227850746}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "query_clip5", "count": 661, "total_counts": 105297, "frac_counts": 0.006277481789604642}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "termini3 clip3", "count": 663, "total_counts": 105297, "frac_counts": 0.006296475683067894}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3602, "total_counts": 105297, "frac_counts": 0.03420800212731607}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "termini5 clip5", "count": 2207, "total_counts": 105297, "frac_counts": 0.0209597614366981}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "termini5 mutation_nt_count", "count": 708, "total_counts": 105297, "frac_counts": 0.006723838285991054}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "barcode clip3", "count": 16, "total_counts": 100868, "frac_counts": 0.00015862315104889558}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "barcode mutation_nt_count", "count": 2008, "total_counts": 100868, "frac_counts": 0.019907205456636396}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "gene clip3", "count": 1875, "total_counts": 100868, "frac_counts": 0.01858865051354245}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "gene mutation_nt_count", "count": 431, "total_counts": 100868, "frac_counts": 0.004272911131379625}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "gene_flank3 clip3", "count": 41, "total_counts": 100868, "frac_counts": 0.00040647182456279493}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4031, "total_counts": 100868, "frac_counts": 0.03996312011738113}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "query_clip3", "count": 521, "total_counts": 100868, "frac_counts": 0.005165166356029663}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "query_clip5", "count": 646, "total_counts": 100868, "frac_counts": 0.0064044097235991596}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "termini3 clip3", "count": 494, "total_counts": 100868, "frac_counts": 0.004897489788634651}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3104, "total_counts": 100868, "frac_counts": 0.030772891303485744}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "termini5 clip5", "count": 1867, "total_counts": 100868, "frac_counts": 0.018509338938018004}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "termini5 mutation_nt_count", "count": 709, "total_counts": 100868, "frac_counts": 0.007028988380854186}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "barcode clip3", "count": 14, "total_counts": 94448, "frac_counts": 0.00014822971370489582}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "barcode mutation_nt_count", "count": 1873, "total_counts": 94448, "frac_counts": 0.01983101812637642}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "gene clip3", "count": 2110, "total_counts": 94448, "frac_counts": 0.02234033542266644}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "gene mutation_nt_count", "count": 484, "total_counts": 94448, "frac_counts": 0.0051245129595121125}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "gene_flank3 clip3", "count": 44, "total_counts": 94448, "frac_counts": 0.00046586481450110114}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "gene_flank3 mutation_nt_count", "count": 4001, "total_counts": 94448, "frac_counts": 0.042361934609520584}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "query_clip3", "count": 583, "total_counts": 94448, "frac_counts": 0.00617270879213959}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "query_clip5", "count": 644, "total_counts": 94448, "frac_counts": 0.006818566830425208}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "termini3 clip3", "count": 649, "total_counts": 94448, "frac_counts": 0.006871506013891242}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "termini3 mutation_nt_count", "count": 3151, "total_counts": 94448, "frac_counts": 0.03336227342029476}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "termini5 clip5", "count": 2019, "total_counts": 94448, "frac_counts": 0.021376842283584618}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "termini5 mutation_nt_count", "count": 699, "total_counts": 94448, "frac_counts": 0.007400897848551584}, {"pacbioRun": "RSVF-LibA-0.25_241125", "filter_reason": "aligned", "count": 86639, "total_counts": 104333, "frac_counts": 0.8304084038607152}, {"pacbioRun": "RSVF-LibA-0.5_241125", "filter_reason": "aligned", "count": 79152, "total_counts": 94689, "frac_counts": 0.8359154706460096}, {"pacbioRun": "RSVF-LibA-1.25_241125", "filter_reason": "aligned", "count": 83385, "total_counts": 100058, "frac_counts": 0.8333666473445401}, {"pacbioRun": "RSVF-LibA-1_241125", "filter_reason": "aligned", "count": 81000, "total_counts": 97325, "frac_counts": 0.8322630362188543}, {"pacbioRun": "RSVF-LibB-0.25_241125", "filter_reason": "aligned", "count": 85668, "total_counts": 103744, "frac_counts": 0.82576341764343}, {"pacbioRun": "RSVF-LibB-0.5_241125", "filter_reason": "aligned", "count": 87562, "total_counts": 105297, "frac_counts": 0.8315716497146167}, {"pacbioRun": "RSVF-LibB-1.25_241125", "filter_reason": "aligned", "count": 85125, "total_counts": 100868, "frac_counts": 0.8439247333148273}, {"pacbioRun": "RSVF-LibB-1_241125", "filter_reason": "aligned", "count": 78177, "total_counts": 94448, "frac_counts": 0.8277253091648314}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-3bc69a238fd7a6a2982d181a2b879b01"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "is_aligned", "type": "nominal"}, "facet": {"columns": 2, "field": "pacbioRun", "title": null, "type": "nominal"}, "tooltip": [{"field": "pacbioRun", "type": "nominal"}, {"field": "filter_reason", "type": "nominal"}, {"field": "count", "type": "quantitative"}, {"field": "total_counts", "type": "quantitative"}, {"field": "frac_counts", "type": "quantitative"}], "x": {"field": "count", "type": "quantitative"}, "y": {"axis": {"title": null}, "field": "filter_reason", "type": "nominal"}}, "height": 75, "resolve": {"scale": {"x": "independent", "y": "independent"}}, "transform": [{"filter": "(datum.frac_counts > 0.01)"}, {"calculate": "(datum.filter_reason === 'aligned')", "as": "is_aligned"}], "width": 250, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-3bc69a238fd7a6a2982d181a2b879b01": [{"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "barcode clip3", "count": 73, "total_counts": 1020471, "frac_counts": 7.153559483806987e-05}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "barcode mutation_nt_count", "count": 34473, "total_counts": 1020471, "frac_counts": 0.03378145973770935}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "gene clip3", "count": 15457, "total_counts": 1020471, "frac_counts": 0.015146927252219809}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "gene mutation_nt_count", "count": 6864, "total_counts": 1020471, "frac_counts": 0.0067263057940892}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "gene_flank3 clip3", "count": 304, "total_counts": 1020471, "frac_counts": 0.0002979016552160718}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "gene_flank3 mutation_nt_count", "count": 41204, "total_counts": 1020471, "frac_counts": 0.04037743355764152}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "query_clip3", "count": 11999, "total_counts": 1020471, "frac_counts": 0.011758295924136991}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "query_clip5", "count": 13243, "total_counts": 1020471, "frac_counts": 0.012977340855350128}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "termini3 clip3", "count": 2025, "total_counts": 1020471, "frac_counts": 0.001984377802014952}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "termini3 mutation_nt_count", "count": 25560, "total_counts": 1020471, "frac_counts": 0.025047257589877615}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "termini5 clip5", "count": 12468, "total_counts": 1020471, "frac_counts": 0.012217887622480208}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "termini5 mutation_nt_count", "count": 8571, "total_counts": 1020471, "frac_counts": 0.008399062785713656}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "variant_tag3 mutation_nt_count", "count": 2266, "total_counts": 1020471, "frac_counts": 0.0022205432589461143}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "variant_tag5 mutation_nt_count", "count": 687, "total_counts": 1020471, "frac_counts": 0.0006732185432021097}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "barcode clip3", "count": 56, "total_counts": 818439, "frac_counts": 6.842293683463275e-05}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "barcode mutation_nt_count", "count": 29600, "total_counts": 818439, "frac_counts": 0.036166409469734456}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "gene clip3", "count": 10711, "total_counts": 818439, "frac_counts": 0.013087108507781277}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "gene mutation_nt_count", "count": 5132, "total_counts": 818439, "frac_counts": 0.006270473425630987}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "gene_flank3 clip3", "count": 271, "total_counts": 818439, "frac_counts": 0.0003311181407533121}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "gene_flank3 mutation_nt_count", "count": 32290, "total_counts": 818439, "frac_counts": 0.039453154114112356}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "query_clip3", "count": 9107, "total_counts": 818439, "frac_counts": 0.011127280102732152}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "query_clip5", "count": 12018, "total_counts": 818439, "frac_counts": 0.014684050979975294}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "termini3 clip3", "count": 1404, "total_counts": 818439, "frac_counts": 0.0017154607734968642}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "termini3 mutation_nt_count", "count": 21410, "total_counts": 818439, "frac_counts": 0.026159554957669418}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "termini5 clip5", "count": 9383, "total_counts": 818439, "frac_counts": 0.011464507434274272}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "termini5 mutation_nt_count", "count": 6816, "total_counts": 818439, "frac_counts": 0.008328048883301015}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "variant_tag3 mutation_nt_count", "count": 2001, "total_counts": 818439, "frac_counts": 0.0024448981536803597}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "variant_tag5 mutation_nt_count", "count": 653, "total_counts": 818439, "frac_counts": 0.0007978603170181284}, {"pacbioRun": "RSV-F-LibA_250219", "filter_reason": "aligned", "count": 845277, "total_counts": 1020471, "frac_counts": 0.8283204520265642}, {"pacbioRun": "RSV-F-LibB_250219", "filter_reason": "aligned", "count": 677587, "total_counts": 818439, "frac_counts": 0.8279016518030055}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=38a42c20">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=def8276e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8066,12 +8022,12 @@ Some fields may be wrong.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0c2e06a9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0d88c303">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># CSVs holding aligned reads</span>
@@ -8121,7 +8077,7 @@ Some fields may be wrong.
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>
-Read 6.667e+05 alignable CCSs:
+Read 1.523e+06 alignable CCSs:
 </pre>
 </div>
 </div>
@@ -8155,36 +8111,12 @@ Read 6.667e+05 alignable CCSs:
 </thead>
 <tbody>
 <tr>
-<th>RSVF-LibA-0.25_241125</th>
-<td>86639</td>
+<th>RSV-F-LibA_250219</th>
+<td>845277</td>
 </tr>
 <tr>
-<th>RSVF-LibA-0.5_241125</th>
-<td>79152</td>
-</tr>
-<tr>
-<th>RSVF-LibA-1.25_241125</th>
-<td>83385</td>
-</tr>
-<tr>
-<th>RSVF-LibA-1_241125</th>
-<td>81000</td>
-</tr>
-<tr>
-<th>RSVF-LibB-0.25_241125</th>
-<td>85668</td>
-</tr>
-<tr>
-<th>RSVF-LibB-0.5_241125</th>
-<td>87562</td>
-</tr>
-<tr>
-<th>RSVF-LibB-1.25_241125</th>
-<td>85125</td>
-</tr>
-<tr>
-<th>RSVF-LibB-1_241125</th>
-<td>78177</td>
+<th>RSV-F-LibB_250219</th>
+<td>677587</td>
 </tr>
 </tbody>
 </table>
@@ -8200,7 +8132,7 @@ Read 6.667e+05 alignable CCSs:
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fb27bdf6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d79670de">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
