@@ -94733,3 +94733,19 @@ gene,RSV-F-LibB,TTTTTTAGACTTTTAG,6,AAG65CAC,K65H,1,1
 gene,RSV-F-LibB,TTTTTTCGTTACCCCG,16,ACC318AAC GGC347AAG,T318N G347K,2,2
 gene,RSV-F-LibB,TTTTTTGTGACTGAAA,2,TCA405AGA,S405R,1,1
 gene,RSV-F-LibB,TTTTTTGTTTTAAAAA,7,TCA405TTA,S405L,1,1
+neut_standard,RSV-F-LibA,AGTAGACTCCCTCCAT,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,ATATAGACACGTGACC,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,CCATCTAGTGGCTAGG,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,CGTGGCGTTTACACTA,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,GCGATTCACGCGTTGG,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,GTGCAGTAGTAAAGTA,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,TACCCATGGATACGAT,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibA,TACGTCGCAATGGTCC,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,AGTAGACTCCCTCCAT,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,ATATAGACACGTGACC,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,CCATCTAGTGGCTAGG,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,CGTGGCGTTTACACTA,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,GCGATTCACGCGTTGG,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,GTGCAGTAGTAAAGTA,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,TACCCATGGATACGAT,187,neut_standard,neut_standard,0,0
+neut_standard,RSV-F-LibB,TACGTCGCAATGGTCC,187,neut_standard,neut_standard,0,0

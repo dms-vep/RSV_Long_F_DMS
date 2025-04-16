@@ -50,7 +50,7 @@ site_numbering_map: data/site_numbering_map.csv
 # this file can be shown in the summary and average escape / functional effects
 # plots by specifying the relevant column as an additional slider stat in the
 # configuration for those plots.
-mutation_annotations: data/mutation_annotations.csv
+#mutation_annotations: null
 
 # Classify mutations into different categories, such as which ones are
 # designed to be in the library. If you don't have different categories of
@@ -114,7 +114,7 @@ codon_variants: results/variants/codon_variants.csv
 # Parameters related to counting the variants from barcode sequencing
 # ----------------------------------------------------------------------------
 
-barcode_runs: null
+barcode_runs: data/barcode_runs.csv
 
 # If the repo already includes the barcode counts tracked, and you just want to use
 # those and **not** recompute by processing the FASTQ files in `barcode_runs`, set
@@ -129,6 +129,7 @@ illumina_barcode_parser_params:
   minq: 20
   upstream_mismatch: 2
 
+duplicate_fastq_R1: warn
 # ----------------------------------------------------------------------------
 # Configuration related to other analyses
 # ----------------------------------------------------------------------------
@@ -136,6 +137,6 @@ illumina_barcode_parser_params:
 # For each variable, set to "null" or just don't provide if you aren't doing that type
 # of analysis. Otherwise provide path to configuration for that analysis.
 
-func_effects_config: null #data/func_effects_config.yml  # Functional effects of mutations
-antibody_escape_config: null #data/antibody_escape_config.yml # escape assays (eg, antibodies)
+func_effects_config: data/func_effects_config.yml  # Functional effects of mutations
+antibody_escape_config: data/antibody_escape_config.yml # escape assays (eg, antibodies)
 summaries_config: null #data/summaries_config.yml # Summaries across assays
