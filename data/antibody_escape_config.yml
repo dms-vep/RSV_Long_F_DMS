@@ -209,7 +209,6 @@ avg_antibody_escape_default: &avg_antibody_escape_default
 avg_antibody_escape:
   Nirsevimab:
     <<: *avg_antibody_escape_default
-    title: Escape map for antibody Nirsevimab
     selections:
       - RSV-F-LibA-250402-Nir
       - RSV-F-LibB-250402-Nir

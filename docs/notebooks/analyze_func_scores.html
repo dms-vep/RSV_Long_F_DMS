@@ -7585,7 +7585,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=9e65d272">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=5be7ab54">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7609,6 +7609,7 @@ a.anchor-link {
             <span class="s2">"clip_lower"</span><span class="p">:</span> <span class="s2">"median_stop"</span><span class="p">,</span>
             <span class="s2">"clip_upper"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
             <span class="s2">"collapse_identical_variants"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">"latent_effects_regularization"</span><span class="p">:</span> <span class="s2">"1e-07"</span><span class="p">,</span>
         <span class="p">},</span>
     <span class="p">},</span>
     <span class="s2">"A-250402-2-2"</span><span class="p">:</span> <span class="p">{</span>
@@ -7625,6 +7626,7 @@ a.anchor-link {
             <span class="s2">"clip_lower"</span><span class="p">:</span> <span class="s2">"median_stop"</span><span class="p">,</span>
             <span class="s2">"clip_upper"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
             <span class="s2">"collapse_identical_variants"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">"latent_effects_regularization"</span><span class="p">:</span> <span class="s2">"1e-07"</span><span class="p">,</span>
         <span class="p">},</span>
     <span class="p">},</span>
     <span class="s2">"B-250402-1-1"</span><span class="p">:</span> <span class="p">{</span>
@@ -7641,6 +7643,7 @@ a.anchor-link {
             <span class="s2">"clip_lower"</span><span class="p">:</span> <span class="s2">"median_stop"</span><span class="p">,</span>
             <span class="s2">"clip_upper"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
             <span class="s2">"collapse_identical_variants"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">"latent_effects_regularization"</span><span class="p">:</span> <span class="s2">"1e-07"</span><span class="p">,</span>
         <span class="p">},</span>
     <span class="p">},</span>
     <span class="s2">"B-250402-2-2"</span><span class="p">:</span> <span class="p">{</span>
@@ -7657,6 +7660,7 @@ a.anchor-link {
             <span class="s2">"clip_lower"</span><span class="p">:</span> <span class="s2">"median_stop"</span><span class="p">,</span>
             <span class="s2">"clip_upper"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
             <span class="s2">"collapse_identical_variants"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="s2">"latent_effects_regularization"</span><span class="p">:</span> <span class="s2">"1e-07"</span><span class="p">,</span>
         <span class="p">},</span>
     <span class="p">},</span>
 <span class="p">}</span>
@@ -7803,23 +7807,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-a5e6471bf3fe43288176bee155071ebd.vega-embed {
+  #altair-viz-d3f9e6df29834a05b163fd07cb8657b9.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a5e6471bf3fe43288176bee155071ebd.vega-embed details,
-  #altair-viz-a5e6471bf3fe43288176bee155071ebd.vega-embed details summary {
+  #altair-viz-d3f9e6df29834a05b163fd07cb8657b9.vega-embed details,
+  #altair-viz-d3f9e6df29834a05b163fd07cb8657b9.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a5e6471bf3fe43288176bee155071ebd"></div>
+<div id="altair-viz-d3f9e6df29834a05b163fd07cb8657b9"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a5e6471bf3fe43288176bee155071ebd") {
-      outputDiv = document.getElementById("altair-viz-a5e6471bf3fe43288176bee155071ebd");
+    if (outputDiv.id !== "altair-viz-d3f9e6df29834a05b163fd07cb8657b9") {
+      outputDiv = document.getElementById("altair-viz-d3f9e6df29834a05b163fd07cb8657b9");
     }
 
     const paths = {
@@ -8039,23 +8043,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-26eb53ce335548c78576bf545114b2d9.vega-embed {
+  #altair-viz-8497ff3d409248be9906076148058f8d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-26eb53ce335548c78576bf545114b2d9.vega-embed details,
-  #altair-viz-26eb53ce335548c78576bf545114b2d9.vega-embed details summary {
+  #altair-viz-8497ff3d409248be9906076148058f8d.vega-embed details,
+  #altair-viz-8497ff3d409248be9906076148058f8d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-26eb53ce335548c78576bf545114b2d9"></div>
+<div id="altair-viz-8497ff3d409248be9906076148058f8d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-26eb53ce335548c78576bf545114b2d9") {
-      outputDiv = document.getElementById("altair-viz-26eb53ce335548c78576bf545114b2d9");
+    if (outputDiv.id !== "altair-viz-8497ff3d409248be9906076148058f8d") {
+      outputDiv = document.getElementById("altair-viz-8497ff3d409248be9906076148058f8d");
     }
 
     const paths = {
@@ -8200,23 +8204,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-528755208d6a4028a28f3c39e539af58.vega-embed {
+  #altair-viz-a988d2ea83674bbdb288a344e2148f7f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-528755208d6a4028a28f3c39e539af58.vega-embed details,
-  #altair-viz-528755208d6a4028a28f3c39e539af58.vega-embed details summary {
+  #altair-viz-a988d2ea83674bbdb288a344e2148f7f.vega-embed details,
+  #altair-viz-a988d2ea83674bbdb288a344e2148f7f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-528755208d6a4028a28f3c39e539af58"></div>
+<div id="altair-viz-a988d2ea83674bbdb288a344e2148f7f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-528755208d6a4028a28f3c39e539af58") {
-      outputDiv = document.getElementById("altair-viz-528755208d6a4028a28f3c39e539af58");
+    if (outputDiv.id !== "altair-viz-a988d2ea83674bbdb288a344e2148f7f") {
+      outputDiv = document.getElementById("altair-viz-a988d2ea83674bbdb288a344e2148f7f");
     }
 
     const paths = {
@@ -8272,23 +8276,23 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e.vega-embed {
+  #altair-viz-6f72e2ea52014701a21e3d6e3a8671d7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e.vega-embed details,
-  #altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e.vega-embed details summary {
+  #altair-viz-6f72e2ea52014701a21e3d6e3a8671d7.vega-embed details,
+  #altair-viz-6f72e2ea52014701a21e3d6e3a8671d7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e"></div>
+<div id="altair-viz-6f72e2ea52014701a21e3d6e3a8671d7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e") {
-      outputDiv = document.getElementById("altair-viz-c5c05bcfb23c455a98c8f1b26a43e98e");
+    if (outputDiv.id !== "altair-viz-6f72e2ea52014701a21e3d6e3a8671d7") {
+      outputDiv = document.getElementById("altair-viz-6f72e2ea52014701a21e3d6e3a8671d7");
     }
 
     const paths = {

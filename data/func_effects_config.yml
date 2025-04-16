@@ -30,6 +30,8 @@ global_epistasis_params: &global_epistasis_params
   clip_upper: null
   # Do we collapse barcodes with same variant?
   collapse_identical_variants: false  # {false, mean, median}
+  # regularization on latent space functional effects
+  latent_effects_regularization: 1e-7
 
 # Define how to compute functional scores. Each key is a selection experiment.
 # A global epistasis model is used to get mutational effects for each selection.
@@ -106,7 +108,6 @@ avg_func_effects_default: &avg_func_effects_default
 avg_func_effects:
   293T-TIM1_entry:
     <<: *avg_func_effects_default
-    title: Mutation effects on entry into 293T-TIM1 cells
     selections:
       - A-250402-1-1
       - A-250402-2-2
