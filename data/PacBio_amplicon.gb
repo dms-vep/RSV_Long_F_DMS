@@ -3,7 +3,9 @@ DEFINITION  PacBio amplicon of RSV F protein
 FEATURES             Location/Qualifiers
      termini5        1..47
      variant_tag5    28..28
-     gene            48..1760
+     gene_upstream   48..122
+     gene            123..1634
+     gene_downstream 1635..1760
      gene_flank3     1761..1814
      barcode         1815..1830
      termini3        1831..1902

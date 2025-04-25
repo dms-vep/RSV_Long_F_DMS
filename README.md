@@ -1,6 +1,8 @@
 # Pseudovirus deep mutational scanning of RSV Long F protein 
 Study by Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org).
 
+See [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS) for HTML rendering of the pipeline results.
+
 ## Organization of this repo
 
 ### `dms-vep-pipeline-3` submodule
@@ -33,7 +35,8 @@ The pipeline builds HTML documentation for the pipeline in [./docs/](docs). Thes
 
 
 ## Running the pipeline (dry-run)
-To do a test run of the pipeline you can execute the following command
+To do a test run of the pipeline you can execute the following command:
+
     snakemake -n -s dms-vep-pipeline-3/Snakefile --rerun-incomplete
 
 ## Running the pipeline

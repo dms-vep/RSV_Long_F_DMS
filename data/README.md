@@ -14,6 +14,8 @@ It must have the following columns:
  - `run`: name of the sequencing run, must be unique
  - `fastq`: FASTQ file from running CCS
 
+## Site numbering map
+[site_numbering_map.csv](site_numbering_map.csv) annotates the sites in the standard RSV F numbering scheme (which starts with 1 at N-terminal Met) as well as sequential numbering of the ectodomain mutagenized in this study. Sites are also assigned to regions F2, p27, or F1.
 
 ## Mutation-type classification
 [data/mutation_design_classification.csv](data/mutation_design_classification.csv) classifies mutations into the different categories of designed mutations.
