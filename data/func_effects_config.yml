@@ -43,28 +43,32 @@ global_epistasis_params: &global_epistasis_params
 #  - `func_score_params`: parameters for computing functional scores
 #  - `global_epistasis_params`: parameters for fitting global epistasis model
 func_scores:
-  A-250402-1-1:
-    post_selection_sample: RSV-F-LibA-250402-TIM1-func-1
-    pre_selection_sample: RSV-F-LibA-250402-TIM1-VSV-1
+  A-250402-concat:
+    post_selection_sample: RSV-F-LibA-250402-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibA-250402-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
     global_epistasis_params: *global_epistasis_params
-  A-250402-2-2:
-    post_selection_sample: RSV-F-LibA-250402-TIM1-func-2
-    pre_selection_sample: RSV-F-LibA-250402-TIM1-VSV-2
+  B-250402-concat:
+    post_selection_sample: RSV-F-LibB-250402-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibB-250402-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
     global_epistasis_params: *global_epistasis_params
-  B-250402-1-1:
-    post_selection_sample: RSV-F-LibB-250402-TIM1-func-1
-    pre_selection_sample: RSV-F-LibB-250402-TIM1-VSV-1
+  A-250418-concat:
+    post_selection_sample: RSV-F-LibA-250418-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibA-250418-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
-    global_epistasis_params: *global_epistasis_params
-  B-250402-2-2:
-    post_selection_sample: RSV-F-LibB-250402-TIM1-func-2
-    pre_selection_sample: RSV-F-LibB-250402-TIM1-VSV-2
+    global_epistasis_params: *global_epistasis_params   
+  B-250418-concat:
+    post_selection_sample: RSV-F-LibB-250418-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibB-250418-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
-    global_epistasis_params: *global_epistasis_params
-  
-
+    global_epistasis_params: *global_epistasis_params   
+  A-250505-concat:
+    post_selection_sample: RSV-F-LibA-250505-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibA-250505-TIM1-VSV-concat
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params 
+ 
 
 
 # --------------------------------------------------------------------------------------
@@ -109,8 +113,12 @@ avg_func_effects:
   293T-TIM1_entry:
     <<: *avg_func_effects_default
     selections:
-      - A-250402-1-1
-      - A-250402-2-2
-      - B-250402-1-1
-      - B-250402-2-2
+      - A-250402-concat
+      - B-250402-concat
+      - A-250418-concat   
+      - B-250418-concat   
+      - A-250505-concat
+      
+      
+
 
