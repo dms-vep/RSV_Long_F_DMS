@@ -64,9 +64,9 @@ prob_escape_filters_default: &prob_escape_filters_default
   # of total counts in the no-antibody sample **OR** the indicated counts and fraction
   # of total counts in the antibody sample.
   min_no_antibody_count: 20  # make bigger for real experiments, say 20
-  min_no_antibody_frac: 0.0000001  # make smaller for large libraries, say ~0.1 / (library size)
+  min_no_antibody_frac: 0.000001  # make smaller for large libraries, say ~0.1 / (library size)
   min_antibody_count: 100  # make bigger for real experiments, say 100
-  min_antibody_frac: 0.00002  # make smaller for large libraries, say ~10 / (library size)
+  min_antibody_frac: 0.0001  # make smaller for large libraries, say ~10 / (library size)
   # For averaging and plotting the mean probability (fraction) escape across variants, use
   # these cutoffs:
   max_aa_subs: 3  # group variants with >= this many substitutions
