@@ -90,6 +90,7 @@ avg_func_effects_default: &avg_func_effects_default
   per_selection_tooltips: true
   floor_for_effect_std: -2
   plot_kwargs:
+    alphabet: ['R','K','H','D','E','Q','N','S','T','Y','W','F','A','I','L','M','V','G','P','C', "'*'"]
     addtl_slider_stats:
       times_seen: 2
       effect_std: 1.6
