@@ -88,25 +88,24 @@ func_scores:
 avg_func_effects_default: &avg_func_effects_default
   avg_method: median
   per_selection_tooltips: true
+  floor_for_effect_std: -2
   plot_kwargs:
     addtl_slider_stats:
       times_seen: 2
-    heatmap_max_at_least: 1
-    heatmap_min_at_least: -1
+      effect_std: 1.6
+    addtl_slider_stats_as_max: [effect_std]
+    heatmap_max_at_least: 2
+    heatmap_min_fixed: -3
     init_floor_at_zero: false
     init_site_statistic: mean
     site_zoom_bar_color_col: region  # supplied in the `site_numbering_map`
     slider_binding_range_kwargs:
       times_seen:
-        step: 1
+        step: 0.5
         min: 1
-        max: 15
+        max: 10
       n_selections:
         step: 1
-    # sites_to_show: 
-    #   include_range: 
-    #     - 30
-    #     - 702
 
 # Define the functional effect conditions to average
 avg_func_effects:

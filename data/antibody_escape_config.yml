@@ -98,10 +98,6 @@ escape_plot_kwargs_default: &escape_plot_kwargs_default
       min: 0
       max: 15
       step: 1
-  # sites_to_show: 
-  #   include_range: 
-  #     - 30
-  #     - 702
 
 # Specify any statistics (usually functional effects) for which you want to enable
 # sliders that hide data. Keyed by statistic name, then next dict gives:
@@ -202,6 +198,10 @@ avg_antibody_escape_default: &avg_antibody_escape_default
     <<: *escape_plot_kwargs_default
     avg_type: median
     per_model_tooltip: true
+    addtl_slider_stats:
+      times_seen: 2
+      escape_std: 1.25
+    addtl_slider_stats_as_max: [escape_std]
   plot_hide_stats: *plot_hide_stats_default
 
 # Define the antibodies/sera to average
