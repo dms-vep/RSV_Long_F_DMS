@@ -1,0 +1,38 @@
+# Heatmaps that integrate measurements across assays
+
+# define default displays for cell entry that can be used across multiple antibodies
+cell_entry_default: &cell_entry_default
+  min_times_seen: 3
+  min_frac_models: 0.5
+  alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]
+  init_floor_escape_at_zero: false
+  init_site_escape_stat: sum
+  antibody_escape: {}
+  other_phenotypes:
+    cell entry:
+      csv: results/func_effects/averages/293T-TIM1_entry_func_effects.csv
+      stat: effect
+      color_scheme: purplegreen
+      max_at_least: 2
+      fixed_min: -3
+      init_min_value: -2.5
+      le_filters:
+        effect_std: 1.6
+
+# escape from antibodies
+antibody_summary:
+  <<: *cell_entry_default
+  no_mean_lineplot: true
+  scale_lineplot_height: 1.1
+  selectable_per_antibody_heatmap: true
+  lineplot_antibody_label_loc: top
+  antibody_escape:
+    antibodies:
+      stat: escape_median
+      color_scheme: redblue
+      max_at_least: 1.5
+      min_at_least: -1.5
+      le_filters:
+        escape_std: 1.25
+      antibody_list:
+        nirsivemab: results/antibody_escape/averages/Nirsevimab_mut_effect.csv
