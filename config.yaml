@@ -139,4 +139,4 @@ duplicate_fastq_R1: warn
 
 func_effects_config: data/func_effects_config.yml  # Functional effects of mutations
 antibody_escape_config: data/antibody_escape_config.yml # escape assays (eg, antibodies)
-summaries_config: null #data/summaries_config.yml # Summaries across assays
+summaries_config: data/summaries_config.yml # Summaries across assays
