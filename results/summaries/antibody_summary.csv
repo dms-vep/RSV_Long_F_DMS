@@ -1,4 +1,4 @@
-site,wildtype,mutant,nirsivemab,mean antibodies,cell entry,sequential_site,region
+site,wildtype,mutant,nirsevimab,mean antibodies,cell entry,sequential_site,region
 26,Q,A,0.1597,0.1597,-0.5612,1,F2
 26,Q,C,,,-1.001,1,F2
 26,Q,D,0.1218,0.1218,-0.2431,1,F2

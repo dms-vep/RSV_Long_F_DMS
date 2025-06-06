@@ -1,0 +1,122 @@
+# Configuration for `configure-dms-viz`, keyed by names given to output JSONs
+# See https://dms-viz.github.io/dms-viz-docs/preparing-data/command-line-api/
+# for more on `configure-dms-viz`.
+
+#---------------------------------------------------------------------------------------
+# Structure 5c6b
+#  - is SC-TM prefusion stabilized version of F from A2 strain
+#  - reference: https://www.nature.com/articles/ncomms9143
+#  - mutations relative to A2: p27 replaced by linker, N67I, S215P, E487Q
+#  - in PDB, F is chain F
+#  - biological assembly is actually two trimers head-to-head, so had to manually edit
+#    to create file with just one trimer
+#---------------------------------------------------------------------------------------
+
+cell_entry_on_prefusion_F:
+  pdb_id: data/pdb_inputs_for_dms-viz/5c6b_trimer.pdb
+  name: RSV F mutation effects on cell entry (prefusion trimer)
+  pdb_type: file  # show 'asymmetric_unit' or 'biological_assembly' or 'file' for structure
+  # `data_csv` is CSV of DMS data, must have columns 'site', 'wildtype', and 'mutant'. Also must
+  # have a column corresponding to `metric` defined below, and `opt_params[condition]` if that is
+  # defined; OR you must specify `melt_condition_metric_cols`.
+  data_csv: results/summaries/antibody_summary.csv
+  # `sitemap_csv` is CSV that must have columns 'reference_site' (corresponding to site in `data_csv`)
+  # as well as 'sequential_site', 'protein_site', and 'chains' which have meaning described here:
+  # https://dms-viz.github.io/dms-viz-docs/preparing-data/data-requirements/#sitemap
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5c6b_sitemap.csv
+  # `melt_condition_metric_cols` is for when there are several columns in `data_csv`
+  # that need to be melted to create the 'metric' column and 'condition' column defined
+  # in `opt_params`. In that case, list the columns to melt. Otherwise set to 'null'.
+  melt_condition_metric_cols: null
+  metric: cell entry  # metric to plot, in `data_csv` or created by `melt_conditions_metric_cols`
+  # optional params, have same meaning as to `configure-dms-viz`:
+  # https://dms-viz.github.io/dms-viz-docs/preparing-data/command-line-api/
+  opt_params: &cell_entry_opt_params
+    included-chains: F
+    alphabet: RKHDEQNSTYWFAILMVGPC
+    floor: False
+    summary-stat: mean
+    tooltip-cols: {sequential_site: sequential site, region: region}
+    heatmap-limits: "-3, 0, 2"
+
+antibody_escape_on_prefusion_F:
+  pdb_id: data/pdb_inputs_for_dms-viz/5c6b_trimer.pdb
+  name: RSV F antibody escape (prefusion trimer)
+  pdb_type: file
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5c6b_sitemap.csv
+  melt_condition_metric_cols: [nirsevimab]
+  metric: escape
+  opt_params: &escape_opt_params
+    condition: antibody
+    included-chains: F
+    alphabet: RKHDEQNSTYWFAILMVGPC
+    floor: False
+    summary-stat: sum
+    tooltip-cols: {cell entry: cell entry, sequential_site: sequential site, region: region}
+    filter-cols: {cell entry: cell entry}
+    filter-limits: {cell entry: [-4, -2.5, 0]}
+    heatmap-limits: "-1.5, 0, 1.5"
+
+#---------------------------------------------------------------------------------------
+# Structure 3rrr
+#  - is post-fusion F from A2 strain
+#  - reference: https://journals.asm.org/doi/10.1128/jvi.00555-11
+#  - in PDB, sites 26-109 are chains A, C, E, G, I, M; sites 147-513 are chains B, D, F, H, L, N
+#  - there are two trimers per asymmetric unit
+#---------------------------------------------------------------------------------------
+
+cell_entry_on_postfusion_F:
+  pdb_id: 3rrr
+  name: RSV F mutation effects on cell entry (postfusion trimer)
+  pdb_type: biological_assembly
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
+  melt_condition_metric_cols: null
+  metric: cell entry  # metric to plot, in `data_csv` or created by `melt_conditions_metric_cols`
+  opt_params: &cell_entry_opt_params
+    <<: *cell_entry_opt_params
+    included-chains: A B C D E F
+
+antibody_escape_on_postfusion_F:
+  pdb_id: 3rrr
+  name: RSV F antibody escape (postfusion trimer)
+  pdb_type: biological_assembly
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
+  melt_condition_metric_cols: [nirsevimab]
+  metric: escape
+  opt_params:
+    <<: *escape_opt_params
+    included-chains: A B C D E F
+
+#---------------------------------------------------------------------------------------
+# Structure 5udc
+#  - is DS-Cav1 stabilized pre-fusion F from A2 strain bound to nirsevimab (MEDI8897)
+#  - reference: https://doi.org/10.1126/scitranslmed.aaj1928
+#  - in PDB, F is chains F, A, D; nirsevimab heavy chain is H, B, E; light chain is L, C, G
+#---------------------------------------------------------------------------------------
+
+nirsevimab_bound_F_escape:
+  pdb_id: 5udc
+  name: RSV bound to nirsevimab w escape effects
+  pdb_type: asymmetric_unit
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
+  melt_condition_metric_cols: [nirsevimab]
+  metric: escape
+  opt_params: 
+    <<: *escape_opt_params 
+    included-chains: F A D
+
+nirsevimab_bound_F_cell_entry:
+  pdb_id: 5udc
+  name: RSV bound to nirsevimab w cell entry effects
+  pdb_type: asymmetric_unit
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
+  melt_condition_metric_cols: null
+  metric: cell entry
+  opt_params: 
+    <<: *cell_entry_opt_params 
+    included-chains: F A D
