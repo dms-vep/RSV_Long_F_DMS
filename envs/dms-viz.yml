@@ -1,0 +1,20 @@
+name: dms-viz
+
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+
+dependencies:
+  - biopython=1.85
+  - jupyterlab
+  - matplotlib=3
+  - numpy<2  # pinned due to this issue: https://github.com/nteract/papermill/issues/800
+  - pandas=2.2
+  - papermill=2.6
+  - pip
+  - python=3.12
+  - seaborn=0.13
+  - pip:
+    - configure-dms-viz==1.7.0
+    - dmslogo==0.7.0
