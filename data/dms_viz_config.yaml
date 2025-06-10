@@ -120,3 +120,34 @@ nirsevimab_bound_F_cell_entry:
   opt_params: 
     <<: *cell_entry_opt_params 
     included-chains: F A D
+
+#---------------------------------------------------------------------------------------
+# Structure 6ous
+#  - is DS-Cav1 stabilized pre-fusion F from A2 strain bound to RB1 (precursor of MK-1654 which is clesrovimab)
+#  - reference: https://doi.org/10.1038/s41467-019-12137-1
+#  - in PDB biological assembly 1, F2 is chains A, C, E; F1 is chains B, D, F; RB1 heavy chain is M, O, Q; light chain is N, P, R
+#---------------------------------------------------------------------------------------
+
+clesrovimab_bound_F_escape:
+  pdb_id: 6ous
+  name: RSV bound to clesrovimab precursor w escape effects
+  pdb_type: biological_assembly
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
+  melt_condition_metric_cols: [clesrovimab]
+  metric: escape
+  opt_params: 
+    <<: *escape_opt_params 
+    included-chains: A C E B D F
+
+clesrovimab_bound_F_cell_entry:
+  pdb_id: 6ous
+  name: RSV bound to clesrovimab precursor w cell entry effects
+  pdb_type: biological_assembly
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
+  melt_condition_metric_cols: null
+  metric: cell entry
+  opt_params: 
+    <<: *cell_entry_opt_params 
+    included-chains: A C E B D F
