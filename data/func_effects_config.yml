@@ -57,19 +57,23 @@ func_scores:
     post_selection_sample: RSV-F-LibA-250418-TIM1-func-concat
     pre_selection_sample: RSV-F-LibA-250418-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
-    global_epistasis_params: *global_epistasis_params   
-  B-250418-concat:
-    post_selection_sample: RSV-F-LibB-250418-TIM1-func-concat
-    pre_selection_sample: RSV-F-LibB-250418-TIM1-VSV-concat
-    func_score_params: *func_scores_params_default
-    global_epistasis_params: *global_epistasis_params   
+    global_epistasis_params: *global_epistasis_params     
   A-250505-concat:
     post_selection_sample: RSV-F-LibA-250505-TIM1-func-concat
     pre_selection_sample: RSV-F-LibA-250505-TIM1-VSV-concat
     func_score_params: *func_scores_params_default
     global_epistasis_params: *global_epistasis_params 
- 
-
+  B-250526-concat:
+    post_selection_sample: RSV-F-LibB-250526-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibB-250526-TIM1-VSV-concat
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params  
+  B-250530-concat:
+    post_selection_sample: RSV-F-LibB-250530-TIM1-func-concat
+    pre_selection_sample: RSV-F-LibB-250530-TIM1-VSV-concat
+    func_score_params: *func_scores_params_default
+    global_epistasis_params: *global_epistasis_params  
+     
 
 # --------------------------------------------------------------------------------------
 # Configuration for averaging mutation functional effects across selections and plotting
@@ -115,9 +119,11 @@ avg_func_effects:
     selections:
       - A-250402-concat
       - B-250402-concat
-      - A-250418-concat   
-      - B-250418-concat   
+      - A-250418-concat    
       - A-250505-concat
+      - B-250526-concat
+      - B-250530-concat
+      
       
       
 
