@@ -36,3 +36,4 @@ antibody_summary:
         escape_std: 1.25
       antibody_list:
         nirsevimab: results/antibody_escape/averages/Nirsevimab_mut_effect.csv
+        clesrovimab: results/antibody_escape/averages/Clesrovimab_mut_effect.csv        
