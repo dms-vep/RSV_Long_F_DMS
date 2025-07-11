@@ -60,3 +60,8 @@ RSV-F-LibA-250611-RSM01-3,RSV-F-LibA,20250611,/shared/ngs/illumina/cabel/250617_
 RSV-F-LibA-250611-Suptav-1,RSV-F-LibA,20250611,/shared/ngs/illumina/cabel/250617_VH01189_383_AACTYHCHV/Unaligned/Project_cabel/LibA-250611-RSVF-Suptav-1_S13_R1_001.fastq.gz,
 RSV-F-LibA-250611-Suptav-2,RSV-F-LibA,20250611,/shared/ngs/illumina/cabel/250617_VH01189_383_AACTYHCHV/Unaligned/Project_cabel/LibA-250611-RSVF-Suptav-2_S14_R1_001.fastq.gz,
 RSV-F-LibA-250611-Suptav-3,RSV-F-LibA,20250611,/shared/ngs/illumina/cabel/250617_VH01189_383_AACTYHCHV/Unaligned/Project_cabel/LibA-250611-RSVF-Suptav-3_S15_R1_001.fastq.gz,
+RSV-F-LibA-250619-Cles-1,RSV-F-LibA,20250619,/shared/ngs/illumina/cabel/20250623_LH00740_0097_A233MHMLT3/Unaligned/CS_Lib_250619/LibA-250619-RSVF-Cles-1_S161_L005_R1_001.fastq.gz,
+RSV-F-LibA-250619-Cles-2,RSV-F-LibA,20250619,/shared/ngs/illumina/cabel/20250623_LH00740_0097_A233MHMLT3/Unaligned/CS_Lib_250619/LibA-250619-RSVF-Cles-2_S162_L005_R1_001.fastq.gz,
+RSV-F-LibA-250619-Cles-3,RSV-F-LibA,20250619,/shared/ngs/illumina/cabel/20250623_LH00740_0097_A233MHMLT3/Unaligned/CS_Lib_250619/LibA-250619-RSVF-Cles-3_S163_L005_R1_001.fastq.gz,
+RSV-F-LibA-250619-Cles-4,RSV-F-LibA,20250619,/shared/ngs/illumina/cabel/20250623_LH00740_0097_A233MHMLT3/Unaligned/CS_Lib_250619/LibA-250619-RSVF-Cles-4_S164_L005_R1_001.fastq.gz,
+RSV-F-LibA-250619-NoAntibody,RSV-F-LibA,20250619,/shared/ngs/illumina/cabel/20250623_LH00740_0097_A233MHMLT3/Unaligned/CS_Lib_250619/LibA-250619-RSVF-NoAb_S160_L005_R1_001.fastq.gz,

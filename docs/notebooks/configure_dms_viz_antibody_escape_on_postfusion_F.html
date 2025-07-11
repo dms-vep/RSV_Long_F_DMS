@@ -7607,7 +7607,7 @@ input_sitemap_csv = "results/dms-viz/vlp_w_mMxra8_6nk6/vlp_w_mMxra8_6nk6_sitemap
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=5f81cc58">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=9c987dc3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7967,7 +7967,7 @@ Comparing `site` in data to `reference_site` in sitemap:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>PDB has all_chains=['A', 'B', 'C', 'D', 'E', 'F']
 Included chains for mapping DMS data: included_chains=['A', 'B', 'C', 'D', 'E', 'F']
-The chains specified in the sitemap are sitemap_chains={'A', 'C', 'F', 'D', 'E', 'B'}
+The chains specified in the sitemap are sitemap_chains={'F', 'C', 'B', 'A', 'E', 'D'}
 
 Comparing wildtype residues in DMS data and PDB for chainset=['A', 'B', 'C', 'D', 'E', 'F']
 Comparing wildtype amino acids for sites with DMS data versus sites in PDB:
@@ -8281,14 +8281,12 @@ Formatting data for visualization using the 'escape' column from 'results/dms-vi
 Using sitemap from 'results/dms-viz/antibody_escape_on_postfusion_F/antibody_escape_on_postfusion_F_sitemap.csv'.
 
 Warning: NaN values were found in the metric column. These rows will be filtered out.
-
-Warning: There are sites where there are no mutations, in other words, only the wildtype residue is present in the mutation column for that site. These rows will be filtered out.
 Three values were provided for heatmap limits, these will be the min, center, and max of the scale.
 
-Warning: The 'cell_entry' filter limit '-4' is less than the minimum value of -3.548. Setting the min value to -3.548.
+Warning: The 'cell_entry' filter limit '-4' is less than the minimum value of -3.651. Setting the min value to -3.651.
 
-About 99.07% (427 of 431) of the wildtype residues in the data match the corresponding residues in the structure.
-About 14.31% (72 of 503) of the data sites are missing from the structure.
+About 99.07% (428 of 432) of the wildtype residues in the data match the corresponding residues in the structure.
+About 14.29% (72 of 504) of the data sites are missing from the structure.
 
 Success! The visualization JSON was written to 'results/dms-viz/antibody_escape_on_postfusion_F/antibody_escape_on_postfusion_F.json'
 

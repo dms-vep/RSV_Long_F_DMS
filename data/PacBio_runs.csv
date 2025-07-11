@@ -1,3 +1,5 @@
 ﻿library,run,fastq
 RSV-F-LibA,RSV-F-LibA_250219,/fh/fast/bloom_j/SR/ngs/pacbio/250214_CassandraSimonich/r64272e_20250214_225625/1_A01/bc2151--bc2151/m64272e_250214_231633.hifi_reads.bc2151--bc2151.fastq.gz
 RSV-F-LibB,RSV-F-LibB_250219,/fh/fast/bloom_j/SR/ngs/pacbio/250214_CassandraSimonich/r64272e_20250214_225625/2_B01/bc2152--bc2152/m64272e_250216_051730.hifi_reads.bc2152--bc2152.fastq.gz
+RSV-F-LibA,RSV-F-LibA_250603,/fh/fast/bloom_j/SR/ngs/pacbio/250612_Cassandra_Brendan/r64272e_20250612_204253/1_A01/bc2151--bc2151/m64272e_250612_210431.hifi_reads.bc2151--bc2151.fastq.gz
+RSV-F-LibB,RSV-F-LibB_250603,/fh/fast/bloom_j/SR/ngs/pacbio/250612_Cassandra_Brendan/r64272e_20250612_204253/2_B01/bc2152--bc2152/m64272e_250614_030528.hifi_reads.bc2152--bc2152.fastq.gz
