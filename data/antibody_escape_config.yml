@@ -349,6 +349,91 @@ antibody_selections:
         concentration: 1000
         use_in_fit: true 
 
+  RSV-F-LibB-250709-Cles:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250709-NoAntibody
+    antibody_samples:
+      RSV-F-LibB-250709-Cles-1:
+        concentration: 15
+        use_in_fit: false
+      RSV-F-LibB-250709-Cles-2:
+        concentration: 50
+        use_in_fit: true
+      RSV-F-LibB-250709-Cles-3:
+        concentration: 100
+        use_in_fit: true     
+      RSV-F-LibB-250709-Cles-4:
+        concentration: 250
+        use_in_fit: true         
+
+
+  RSV-F-LibB-250716-Pal:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250716-NoAntibody
+    antibody_samples:
+      RSV-F-LibB-250716-Pal-1:
+        concentration: 1
+        use_in_fit: true
+      RSV-F-LibB-250716-Pal-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibB-250716-Pal-3:
+        concentration: 20
+        use_in_fit: true  
+
+  RSV-F-LibA-250718-NirFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-250718-NoAntibody
+    antibody_samples:
+      RSV-F-LibA-250718-NirFab-1:
+        concentration: 75
+        use_in_fit: true
+      RSV-F-LibA-250718-NirFab-2:
+        concentration: 150
+        use_in_fit: true
+      RSV-F-LibA-250718-NirFab-3:
+        concentration: 300
+        use_in_fit: true   
+      RSV-F-LibA-250718-NirFab-4:
+        concentration: 700
+        use_in_fit: false  
+
+  RSV-F-LibB-250718-Suptav:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250718-NoAntibody
+    antibody_samples:
+      RSV-F-LibB-250718-Suptav-1:
+        concentration: 150
+        use_in_fit: true
+      RSV-F-LibB-250718-Suptav-2:
+        concentration: 300
+        use_in_fit: true
+      RSV-F-LibB-250718-Suptav-3:
+        concentration: 500
+        use_in_fit: true   
+      RSV-F-LibB-250718-Suptav-4:
+        concentration: 800
+        use_in_fit: true  
+      RSV-F-LibB-250718-Suptav-5:
+        concentration: 1000
+        use_in_fit: true                                                    
+
 # --------------------------------------------------------------------------------------
 # Configuration for averaging and plotting selections for the same antibody
 # --------------------------------------------------------------------------------------
@@ -385,18 +470,25 @@ avg_antibody_escape:
       - RSV-F-LibA-250404-Nir
       - RSV-F-LibB-250530-Nir
 
+  Nirsevimab-Fab:
+    <<: *avg_antibody_escape_default
+    selections:
+      - RSV-F-LibA-250718-NirFab
+
   Clesrovimab:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibA-250526-Cles
       - RSV-F-LibA-250611-Cles
       - RSV-F-LibB-250611-Cles 
-      - RSV-F-LibA-250619-Cles     
+      - RSV-F-LibA-250619-Cles 
+      - RSV-F-LibB-250709-Cles    
 
   Palivizumab:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibA-250611-Pal
+      - RSV-F-LibB-250716-Pal
 
   RSM01:
     <<: *avg_antibody_escape_default
@@ -407,6 +499,7 @@ avg_antibody_escape:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibA-250611-Suptav
+      - RSV-F-LibB-250718-Suptav
 
   MPE8:
     <<: *avg_antibody_escape_default
