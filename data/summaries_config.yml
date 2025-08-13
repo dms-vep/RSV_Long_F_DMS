@@ -35,5 +35,7 @@ antibody_summary:
       le_filters:
         escape_std: 1.25
       antibody_list:
-        nirsevimab: results/antibody_escape/averages/Nirsevimab_mut_effect.csv
-        clesrovimab: results/antibody_escape/averages/Clesrovimab_mut_effect.csv        
+        Nirsevimab-IgG: results/antibody_escape/averages/Nirsevimab-IgG_mut_effect.csv
+        Nirsevimab-Fab: results/antibody_escape/averages/Nirsevimab-Fab_mut_effect.csv
+        Clesrovimab-IgG: results/antibody_escape/averages/Clesrovimab-IgG_mut_effect.csv
+        Clesrovimab-Fab: results/antibody_escape/averages/Clesrovimab-Fab_mut_effect.csv         

@@ -45,7 +45,7 @@ antibody_escape_on_prefusion_F:
   pdb_type: file
   data_csv: results/summaries/antibody_summary.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/5c6b_sitemap.csv
-  melt_condition_metric_cols: [nirsevimab]
+  melt_condition_metric_cols: [Nirsevimab-Fab]
   metric: escape
   opt_params: &escape_opt_params
     condition: antibody
@@ -84,7 +84,7 @@ antibody_escape_on_postfusion_F:
   pdb_type: biological_assembly
   data_csv: results/summaries/antibody_summary.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
-  melt_condition_metric_cols: [nirsevimab]
+  melt_condition_metric_cols: [Nirsevimab-Fab]
   metric: escape
   opt_params:
     <<: *escape_opt_params
@@ -97,17 +97,29 @@ antibody_escape_on_postfusion_F:
 #  - in PDB, F is chains F, A, D; nirsevimab heavy chain is H, B, E; light chain is L, C, G
 #---------------------------------------------------------------------------------------
 
-nirsevimab_bound_F_escape:
+nirsevimab-IgG_bound_F_escape:
   pdb_id: 5udc
   name: RSV bound to nirsevimab w escape effects
   pdb_type: asymmetric_unit
   data_csv: results/summaries/antibody_summary.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
-  melt_condition_metric_cols: [nirsevimab]
+  melt_condition_metric_cols: [Nirsevimab-IgG]
   metric: escape
   opt_params: 
     <<: *escape_opt_params 
     included-chains: F A D
+
+nirsevimab-Fab_bound_F_escape:
+  pdb_id: 5udc
+  name: RSV bound to nirsevimab w escape effects
+  pdb_type: asymmetric_unit
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
+  melt_condition_metric_cols: [Nirsevimab-Fab]
+  metric: escape
+  opt_params: 
+    <<: *escape_opt_params 
+    included-chains: F A D    
 
 nirsevimab_bound_F_cell_entry:
   pdb_id: 5udc
@@ -128,17 +140,29 @@ nirsevimab_bound_F_cell_entry:
 #  - in PDB biological assembly 1, F2 is chains A, C, E; F1 is chains B, D, F; RB1 heavy chain is M, O, Q; light chain is N, P, R
 #---------------------------------------------------------------------------------------
 
-clesrovimab_bound_F_escape:
+clesrovimab-IgG_bound_F_escape:
   pdb_id: 6ous
   name: RSV bound to clesrovimab precursor w escape effects
   pdb_type: biological_assembly
   data_csv: results/summaries/antibody_summary.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
-  melt_condition_metric_cols: [clesrovimab]
+  melt_condition_metric_cols: [Clesrovimab-IgG]
   metric: escape
   opt_params: 
     <<: *escape_opt_params 
     included-chains: A C E B D F
+
+clesrovimab-Fab_bound_F_escape:
+  pdb_id: 6ous
+  name: RSV bound to clesrovimab precursor w escape effects
+  pdb_type: biological_assembly
+  data_csv: results/summaries/antibody_summary.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
+  melt_condition_metric_cols: [Clesrovimab-Fab]
+  metric: escape
+  opt_params: 
+    <<: *escape_opt_params 
+    included-chains: A C E B D F    
 
 clesrovimab_bound_F_cell_entry:
   pdb_id: 6ous

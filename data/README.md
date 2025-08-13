@@ -15,7 +15,7 @@ It must have the following columns:
  - `fastq`: FASTQ file from running CCS
 
 ## Site numbering map
-[site_numbering_map.csv](site_numbering_map.csv) annotates the sites in the standard RSV F numbering scheme (which starts with 1 at N-terminal Met) as well as sequential numbering of the ectodomain mutagenized in this study. Sites are also assigned to regions F2, p27, or F1.
+[site_numbering_map.csv](site_numbering_map.csv) annotates the sites in the standard RSV F numbering scheme (which starts with 1 at N-terminal Met) as well as sequential numbering of the ectodomain mutagenized in this study. Sites are also assigned to the 6 broadly defined antigenic regions as published in Gilman et al. Sci Immunol 2016 PMC5244814 and Rossey et al. Trends Microbiol 2018 PMID29054341. 
 
 ## Mutation-type classification
 [data/mutation_design_classification.csv](data/mutation_design_classification.csv) classifies mutations into the different categories of designed mutations.
