@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7529,20 +7528,20 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">gzip</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">warnings</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">gzip</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">Bio.PDB.PDBParser</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">Bio.PDB.Polypeptide</span>
+<span class="kn">import</span> <span class="nn">Bio.PDB.PDBParser</span>
+<span class="kn">import</span> <span class="nn">Bio.PDB.Polypeptide</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.colors</span>
+<span class="kn">import</span> <span class="nn">matplotlib.colors</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span>
+<span class="kn">import</span> <span class="nn">seaborn</span>
 </pre></div>
 </div>
 </div>
@@ -7607,7 +7606,7 @@ input_sitemap_csv = "results/dms-viz/vlp_w_mMxra8_6nk6/vlp_w_mMxra8_6nk6_sitemap
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=ee53940b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=3d0b02df">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7621,11 +7620,29 @@ input_sitemap_csv = "results/dms-viz/vlp_w_mMxra8_6nk6/vlp_w_mMxra8_6nk6_sitemap
 <span class="n">name</span> <span class="o">=</span> <span class="s2">"RSV bound to clesrovimab precursor w escape effects"</span>
 <span class="n">melt_condition_metric_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Clesrovimab-IgG"</span><span class="p">]</span>
 <span class="n">metric</span> <span class="o">=</span> <span class="s2">"escape"</span>
-<span class="n">opt_params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"condition"</span><span class="p">:</span> <span class="s2">"antibody"</span><span class="p">,</span> <span class="s2">"included-chains"</span><span class="p">:</span> <span class="s2">"A C E B D F"</span><span class="p">,</span> <span class="s2">"alphabet"</span><span class="p">:</span> <span class="s2">"RKHDEQNSTYWFAILMVGPC"</span><span class="p">,</span> <span class="s2">"floor"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">"summary-stat"</span><span class="p">:</span> <span class="s2">"sum"</span><span class="p">,</span> <span class="s2">"tooltip-cols"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"cell entry"</span><span class="p">:</span> <span class="s2">"cell entry"</span><span class="p">,</span> <span class="s2">"sequential_site"</span><span class="p">:</span> <span class="s2">"sequential site"</span><span class="p">,</span> <span class="s2">"region"</span><span class="p">:</span> <span class="s2">"region"</span><span class="p">},</span> <span class="s2">"filter-cols"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"cell entry"</span><span class="p">:</span> <span class="s2">"cell entry"</span><span class="p">},</span> <span class="s2">"filter-limits"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"cell entry"</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">]},</span> <span class="s2">"heatmap-limits"</span><span class="p">:</span> <span class="s2">"-1.5, 0, 1.5"</span><span class="p">}</span>
+<span class="n">opt_params</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"condition"</span><span class="p">:</span> <span class="s2">"antibody"</span><span class="p">,</span>
+    <span class="s2">"included-chains"</span><span class="p">:</span> <span class="s2">"A C E B D F"</span><span class="p">,</span>
+    <span class="s2">"alphabet"</span><span class="p">:</span> <span class="s2">"RKHDEQNSTYWFAILMVGPC"</span><span class="p">,</span>
+    <span class="s2">"floor"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="s2">"summary-stat"</span><span class="p">:</span> <span class="s2">"sum"</span><span class="p">,</span>
+    <span class="s2">"tooltip-cols"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"cell entry"</span><span class="p">:</span> <span class="s2">"cell entry"</span><span class="p">,</span>
+        <span class="s2">"sequential_site"</span><span class="p">:</span> <span class="s2">"sequential site"</span><span class="p">,</span>
+        <span class="s2">"region"</span><span class="p">:</span> <span class="s2">"region"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s2">"filter-cols"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"cell entry"</span><span class="p">:</span> <span class="s2">"cell entry"</span><span class="p">},</span>
+    <span class="s2">"filter-limits"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"cell entry"</span><span class="p">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">]},</span>
+    <span class="s2">"heatmap-limits"</span><span class="p">:</span> <span class="s2">"-1.5, 0, 1.5"</span><span class="p">,</span>
+<span class="p">}</span>
 <span class="n">data_csv</span> <span class="o">=</span> <span class="s2">"results/summaries/antibody_summary.csv"</span>
 <span class="n">sitemap_csv</span> <span class="o">=</span> <span class="s2">"data/pdb_inputs_for_dms-viz/6ous_sitemap.csv"</span>
-<span class="n">dms_viz_json</span> <span class="o">=</span> <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape.json"</span>
-<span class="n">pdb_file</span> <span class="o">=</span> <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape.pdb"</span>
+<span class="n">dms_viz_json</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape.json"</span>
+<span class="p">)</span>
+<span class="n">pdb_file</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape.pdb"</span>
+<span class="p">)</span>
 <span class="n">input_data_csv</span> <span class="o">=</span> <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape_data.csv"</span>
 <span class="n">input_sitemap_csv</span> <span class="o">=</span> <span class="s2">"results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-IgG_bound_F_escape_sitemap.csv"</span>
 </pre></div>
@@ -7967,7 +7984,7 @@ Comparing `site` in data to `reference_site` in sitemap:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>PDB has all_chains=['A', 'B', 'C', 'D', 'E', 'F', 'M', 'N', 'O', 'P', 'Q', 'R', 'Y', 'Z', 'a']
 Included chains for mapping DMS data: included_chains=['A', 'C', 'E', 'B', 'D', 'F']
-The chains specified in the sitemap are sitemap_chains={'C', 'D', 'B', 'F', 'E', 'A'}
+The chains specified in the sitemap are sitemap_chains={'A', 'F', 'E', 'B', 'D', 'C'}
 
 Comparing wildtype residues in DMS data and PDB for chainset=['A', 'C', 'E', 'B', 'D', 'F']
 Comparing wildtype amino acids for sites with DMS data versus sites in PDB:
@@ -8371,7 +8388,7 @@ Writing data for data_cols=['site', 'wildtype', 'mutant', 'cell entry', 'sequent
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_hex_color_palette</span><span class="p">(</span><span class="n">num_colors</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_hex_color_palette</span><span class="p">(</span><span class="n">num_colors</span><span class="p">):</span>
     <span class="n">colors</span> <span class="o">=</span> <span class="n">seaborn</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s2">"hls"</span><span class="p">,</span> <span class="n">num_colors</span><span class="p">)</span>
     <span class="n">hex_colors</span> <span class="o">=</span> <span class="p">[</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">to_hex</span><span class="p">(</span><span class="n">color</span><span class="p">)</span> <span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">hex_colors</span>
@@ -8472,7 +8489,7 @@ Using sitemap from 'results/dms-viz/clesrovimab-IgG_bound_F_escape/clesrovimab-I
 Warning: NaN values were found in the metric column. These rows will be filtered out.
 Three values were provided for heatmap limits, these will be the min, center, and max of the scale.
 
-Warning: The 'cell_entry' filter limit '-4' is less than the minimum value of -3.588. Setting the min value to -3.588.
+Warning: The 'cell_entry' filter limit '-4' is less than the minimum value of -3.587. Setting the min value to -3.587.
 
 About 94.66% (443 of 468) of the wildtype residues in the data match the corresponding residues in the structure.
 About 7.14% (36 of 504) of the data sites are missing from the structure.

@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7530,20 +7529,20 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">itertools</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">tempfile</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
+<span class="kn">import</span> <span class="nn">tempfile</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">Bio.SeqIO</span>
+<span class="kn">import</span> <span class="nn">Bio.SeqIO</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">altair</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">dms_variants.codonvarianttable</span>
+<span class="kn">import</span> <span class="nn">dms_variants.codonvarianttable</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="kn">import</span><span class="w"> </span><span class="nn">upsetplot</span>
+<span class="kn">import</span> <span class="nn">upsetplot</span>
 </pre></div>
 </div>
 </div>
@@ -7595,7 +7594,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=47c0988f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=5c3c297e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7743,7 +7742,13 @@ Neutralization standard barcodes:
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Reading gene variants from results/variants/nt_variants.csv
-The gene variants and neutralization standards have distinct barcodes.
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>The gene variants and neutralization standards have distinct barcodes.
 </pre>
 </div>
 </div>
@@ -7963,23 +7968,23 @@ Note that we use the <code>allowgaps</code> option as gaps are being allowed:</p
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-a4d3c4f2737c405592c4c150bfc2f01e.vega-embed {
+  #altair-viz-f0adc4762ddb43b49b512c6135260b66.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a4d3c4f2737c405592c4c150bfc2f01e.vega-embed details,
-  #altair-viz-a4d3c4f2737c405592c4c150bfc2f01e.vega-embed details summary {
+  #altair-viz-f0adc4762ddb43b49b512c6135260b66.vega-embed details,
+  #altair-viz-f0adc4762ddb43b49b512c6135260b66.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a4d3c4f2737c405592c4c150bfc2f01e"></div>
+<div id="altair-viz-f0adc4762ddb43b49b512c6135260b66"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a4d3c4f2737c405592c4c150bfc2f01e") {
-      outputDiv = document.getElementById("altair-viz-a4d3c4f2737c405592c4c150bfc2f01e");
+    if (outputDiv.id !== "altair-viz-f0adc4762ddb43b49b512c6135260b66") {
+      outputDiv = document.getElementById("altair-viz-f0adc4762ddb43b49b512c6135260b66");
     }
 
     const paths = {
@@ -8225,25 +8230,25 @@ For the libraries, we make plots showing both the identity of the mutations (eac
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -8261,26 +8266,26 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/loc/scratch/29302538/ipykernel_12548/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>/loc/scratch/30051104/ipykernel_17618/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -8298,26 +8303,26 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/loc/scratch/29302538/ipykernel_12548/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>/loc/scratch/30051104/ipykernel_17618/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -8335,26 +8340,26 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/loc/scratch/29302538/ipykernel_12548/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>/loc/scratch/30051104/ipykernel_17618/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -8372,26 +8377,26 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/loc/scratch/29302538/ipykernel_12548/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+<pre>/loc/scratch/30051104/ipykernel_17618/578285783.py:40: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:795: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:796: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:797: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
 
 
-/fh/fast/bloom_j/computational_notebooks/jbloom/2025/RSV_Long_F_DMS/.snakemake/conda/2acb04c1757622bdd52b7071bc5e025a_/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+/fh/fast/bloom_j/software/miniforge3/envs/dms-vep-pipeline-3/lib/python3.12/site-packages/upsetplot/plotting.py:798: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
 The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
 
 For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
@@ -8559,23 +8564,23 @@ For example, when doing 'df[col].method(value, inplace=True)', try using 'df.met
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-6524b10b704146b5b8dbe9c5c56dbb95.vega-embed {
+  #altair-viz-c6ddaafbddde466badc5d9e99799006d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6524b10b704146b5b8dbe9c5c56dbb95.vega-embed details,
-  #altair-viz-6524b10b704146b5b8dbe9c5c56dbb95.vega-embed details summary {
+  #altair-viz-c6ddaafbddde466badc5d9e99799006d.vega-embed details,
+  #altair-viz-c6ddaafbddde466badc5d9e99799006d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6524b10b704146b5b8dbe9c5c56dbb95"></div>
+<div id="altair-viz-c6ddaafbddde466badc5d9e99799006d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6524b10b704146b5b8dbe9c5c56dbb95") {
-      outputDiv = document.getElementById("altair-viz-6524b10b704146b5b8dbe9c5c56dbb95");
+    if (outputDiv.id !== "altair-viz-c6ddaafbddde466badc5d9e99799006d") {
+      outputDiv = document.getElementById("altair-viz-c6ddaafbddde466badc5d9e99799006d");
     }
 
     const paths = {
@@ -8801,23 +8806,23 @@ You can also use the scroll wheel on the mouse to zoom the x-axis:</p>
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-589a29e56f394eaf9b8765e504bcec74.vega-embed {
+  #altair-viz-2b5717eb89ad422e8213420ee12755b2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-589a29e56f394eaf9b8765e504bcec74.vega-embed details,
-  #altair-viz-589a29e56f394eaf9b8765e504bcec74.vega-embed details summary {
+  #altair-viz-2b5717eb89ad422e8213420ee12755b2.vega-embed details,
+  #altair-viz-2b5717eb89ad422e8213420ee12755b2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-589a29e56f394eaf9b8765e504bcec74"></div>
+<div id="altair-viz-2b5717eb89ad422e8213420ee12755b2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-589a29e56f394eaf9b8765e504bcec74") {
-      outputDiv = document.getElementById("altair-viz-589a29e56f394eaf9b8765e504bcec74");
+    if (outputDiv.id !== "altair-viz-2b5717eb89ad422e8213420ee12755b2") {
+      outputDiv = document.getElementById("altair-viz-2b5717eb89ad422e8213420ee12755b2");
     }
 
     const paths = {
