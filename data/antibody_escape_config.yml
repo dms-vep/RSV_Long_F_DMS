@@ -726,10 +726,10 @@ antibody_selections:
         use_in_fit: true   
       RSV-F-LibB-250820-RSMFab-4:
         concentration: 250
-        use_in_fit: true 
+        use_in_fit: false 
       RSV-F-LibB-250820-RSMFab-5:
         concentration: 500
-        use_in_fit: true
+        use_in_fit: false
 
   RSV-F-LibB-250820-RSM01:
     neut_standard_name: neut_standard
@@ -752,6 +752,176 @@ antibody_selections:
         concentration: 200
         use_in_fit: true   
 
+  RSV-F-LibA-250827-ClesFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-250827-NoAb-2
+    antibody_samples:
+      RSV-F-LibA-250827-ClesFab-1:
+        concentration: 5
+        use_in_fit: false
+      RSV-F-LibA-250827-ClesFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibA-250827-ClesFab-3:
+        concentration: 50
+        use_in_fit: true     
+
+  RSV-F-LibB-250827-ClesFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250827-NoAb-1
+    antibody_samples:
+      RSV-F-LibB-250827-ClesFab-1:
+        concentration: 5
+        use_in_fit: false
+      RSV-F-LibB-250827-ClesFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibB-250827-ClesFab-3:
+        concentration: 50
+        use_in_fit: true   
+      RSV-F-LibB-250827-ClesFab-4:
+        concentration: 125
+        use_in_fit: false  
+
+  RSV-F-LibA-250827-NirFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-250827-NoAb-2
+    antibody_samples:
+      RSV-F-LibA-250827-NirFab-1:
+        concentration: 5
+        use_in_fit: true
+      RSV-F-LibA-250827-NirFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibA-250827-NirFab-3:
+        concentration: 50
+        use_in_fit: true   
+      RSV-F-LibA-250827-NirFab-4:
+        concentration: 100
+        use_in_fit: true  
+
+  RSV-F-LibB-250827-NirFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250827-NoAb-1
+    antibody_samples:
+      RSV-F-LibB-250827-NirFab-1:
+        concentration: 5
+        use_in_fit: true
+      RSV-F-LibB-250827-NirFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibB-250827-NirFab-3:
+        concentration: 50
+        use_in_fit: true   
+      RSV-F-LibB-250827-NirFab-4:
+        concentration: 100
+        use_in_fit: true 
+  
+  RSV-F-LibA-250909-ClesFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-250909-NoAb
+    antibody_samples:
+      RSV-F-LibA-250909-ClesFab-1:
+        concentration: 5
+        use_in_fit: true
+      RSV-F-LibA-250909-ClesFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibA-250909-ClesFab-3:
+        concentration: 25
+        use_in_fit: true
+      RSV-F-LibA-250909-ClesFab-4:
+        concentration: 50
+        use_in_fit: true   
+      RSV-F-LibA-250909-ClesFab-5:
+        concentration: 125
+        use_in_fit: false  
+
+  RSV-F-LibA-250909-RSM01Fab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-250909-NoAb
+    antibody_samples:
+      RSV-F-LibA-250909-RSM01Fab-1:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibA-250909-RSM01Fab-2:
+        concentration: 20
+        use_in_fit: true
+      RSV-F-LibA-250909-RSM01Fab-3:
+        concentration: 50
+        use_in_fit: true
+      RSV-F-LibA-250909-RSM01Fab-4:
+        concentration: 100
+        use_in_fit: true   
+
+  RSV-F-LibB-250910-ClesFab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250910-NoAb
+    antibody_samples:
+      RSV-F-LibB-250910-ClesFab-1:
+        concentration: 5
+        use_in_fit: true
+      RSV-F-LibB-250910-ClesFab-2:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibB-250910-ClesFab-3:
+        concentration: 25
+        use_in_fit: true
+      RSV-F-LibB-250910-ClesFab-4:
+        concentration: 50
+        use_in_fit: true   
+      RSV-F-LibB-250910-ClesFab-5:
+        concentration: 125
+        use_in_fit: false  
+
+  RSV-F-LibB-250910-RSM01Fab:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-250910-NoAb
+    antibody_samples:
+      RSV-F-LibB-250910-RSM01Fab-1:
+        concentration: 10
+        use_in_fit: true
+      RSV-F-LibB-250910-RSM01Fab-2:
+        concentration: 20
+        use_in_fit: true
+      RSV-F-LibB-250910-RSM01Fab-3:
+        concentration: 50
+        use_in_fit: true
+      RSV-F-LibB-250910-RSM01Fab-4:
+        concentration: 100
+        use_in_fit: true 
 # --------------------------------------------------------------------------------------
 # Configuration for averaging and plotting selections for the same antibody
 # --------------------------------------------------------------------------------------
@@ -792,7 +962,9 @@ avg_antibody_escape:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibB-250723-NirFab 
-      - RSV-F-LibA-250725-NirFab           
+      - RSV-F-LibA-250725-NirFab   
+      - RSV-F-LibA-250827-NirFab
+      - RSV-F-LibB-250827-NirFab        
 
   Clesrovimab-IgG:
     <<: *avg_antibody_escape_default
@@ -806,7 +978,9 @@ avg_antibody_escape:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibB-250725-ClesFab
-      - RSV-F-LibA-250806-ClesFab                     
+      - RSV-F-LibA-250806-ClesFab   
+      - RSV-F-LibA-250909-ClesFab 
+      - RSV-F-LibB-250910-ClesFab                 
 
   Palivizumab-IgG:
     <<: *avg_antibody_escape_default
@@ -832,7 +1006,8 @@ avg_antibody_escape:
   RSM01-Fab:
     <<: *avg_antibody_escape_default
     selections:
-      - RSV-F-LibB-250820-RSMFab 
+      - RSV-F-LibB-250910-RSM01Fab
+      - RSV-F-LibA-250909-RSM01Fab
 
   Suptavumab-IgG:
     <<: *avg_antibody_escape_default
