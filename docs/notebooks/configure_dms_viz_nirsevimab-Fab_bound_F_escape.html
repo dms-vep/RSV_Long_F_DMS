@@ -7606,7 +7606,7 @@ input_sitemap_csv = "results/dms-viz/vlp_w_mMxra8_6nk6/vlp_w_mMxra8_6nk6_sitemap
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=060ca6e6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=1eb2c789">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7984,7 +7984,7 @@ Comparing `site` in data to `reference_site` in sitemap:
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>PDB has all_chains=['H', 'L', 'F', 'B', 'C', 'A', 'E', 'G', 'D', 'I']
 Included chains for mapping DMS data: included_chains=['F', 'A', 'D']
-The chains specified in the sitemap are sitemap_chains={'F', 'D', 'A'}
+The chains specified in the sitemap are sitemap_chains={'D', 'A', 'F'}
 
 Comparing wildtype residues in DMS data and PDB for chainset=['F', 'A', 'D']
 Comparing wildtype amino acids for sites with DMS data versus sites in PDB:
@@ -8325,12 +8325,14 @@ Formatting data for visualization using the 'escape' column from 'results/dms-vi
 Using sitemap from 'results/dms-viz/nirsevimab-Fab_bound_F_escape/nirsevimab-Fab_bound_F_escape_sitemap.csv'.
 
 Warning: NaN values were found in the metric column. These rows will be filtered out.
+
+Warning: There are sites where there are no mutations, in other words, only the wildtype residue is present in the mutation column for that site. These rows will be filtered out.
 Three values were provided for heatmap limits, these will be the min, center, and max of the scale.
 
 Warning: The 'cell_entry' filter limit '-4' is less than the minimum value of -3.591. Setting the min value to -3.591.
 
-About 98.44% (442 of 449) of the wildtype residues in the data match the corresponding residues in the structure.
-About 10.91% (55 of 504) of the data sites are missing from the structure.
+About 98.43% (439 of 446) of the wildtype residues in the data match the corresponding residues in the structure.
+About 10.98% (55 of 501) of the data sites are missing from the structure.
 
 Success! The visualization JSON was written to 'results/dms-viz/nirsevimab-Fab_bound_F_escape/nirsevimab-Fab_bound_F_escape.json'
 
