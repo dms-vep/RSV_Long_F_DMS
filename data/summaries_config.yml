@@ -2,12 +2,11 @@
 
 # define default displays for cell entry that can be used across multiple antibodies
 cell_entry_default: &cell_entry_default
-  min_times_seen: 3
-  min_frac_models: 0.5
+  min_times_seen: 2
+  min_frac_models: 0.67
   alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]
-  init_floor_escape_at_zero: false
+  init_floor_escape_at_zero: true
   init_site_escape_stat: sum
-  antibody_escape: {}
   other_phenotypes:
     cell entry:
       csv: results/func_effects/averages/293T-TIM1_entry_func_effects.csv
@@ -19,23 +18,77 @@ cell_entry_default: &cell_entry_default
       le_filters:
         effect_std: 1.6
 
+antibody_default: &antibody_default
+  stat: escape_median
+  color_scheme: redblue
+  max_at_least: 2
+  min_at_least: -2
+
 # escape from antibodies
-antibody_summary:
+all_antibodies:
   <<: *cell_entry_default
   no_mean_lineplot: true
   scale_lineplot_height: 1.1
   selectable_per_antibody_heatmap: true
   lineplot_antibody_label_loc: top
   antibody_escape:
-    antibodies:
-      stat: escape_median
-      color_scheme: redblue
-      max_at_least: 1.5
-      min_at_least: -1.5
+    Nirsevimab-IgG:
+      <<: *antibody_default
       le_filters:
-        escape_std: 1.25
+        escape_std: 1.5
       antibody_list:
         Nirsevimab-IgG: results/antibody_escape/averages/Nirsevimab-IgG_mut_effect.csv
+    Nirsevimab-Fab:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.75
+      antibody_list:
         Nirsevimab-Fab: results/antibody_escape/averages/Nirsevimab-Fab_mut_effect.csv
+    Clesrovimab-IgG:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.75
+      antibody_list:
         Clesrovimab-IgG: results/antibody_escape/averages/Clesrovimab-IgG_mut_effect.csv
-        Clesrovimab-Fab: results/antibody_escape/averages/Clesrovimab-Fab_mut_effect.csv         
+    Clesrovimab-Fab:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 2.55
+      antibody_list:
+        Clesrovimab-Fab: results/antibody_escape/averages/Clesrovimab-Fab_mut_effect.csv
+    Palivizumab-IgG:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.85
+      antibody_list:
+        Palivizumab-IgG: results/antibody_escape/averages/Palivizumab-IgG_mut_effect.csv
+    Palivizumab-Fab:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 2.0
+      antibody_list:
+        Palivizumab-Fab: results/antibody_escape/averages/Palivizumab-Fab_mut_effect.csv
+    RSM01-IgG:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 2.05
+      antibody_list:
+        RSM01-IgG: results/antibody_escape/averages/RSM01-IgG_mut_effect.csv
+    RSM01-Fab:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 2.6
+      antibody_list:
+        RSM01-Fab: results/antibody_escape/averages/RSM01-Fab_mut_effect.csv
+    Suptavumab-IgG:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.5
+      antibody_list:
+        Suptavumab-IgG: results/antibody_escape/averages/Suptavumab-IgG_mut_effect.csv
+    Suptavumab-Fab:
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.65
+      antibody_list:
+        Suptavumab-Fab: results/antibody_escape/averages/Suptavumab-Fab_mut_effect.csv
