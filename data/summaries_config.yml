@@ -18,6 +18,11 @@ cell_entry_default: &cell_entry_default
       le_filters:
         effect_std: 1.6
 
+# cell entry only
+cell_entry:
+  <<: *cell_entry_default
+  antibody_escape: {}
+
 antibody_default: &antibody_default
   stat: escape_median
   color_scheme: redblue
@@ -25,70 +30,104 @@ antibody_default: &antibody_default
   min_at_least: -2
 
 # escape from antibodies
-all_antibodies:
+all_antibodies: &antibody_summary_default
   <<: *cell_entry_default
   no_mean_lineplot: true
-  scale_lineplot_height: 1.1
-  selectable_per_antibody_heatmap: true
+  scale_lineplot_height: 1
+  selectable_per_antibody_heatmap: false
   lineplot_antibody_label_loc: top
   antibody_escape:
-    Nirsevimab-IgG:
+    Nirsevimab-IgG: &Nirsevimab-IgG
       <<: *antibody_default
       le_filters:
         escape_std: 1.5
       antibody_list:
         Nirsevimab-IgG: results/antibody_escape/averages/Nirsevimab-IgG_mut_effect.csv
-    Nirsevimab-Fab:
+    Nirsevimab-Fab: &Nirsevimab-Fab
       <<: *antibody_default
       le_filters:
         escape_std: 1.75
       antibody_list:
         Nirsevimab-Fab: results/antibody_escape/averages/Nirsevimab-Fab_mut_effect.csv
-    Clesrovimab-IgG:
+    Clesrovimab-IgG: &Clesrovimab-IgG
       <<: *antibody_default
       le_filters:
         escape_std: 1.75
       antibody_list:
         Clesrovimab-IgG: results/antibody_escape/averages/Clesrovimab-IgG_mut_effect.csv
-    Clesrovimab-Fab:
+    Clesrovimab-Fab: &Clesrovimab-Fab
       <<: *antibody_default
       le_filters:
         escape_std: 2.55
       antibody_list:
         Clesrovimab-Fab: results/antibody_escape/averages/Clesrovimab-Fab_mut_effect.csv
-    Palivizumab-IgG:
+    Palivizumab-IgG: &Palivizumab-IgG
       <<: *antibody_default
       le_filters:
         escape_std: 1.85
       antibody_list:
         Palivizumab-IgG: results/antibody_escape/averages/Palivizumab-IgG_mut_effect.csv
-    Palivizumab-Fab:
+    Palivizumab-Fab: &Palivizumab-Fab
       <<: *antibody_default
       le_filters:
         escape_std: 2.0
       antibody_list:
         Palivizumab-Fab: results/antibody_escape/averages/Palivizumab-Fab_mut_effect.csv
-    RSM01-IgG:
+    RSM01-IgG: &RSM01-IgG
       <<: *antibody_default
       le_filters:
         escape_std: 2.05
       antibody_list:
         RSM01-IgG: results/antibody_escape/averages/RSM01-IgG_mut_effect.csv
-    RSM01-Fab:
+    RSM01-Fab: &RSM01-Fab
       <<: *antibody_default
       le_filters:
         escape_std: 2.6
       antibody_list:
         RSM01-Fab: results/antibody_escape/averages/RSM01-Fab_mut_effect.csv
-    Suptavumab-IgG:
+    Suptavumab-IgG: &Suptavumab-IgG
       <<: *antibody_default
       le_filters:
         escape_std: 1.5
       antibody_list:
         Suptavumab-IgG: results/antibody_escape/averages/Suptavumab-IgG_mut_effect.csv
-    Suptavumab-Fab:
+    Suptavumab-Fab: &Suptavumab-Fab
       <<: *antibody_default
       le_filters:
         escape_std: 1.65
       antibody_list:
         Suptavumab-Fab: results/antibody_escape/averages/Suptavumab-Fab_mut_effect.csv
+
+# escape from individual antibodies
+Nirsevimab:
+  <<: *antibody_summary_default
+  antibody_escape:
+    Nirsevimab-IgG: *Nirsevimab-IgG
+    Nirsevimab-Fab: *Nirsevimab-Fab
+Clesrovimab:
+  <<: *antibody_summary_default
+  antibody_escape:
+    Clesrovimab-IgG: *Clesrovimab-IgG
+    Clesrovimab-Fab: *Clesrovimab-Fab
+Nirsevimab-and-Clesrovimab:
+  <<: *antibody_summary_default
+  antibody_escape:
+    Nirsevimab-IgG: *Nirsevimab-IgG
+    Nirsevimab-Fab: *Nirsevimab-Fab
+    Clesrovimab-IgG: *Clesrovimab-IgG
+    Clesrovimab-Fab: *Clesrovimab-Fab
+Palivizumab:
+  <<: *antibody_summary_default
+  antibody_escape:
+    Palivizumab-IgG: *Palivizumab-IgG
+    Palivizumab-Fab: *Palivizumab-Fab
+RSM01:
+  <<: *antibody_summary_default
+  antibody_escape:
+    RSM01-IgG: *RSM01-IgG
+    RSM01-Fab: *RSM01-Fab
+Suptavumab:
+  <<: *antibody_summary_default
+  antibody_escape:
+    Suptavumab-IgG: *Suptavumab-IgG
+    Suptavumab-Fab: *Suptavumab-Fab
