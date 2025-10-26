@@ -74,7 +74,7 @@ cell_entry_on_postfusion_F:
   sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
   melt_condition_metric_cols: null
   metric: cell entry  # metric to plot, in `data_csv` or created by `melt_conditions_metric_cols`
-  opt_params: &cell_entry_opt_params
+  opt_params:
     <<: *cell_entry_opt_params
     included-chains: A B C D E F
 
