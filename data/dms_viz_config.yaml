@@ -19,7 +19,7 @@ cell_entry_on_prefusion_F:
   # `data_csv` is CSV of DMS data, must have columns 'site', 'wildtype', and 'mutant'. Also must
   # have a column corresponding to `metric` defined below, and `opt_params[condition]` if that is
   # defined; OR you must specify `melt_condition_metric_cols`.
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   # `sitemap_csv` is CSV that must have columns 'reference_site' (corresponding to site in `data_csv`)
   # as well as 'sequential_site', 'protein_site', and 'chains' which have meaning described here:
   # https://dms-viz.github.io/dms-viz-docs/preparing-data/data-requirements/#sitemap
@@ -43,9 +43,19 @@ antibody_escape_on_prefusion_F:
   pdb_id: data/pdb_inputs_for_dms-viz/5c6b_trimer.pdb
   name: RSV F antibody escape (prefusion trimer)
   pdb_type: file
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/5c6b_sitemap.csv
-  melt_condition_metric_cols: [Nirsevimab-Fab]
+  melt_condition_metric_cols:
+    - Nirsevimab-IgG escape
+    - Nirsevimab-Fab escape
+    - Clesrovimab-IgG escape
+    - Clesrovimab-Fab escape
+    - RSM01-IgG escape
+    - RSM01-Fab escape
+    - Palivizumab-IgG escape
+    - Palivizumab-Fab escape
+    - Suptavumab-IgG escape
+    - Suptavumab-Fab escape
   metric: escape
   opt_params: &escape_opt_params
     condition: antibody
@@ -56,7 +66,7 @@ antibody_escape_on_prefusion_F:
     tooltip-cols: {cell entry: cell entry, sequential_site: sequential site, region: region}
     filter-cols: {cell entry: cell entry}
     filter-limits: {cell entry: [-4, -2.5, 0]}
-    heatmap-limits: "-1.5, 0, 1.5"
+    heatmap-limits: "-2, 0, 2"
 
 #---------------------------------------------------------------------------------------
 # Structure 3rrr
@@ -70,11 +80,11 @@ cell_entry_on_postfusion_F:
   pdb_id: 3rrr
   name: RSV F mutation effects on cell entry (postfusion trimer)
   pdb_type: biological_assembly
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
   melt_condition_metric_cols: null
   metric: cell entry  # metric to plot, in `data_csv` or created by `melt_conditions_metric_cols`
-  opt_params: &cell_entry_opt_params
+  opt_params:
     <<: *cell_entry_opt_params
     included-chains: A B C D E F
 
@@ -82,9 +92,19 @@ antibody_escape_on_postfusion_F:
   pdb_id: 3rrr
   name: RSV F antibody escape (postfusion trimer)
   pdb_type: biological_assembly
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/3rrr_sitemap.csv
-  melt_condition_metric_cols: [Nirsevimab-Fab]
+  melt_condition_metric_cols:
+    - Nirsevimab-IgG escape
+    - Nirsevimab-Fab escape
+    - Clesrovimab-IgG escape
+    - Clesrovimab-Fab escape
+    - RSM01-IgG escape
+    - RSM01-Fab escape
+    - Palivizumab-IgG escape
+    - Palivizumab-Fab escape
+    - Suptavumab-IgG escape
+    - Suptavumab-Fab escape
   metric: escape
   opt_params:
     <<: *escape_opt_params
@@ -97,35 +117,23 @@ antibody_escape_on_postfusion_F:
 #  - in PDB, F is chains F, A, D; nirsevimab heavy chain is H, B, E; light chain is L, C, G
 #---------------------------------------------------------------------------------------
 
-nirsevimab-IgG_bound_F_escape:
+Nirsevimab_bound_F_escape:
   pdb_id: 5udc
   name: RSV bound to nirsevimab w escape effects
   pdb_type: asymmetric_unit
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
-  melt_condition_metric_cols: [Nirsevimab-IgG]
+  melt_condition_metric_cols: [Nirsevimab-IgG escape, Nirsevimab-Fab escape]
   metric: escape
   opt_params: 
     <<: *escape_opt_params 
     included-chains: F A D
 
-nirsevimab-Fab_bound_F_escape:
-  pdb_id: 5udc
-  name: RSV bound to nirsevimab w escape effects
-  pdb_type: asymmetric_unit
-  data_csv: results/summaries/antibody_summary.csv
-  sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
-  melt_condition_metric_cols: [Nirsevimab-Fab]
-  metric: escape
-  opt_params: 
-    <<: *escape_opt_params 
-    included-chains: F A D    
-
-nirsevimab_bound_F_cell_entry:
+Nirsevimab_bound_F_cell_entry:
   pdb_id: 5udc
   name: RSV bound to nirsevimab w cell entry effects
   pdb_type: asymmetric_unit
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/5udc_sitemap.csv
   melt_condition_metric_cols: null
   metric: cell entry
@@ -140,35 +148,23 @@ nirsevimab_bound_F_cell_entry:
 #  - in PDB biological assembly 1, F2 is chains A, C, E; F1 is chains B, D, F; RB1 heavy chain is M, O, Q; light chain is N, P, R
 #---------------------------------------------------------------------------------------
 
-clesrovimab-IgG_bound_F_escape:
+Clesrovimab-IgG_bound_F_escape:
   pdb_id: 6ous
   name: RSV bound to clesrovimab precursor w escape effects
   pdb_type: biological_assembly
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
-  melt_condition_metric_cols: [Clesrovimab-IgG]
+  melt_condition_metric_cols: [Clesrovimab-IgG escape, Clesrovimab-Fab escape]
   metric: escape
   opt_params: 
     <<: *escape_opt_params 
     included-chains: A C E B D F
 
-clesrovimab-Fab_bound_F_escape:
-  pdb_id: 6ous
-  name: RSV bound to clesrovimab precursor w escape effects
-  pdb_type: biological_assembly
-  data_csv: results/summaries/antibody_summary.csv
-  sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
-  melt_condition_metric_cols: [Clesrovimab-Fab]
-  metric: escape
-  opt_params: 
-    <<: *escape_opt_params 
-    included-chains: A C E B D F    
-
-clesrovimab_bound_F_cell_entry:
+Clesrovimab_bound_F_cell_entry:
   pdb_id: 6ous
   name: RSV bound to clesrovimab precursor w cell entry effects
   pdb_type: biological_assembly
-  data_csv: results/summaries/antibody_summary.csv
+  data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/6ous_sitemap.csv
   melt_condition_metric_cols: null
   metric: cell entry
