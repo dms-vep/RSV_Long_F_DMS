@@ -7588,7 +7588,7 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=249ad5bc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs celltag_injected-parameters" id="cell-id=55c21b07">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7599,6 +7599,13 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Parameters</span>
 <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">"icXX"</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>
+    <span class="s2">"plot_hide_stats"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"cell entry in 293T-TIM1"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"csv"</span><span class="p">:</span> <span class="s2">"results/func_effects/averages/293T-TIM1_entry_func_effects.csv"</span><span class="p">,</span>
+            <span class="s2">"csv_col"</span><span class="p">:</span> <span class="s2">"effect"</span><span class="p">,</span>
+            <span class="s2">"init"</span><span class="p">:</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">,</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
     <span class="s2">"escape_plot_kwargs"</span><span class="p">:</span> <span class="p">{</span>
         <span class="s2">"alphabet"</span><span class="p">:</span> <span class="p">[</span>
             <span class="s2">"R"</span><span class="p">,</span>
@@ -7634,20 +7641,12 @@ The next cell is tagged as <code>parameters</code> to get the passed parameters.
         <span class="s2">"per_model_tooltip"</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
         <span class="s2">"addtl_slider_stats_as_max"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"escape_std"</span><span class="p">],</span>
     <span class="p">},</span>
-    <span class="s2">"plot_hide_stats"</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">"cell entry in 293T-TIM1"</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">"csv"</span><span class="p">:</span> <span class="s2">"results/func_effects/averages/293T-TIM1_entry_func_effects.csv"</span><span class="p">,</span>
-            <span class="s2">"csv_col"</span><span class="p">:</span> <span class="s2">"effect"</span><span class="p">,</span>
-            <span class="s2">"init"</span><span class="p">:</span> <span class="o">-</span><span class="mf">2.5</span><span class="p">,</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
     <span class="s2">"selections"</span><span class="p">:</span> <span class="p">[</span>
         <span class="s2">"RSV-F-LibA-250402-Nir"</span><span class="p">,</span>
         <span class="s2">"RSV-F-LibB-250402-Nir"</span><span class="p">,</span>
         <span class="s2">"RSV-F-LibA-250404-Nir"</span><span class="p">,</span>
         <span class="s2">"RSV-F-LibB-250530-Nir"</span><span class="p">,</span>
     <span class="p">],</span>
-    <span class="s2">"addtl_slider_stats"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"times_seen"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"escape_std"</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">},</span>
 <span class="p">}</span>
 <span class="n">prob_escape_mean_csvs</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">"results/antibody_escape/by_selection/RSV-F-LibA-250402-Nir_prob_escape_mean.csv"</span><span class="p">,</span>
@@ -7878,23 +7877,23 @@ Note the concentrations <strong>not</strong> used in the model fits are shown fa
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac.vega-embed {
+  #altair-viz-7170d68a881146e6b5132bc1f5d06119.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac.vega-embed details,
-  #altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac.vega-embed details summary {
+  #altair-viz-7170d68a881146e6b5132bc1f5d06119.vega-embed details,
+  #altair-viz-7170d68a881146e6b5132bc1f5d06119.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac"></div>
+<div id="altair-viz-7170d68a881146e6b5132bc1f5d06119"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac") {
-      outputDiv = document.getElementById("altair-viz-865e3b8ac1ff47a8a4c85d335773e9ac");
+    if (outputDiv.id !== "altair-viz-7170d68a881146e6b5132bc1f5d06119") {
+      outputDiv = document.getElementById("altair-viz-7170d68a881146e6b5132bc1f5d06119");
     }
 
     const paths = {
@@ -8025,23 +8024,23 @@ Note the concentrations <strong>not</strong> used in the model fits are shown fa
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-46a5aa0782254e17af8be2147ade754e.vega-embed {
+  #altair-viz-163fc43519fc449281a7e592d6f95833.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-46a5aa0782254e17af8be2147ade754e.vega-embed details,
-  #altair-viz-46a5aa0782254e17af8be2147ade754e.vega-embed details summary {
+  #altair-viz-163fc43519fc449281a7e592d6f95833.vega-embed details,
+  #altair-viz-163fc43519fc449281a7e592d6f95833.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-46a5aa0782254e17af8be2147ade754e"></div>
+<div id="altair-viz-163fc43519fc449281a7e592d6f95833"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-46a5aa0782254e17af8be2147ade754e") {
-      outputDiv = document.getElementById("altair-viz-46a5aa0782254e17af8be2147ade754e");
+    if (outputDiv.id !== "altair-viz-163fc43519fc449281a7e592d6f95833") {
+      outputDiv = document.getElementById("altair-viz-163fc43519fc449281a7e592d6f95833");
     }
 
     const paths = {
@@ -8278,23 +8277,23 @@ Filtering for cell entry in 293T-TIM1 &gt;= -2.5 removes 14507 of 31130 mutation
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-5dd8c57e086f4e968d42ca17838fe955.vega-embed {
+  #altair-viz-0603a59e0d954b038f991395ba851e46.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5dd8c57e086f4e968d42ca17838fe955.vega-embed details,
-  #altair-viz-5dd8c57e086f4e968d42ca17838fe955.vega-embed details summary {
+  #altair-viz-0603a59e0d954b038f991395ba851e46.vega-embed details,
+  #altair-viz-0603a59e0d954b038f991395ba851e46.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5dd8c57e086f4e968d42ca17838fe955"></div>
+<div id="altair-viz-0603a59e0d954b038f991395ba851e46"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5dd8c57e086f4e968d42ca17838fe955") {
-      outputDiv = document.getElementById("altair-viz-5dd8c57e086f4e968d42ca17838fe955");
+    if (outputDiv.id !== "altair-viz-0603a59e0d954b038f991395ba851e46") {
+      outputDiv = document.getElementById("altair-viz-0603a59e0d954b038f991395ba851e46");
     }
 
     const paths = {
@@ -8395,23 +8394,23 @@ Filtering for cell entry in 293T-TIM1 &gt;= -2.5 removes 14507 of 31130 mutation
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-046eea87e72746fd80b2b76e2524043b.vega-embed {
+  #altair-viz-afef11aa25424861a8db1fb9390b204d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-046eea87e72746fd80b2b76e2524043b.vega-embed details,
-  #altair-viz-046eea87e72746fd80b2b76e2524043b.vega-embed details summary {
+  #altair-viz-afef11aa25424861a8db1fb9390b204d.vega-embed details,
+  #altair-viz-afef11aa25424861a8db1fb9390b204d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-046eea87e72746fd80b2b76e2524043b"></div>
+<div id="altair-viz-afef11aa25424861a8db1fb9390b204d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-046eea87e72746fd80b2b76e2524043b") {
-      outputDiv = document.getElementById("altair-viz-046eea87e72746fd80b2b76e2524043b");
+    if (outputDiv.id !== "altair-viz-afef11aa25424861a8db1fb9390b204d") {
+      outputDiv = document.getElementById("altair-viz-afef11aa25424861a8db1fb9390b204d");
     }
 
     const paths = {
@@ -8626,23 +8625,23 @@ Note the plot is interactive: you can mouseover points and change the site metri
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee.vega-embed {
+  #altair-viz-73bff484ffd94e0493ef3cfa15d1d918.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee.vega-embed details,
-  #altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee.vega-embed details summary {
+  #altair-viz-73bff484ffd94e0493ef3cfa15d1d918.vega-embed details,
+  #altair-viz-73bff484ffd94e0493ef3cfa15d1d918.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee"></div>
+<div id="altair-viz-73bff484ffd94e0493ef3cfa15d1d918"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee") {
-      outputDiv = document.getElementById("altair-viz-a3efb2ee2ac04b24822a3160c2ea18ee");
+    if (outputDiv.id !== "altair-viz-73bff484ffd94e0493ef3cfa15d1d918") {
+      outputDiv = document.getElementById("altair-viz-73bff484ffd94e0493ef3cfa15d1d918");
     }
 
     const paths = {
@@ -8798,23 +8797,23 @@ This is useful to look at if you have imposed a filter on the standard deviation
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-2a9593eead1547c9be7a54d2bd5f6688.vega-embed {
+  #altair-viz-bf83c7f9a758422dacc6b3f1cf300a61.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2a9593eead1547c9be7a54d2bd5f6688.vega-embed details,
-  #altair-viz-2a9593eead1547c9be7a54d2bd5f6688.vega-embed details summary {
+  #altair-viz-bf83c7f9a758422dacc6b3f1cf300a61.vega-embed details,
+  #altair-viz-bf83c7f9a758422dacc6b3f1cf300a61.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2a9593eead1547c9be7a54d2bd5f6688"></div>
+<div id="altair-viz-bf83c7f9a758422dacc6b3f1cf300a61"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2a9593eead1547c9be7a54d2bd5f6688") {
-      outputDiv = document.getElementById("altair-viz-2a9593eead1547c9be7a54d2bd5f6688");
+    if (outputDiv.id !== "altair-viz-bf83c7f9a758422dacc6b3f1cf300a61") {
+      outputDiv = document.getElementById("altair-viz-bf83c7f9a758422dacc6b3f1cf300a61");
     }
 
     const paths = {
@@ -8983,23 +8982,23 @@ This is useful to look at if you have imposed a filter on the standard deviation
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-7b8ebf9cdb4647b2b6599395f68cca05.vega-embed {
+  #altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7b8ebf9cdb4647b2b6599395f68cca05.vega-embed details,
-  #altair-viz-7b8ebf9cdb4647b2b6599395f68cca05.vega-embed details summary {
+  #altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7.vega-embed details,
+  #altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7b8ebf9cdb4647b2b6599395f68cca05"></div>
+<div id="altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7b8ebf9cdb4647b2b6599395f68cca05") {
-      outputDiv = document.getElementById("altair-viz-7b8ebf9cdb4647b2b6599395f68cca05");
+    if (outputDiv.id !== "altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7") {
+      outputDiv = document.getElementById("altair-viz-02eb6b7cfdf241ad8a1cbf983ee19af7");
     }
 
     const paths = {
@@ -9134,23 +9133,23 @@ Writing changes in ICXX to results/antibody_escape/averages/Nirsevimab-IgG_mut_i
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style>
-  #altair-viz-9683facce28a49379b1d51f8c9a9dc00.vega-embed {
+  #altair-viz-f78828cfd230468daaa3c9d5bff52f75.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9683facce28a49379b1d51f8c9a9dc00.vega-embed details,
-  #altair-viz-9683facce28a49379b1d51f8c9a9dc00.vega-embed details summary {
+  #altair-viz-f78828cfd230468daaa3c9d5bff52f75.vega-embed details,
+  #altair-viz-f78828cfd230468daaa3c9d5bff52f75.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9683facce28a49379b1d51f8c9a9dc00"></div>
+<div id="altair-viz-f78828cfd230468daaa3c9d5bff52f75"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9683facce28a49379b1d51f8c9a9dc00") {
-      outputDiv = document.getElementById("altair-viz-9683facce28a49379b1d51f8c9a9dc00");
+    if (outputDiv.id !== "altair-viz-f78828cfd230468daaa3c9d5bff52f75") {
+      outputDiv = document.getElementById("altair-viz-f78828cfd230468daaa3c9d5bff52f75");
     }
 
     const paths = {
