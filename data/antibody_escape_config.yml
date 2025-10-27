@@ -937,7 +937,8 @@ antibody_selections:
 # Define defaults for each antibody/serum, used via the merge (<<) operator
 avg_antibody_escape_default: &avg_antibody_escape_default
   icXX: 50
-  escape_plot_kwargs:
+  plot_hide_stats: *plot_hide_stats_default
+  escape_plot_kwargs: &avg_escape_plot_kwargs_default
     <<: *escape_plot_kwargs_default
     avg_type: median
     per_model_tooltip: true
@@ -945,7 +946,6 @@ avg_antibody_escape_default: &avg_antibody_escape_default
       times_seen: 2
       escape_std: 1.5
     addtl_slider_stats_as_max: [escape_std]
-  plot_hide_stats: *plot_hide_stats_default
 
 # Define the antibodies/sera to average
 
@@ -957,9 +957,11 @@ avg_antibody_escape:
       - RSV-F-LibB-250402-Nir
       - RSV-F-LibA-250404-Nir
       - RSV-F-LibB-250530-Nir
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.5
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.5
 
   Nirsevimab-Fab:
     <<: *avg_antibody_escape_default
@@ -968,9 +970,11 @@ avg_antibody_escape:
       - RSV-F-LibA-250725-NirFab   
       - RSV-F-LibA-250827-NirFab
       - RSV-F-LibB-250827-NirFab        
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.75
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.75
 
   Clesrovimab-IgG:
     <<: *avg_antibody_escape_default
@@ -979,9 +983,11 @@ avg_antibody_escape:
       - RSV-F-LibA-250619-Cles 
       - RSV-F-LibB-250709-Cles
       - RSV-F-LibB-250723-Cles 
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.75
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.75
 
   Clesrovimab-Fab:
     <<: *avg_antibody_escape_default
@@ -990,27 +996,33 @@ avg_antibody_escape:
       - RSV-F-LibA-250806-ClesFab   
       - RSV-F-LibA-250909-ClesFab 
       - RSV-F-LibB-250910-ClesFab                 
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 2.55
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 2.55
 
   Palivizumab-IgG:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibA-250611-Pal
       - RSV-F-LibB-250716-Pal
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.85
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.85
 
   Palivizumab-Fab:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibB-250806-PalFab 
       - RSV-F-LibA-250820-PalFab    
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 2.00
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 2.00
 
   RSM01-IgG:
     <<: *avg_antibody_escape_default
@@ -1019,33 +1031,41 @@ avg_antibody_escape:
       - RSV-F-LibA-250820-RSM01
       - RSV-F-LibB-250725-RSM01 
       - RSV-F-LibB-250820-RSM01    
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 2.05
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 2.05
   
   RSM01-Fab:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibB-250910-RSM01Fab
       - RSV-F-LibA-250909-RSM01Fab
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 2.60
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 2.60
 
   Suptavumab-IgG:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibA-250611-Suptav
       - RSV-F-LibB-250718-Suptav
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.5
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.5
 
   Suptavumab-Fab:
     <<: *avg_antibody_escape_default
     selections:
       - RSV-F-LibB-250725-SuptFab   
       - RSV-F-LibA-250730-SuptFab          
-    addtl_slider_stats:
-      times_seen: 2
-      escape_std: 1.65
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.65
