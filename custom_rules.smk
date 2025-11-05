@@ -63,3 +63,32 @@ docs["dms-viz visualizations"] = {
         for viz_name in dms_viz_config
     },
 }
+
+# Make row-wrapped heatmaps -------------------------------------------------------------
+
+# read configuration for wrapped heatmaps
+with open("data/wrapped_heatmap_config.yaml") as f:
+    wrapped_heatmap_config = yaml.YAML(typ="safe", pure=True).load(f)
+
+
+rule wrapped_heatmap:
+    """Make row-wrapped heatmaps."""
+    input:
+        data_csv=lambda wc: wrapped_heatmap_config[wc.wrapped_hm]["data_csv"],
+    output:
+        chart_html="results/wrapped_heatmaps/{wrapped_hm}_wrapped_heatmap.html",
+    params:
+        params_dict=lambda wc: wrapped_heatmap_config[wc.wrapped_hm]
+    log:
+        notebook="results/notebooks/wrapped_heatmap_{wrapped_hm}.ipynb",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    notebook:
+        "notebooks/wrapped_heatmap.py.ipynb"
+
+docs["Row-wrapped heatmaps"] = {
+    "Heatmap HTMLs" : {
+        wrapped_hm: rules.wrapped_heatmap.output.chart_html.format(wrapped_hm=wrapped_hm)
+        for wrapped_hm in wrapped_heatmap_config
+    }
+}

@@ -1,0 +1,13 @@
+rsvF_293T_TIM1:
+  data_csv: results/summaries/cell_entry.csv
+  title: "Effect of mutations to RSV F protein on entry in 293T-TIM1 cells"
+  effect_col: "cell entry"
+  data_query_str: ""
+  sites_per_row: 126
+  site_label_freq: 10
+  site_label_start: 5  # start labeling at this site
+  color_scheme: redblue
+  fixed_min: -4
+  fixed_max: 2
+  alphabet: "RKHDEQNSTYWFAILMVGPC"
+  # dark_gray_muts: null   # optional; add if you want the gray overlay feature
