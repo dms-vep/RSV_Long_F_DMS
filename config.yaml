@@ -8,7 +8,6 @@
 # and `./`, but in this example they are upstream from this subdirectory.
 # ----------------------------------------------------------------------------
 pipeline_path: dms-vep-pipeline-3  # typically will be `dms-vep-pipeline` for real pipelines
-docs: docs  # typically will be `docs` for real pipelines
 
 # ----------------------------------------------------------------------------
 # Details on repo, used for docs. Change this to details for your project.
@@ -130,6 +129,7 @@ illumina_barcode_parser_params:
   upstream_mismatch: 2
 
 duplicate_fastq_R1: warn
+
 # ----------------------------------------------------------------------------
 # Configuration related to other analyses
 # ----------------------------------------------------------------------------
