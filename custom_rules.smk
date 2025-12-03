@@ -92,3 +92,84 @@ docs["Row-wrapped heatmaps"] = {
         for wrapped_hm in wrapped_heatmap_config
     }
 }
+
+# Polymorphism analysis ------------------------------------------------------------------
+
+# read configuration for polymorphism analysis
+with open("data/polymorphism_analysis_config.yaml") as f:
+    polymorphism_config = yaml.YAML(typ="safe", pure=True).load(f)
+
+# Get list of strains from config (exclude common parameters)
+polymorphism_strains = [key for key in polymorphism_config.keys()
+                        if key not in ['cell_entry_file', 'figures_dir']]
+
+
+rule find_variable_sites:
+    """Identify variable sites from RSV F sequence alignments."""
+    input:
+        alignment=lambda wc: polymorphism_config[wc.strain]["alignment_file"],
+        nb="notebooks/polymorphism_analysis/find_variable_sites.ipynb",
+    output:
+        variable_sites="results/polymorphisms/{strain}_variable_sites.csv",
+        nb="results/notebooks/find_variable_sites_{strain}.ipynb",
+    log:
+        "results/logs/find_variable_sites_{strain}.txt",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p strain {wildcards.strain} \
+            -p alignment_file {input.alignment} \
+            -p output_file {output.variable_sites} \
+            &> {log}
+        """
+
+
+rule plot_polymorphism_effects:
+    """Plot cell entry effects of naturally occurring polymorphisms."""
+    input:
+        variable_sites="results/polymorphisms/{strain}_variable_sites.csv",
+        cell_entry=polymorphism_config["cell_entry_file"],
+        nb="notebooks/polymorphism_analysis/plot_effect_of_polymorphisms.ipynb",
+    output:
+        polymorphisms_with_effects="results/polymorphisms/{strain}_polymorphisms_with_effects.csv",
+        chart_html="results/polymorphisms/{strain}_polymorphism_effects.html",
+        nb="results/notebooks/plot_effect_of_polymorphisms_{strain}.ipynb",
+    log:
+        "results/logs/plot_effect_of_polymorphisms_{strain}.txt",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p strain {wildcards.strain} \
+            -p variable_sites_file {input.variable_sites} \
+            -p cell_entry_file {input.cell_entry} \
+            -p output_csv {output.polymorphisms_with_effects} \
+            -p output_html {output.chart_html} \
+            &> {log}
+        """
+
+
+docs["Polymorphism analysis"] = {
+    "Variable sites CSVs": {
+        strain: rules.find_variable_sites.output.variable_sites.format(strain=strain)
+        for strain in polymorphism_strains
+    },
+    "Polymorphisms with effects CSVs": {
+        strain: rules.plot_polymorphism_effects.output.polymorphisms_with_effects.format(strain=strain)
+        for strain in polymorphism_strains
+    },
+    "Interactive polymorphism plots": {
+        strain: rules.plot_polymorphism_effects.output.chart_html.format(strain=strain)
+        for strain in polymorphism_strains
+    },
+    "Polymorphism analysis notebooks": {
+        f"find_variable_sites_{strain}": rules.find_variable_sites.output.nb.format(strain=strain)
+        for strain in polymorphism_strains
+    } | {
+        f"plot_effect_of_polymorphisms_{strain}": rules.plot_polymorphism_effects.output.nb.format(strain=strain)
+        for strain in polymorphism_strains
+    },
+}
