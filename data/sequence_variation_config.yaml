@@ -1,0 +1,78 @@
+# Configuration for sequence variation analysis notebooks
+# This file specifies parameters for analyzing RSV F protein sequence variation
+
+# Common parameters used by all analyses
+cell_entry_file: results/summaries/cell_entry.csv
+figures_dir: results/sequence_variation/figures
+
+# Reference strain definitions
+# RSV-A: hRSV/A/England/397/2017 (GenBank: PP109421.1, Protein: WTM05212.1)
+# RSV-B: HRSV/B/AUS/VIC-RCH056/2019 (GenBank: OP975389.1, Protein: WBQ20026.1)
+# DMS Long strain: RSV_Long_F (strain used for deep mutational scanning)
+
+# Per-strain configuration with three analysis types:
+# 1. "dms_ref" - Differences from DMS Long strain, effects relative to DMS
+# 2. "strain_ref" - Mutations from RSV-A/B reference, effects relative to RSV-A/B reference
+# 3. "dms_diff_strain_effect" - Differences from DMS Long strain, effects relative to RSV-A/B reference
+
+RSV-A_dms_ref:
+  alignment_file: data/RSV_F_seqs/RSV-A_with_ref.fasta
+  reference_name: RSV_Long_F
+  analysis_type: differences_from_DMS
+  strain_label: RSV-A
+  analysis_description: Differences from DMS Long Strain
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: RSV_Long_F
+  min_mutation_count: 4
+
+RSV-A_strain_ref:
+  alignment_file: data/RSV_F_seqs/RSV-A_with_ref.fasta
+  reference_name: RSV-A_Reference_England_397_2017
+  analysis_type: mutations_from_reference
+  strain_label: RSV-A
+  analysis_description: Mutations from Reference Strain
+  mutation_identified_relative_to: hRSV/A/England/397/2017
+  effects_calculated_relative_to: hRSV/A/England/397/2017
+  min_mutation_count: 4
+
+RSV-A_dms_diff_strain_effect:
+  alignment_file: data/RSV_F_seqs/RSV-A_with_ref.fasta
+  reference_name: RSV_Long_F
+  effect_reference_name: RSV-A_Reference_England_397_2017
+  analysis_type: dms_differences_with_strain_effects
+  strain_label: RSV-A
+  analysis_description: DMS Differences with Reference-Relative Effects
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: hRSV/A/England/397/2017
+  min_mutation_count: 4
+
+RSV-B_dms_ref:
+  alignment_file: data/RSV_F_seqs/RSV-B_with_ref.fasta
+  reference_name: RSV_Long_F
+  analysis_type: differences_from_DMS
+  strain_label: RSV-B
+  analysis_description: Differences from DMS Long Strain
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: RSV_Long_F
+  min_mutation_count: 4
+
+RSV-B_strain_ref:
+  alignment_file: data/RSV_F_seqs/RSV-B_with_ref.fasta
+  reference_name: RSV-B_Reference_AUS_VIC-RCH056_2019
+  analysis_type: mutations_from_reference
+  strain_label: RSV-B
+  analysis_description: Mutations from Reference Strain
+  mutation_identified_relative_to: HRSV/B/AUS/VIC-RCH056/2019
+  effects_calculated_relative_to: HRSV/B/AUS/VIC-RCH056/2019
+  min_mutation_count: 4
+
+RSV-B_dms_diff_strain_effect:
+  alignment_file: data/RSV_F_seqs/RSV-B_with_ref.fasta
+  reference_name: RSV_Long_F
+  effect_reference_name: RSV-B_Reference_AUS_VIC-RCH056_2019
+  analysis_type: dms_differences_with_strain_effects
+  strain_label: RSV-B
+  analysis_description: DMS Differences with Reference-Relative Effects
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: HRSV/B/AUS/VIC-RCH056/2019
+  min_mutation_count: 4
