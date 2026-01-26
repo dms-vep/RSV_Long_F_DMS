@@ -110,7 +110,6 @@ rule find_variable_sites:
         alignment=lambda wc: seq_var_config[wc.analysis]["alignment_file"],
         cell_entry=seq_var_config["cell_entry_file"],
         nb="notebooks/sequence_variation/find_variable_sites.ipynb",
-        effect_ref_file=lambda wc: seq_var_config[wc.analysis]["alignment_file"] if "effect_reference_name" in seq_var_config[wc.analysis] else [],
     output:
         variations_with_effects="results/sequence_variation/{analysis}_sequence_variations_with_effects.csv",
         nb="results/notebooks/find_variable_sites_{analysis}.ipynb",
@@ -121,14 +120,13 @@ rule find_variable_sites:
         mutation_identified_relative_to=lambda wc: seq_var_config[wc.analysis]["mutation_identified_relative_to"],
         effects_calculated_relative_to=lambda wc: seq_var_config[wc.analysis]["effects_calculated_relative_to"],
         min_mutation_count=lambda wc: seq_var_config[wc.analysis]["min_mutation_count"],
-        effect_reference_name=lambda wc: seq_var_config[wc.analysis].get("effect_reference_name", ""),
     log:
         "results/logs/find_variable_sites_{analysis}.txt",
     conda:
         os.path.join(config["pipeline_path"], "environment.yml"),
-    run:
-        # Build papermill command
-        cmd = f"""papermill {input.nb} {output.nb} \
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
             -p strain {params.strain_label} \
             -p alignment_file {input.alignment} \
             -p output_file {output.variations_with_effects} \
@@ -137,17 +135,9 @@ rule find_variable_sites:
             -p analysis_description "{params.analysis_description}" \
             -p mutation_identified_relative_to "{params.mutation_identified_relative_to}" \
             -p effects_calculated_relative_to "{params.effects_calculated_relative_to}" \
-            -p min_mutation_count {params.min_mutation_count} """
-
-        # Add optional effect reference parameters if specified
-        if params.effect_reference_name:
-            cmd += f" \\\n            -p effect_reference_file {input.effect_ref_file}"
-            cmd += f" \\\n            -p effect_reference_name {params.effect_reference_name}"
-
-        cmd += f" &> {log}"
-
-        # Execute command
-        shell(cmd)
+            -p min_mutation_count {params.min_mutation_count} \
+            &> {log}
+        """
 
 
 rule plot_sequence_variation_effects:
