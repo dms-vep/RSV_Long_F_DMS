@@ -5,9 +5,7 @@
 cell_entry_file: results/summaries/cell_entry.csv
 figures_dir: results/sequence_variation/figures
 
-# Reference strain definitions
-# RSV-A: hRSV/A/England/397/2017 (GenBank: PP109421.1, Protein: WTM05212.1)
-# RSV-B: HRSV/B/AUS/VIC-RCH056/2019 (GenBank: OP975389.1, Protein: WBQ20026.1)
+# Reference strain definition
 # DMS Long strain: RSV_Long_F (strain used for deep mutational scanning)
 
 # Per-strain configuration:
