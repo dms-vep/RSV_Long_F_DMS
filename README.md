@@ -31,7 +31,12 @@ Input data utilized by the pipeline are located in [./data/](data).
 The results of running the pipeline are placed in [./results/](results).
 Due to space, only some results are tracked. For those that are not, see the [.gitignore](.gitignore) document.
 
-The pipeline builds HTML documentation for the pipeline in [./docs/](docs). These docs are rendered for viewing at [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS).
+The pipeline builds HTML documentation for the pipeline in `./results/docs`.
+To visualize these docs via GitHub Pages, run:
+
+    dms-vep-pipeline-3/publish_docs_gh-pages.sh
+
+This pushes the docs to the *gh-pages* branch, we can be viewed on GitHub Pages at [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS).
 
 
 ## Running the pipeline (dry-run)

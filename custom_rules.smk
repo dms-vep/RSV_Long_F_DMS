@@ -92,3 +92,98 @@ docs["Row-wrapped heatmaps"] = {
         for wrapped_hm in wrapped_heatmap_config
     }
 }
+
+# Sequence variation analysis ------------------------------------------------------------------
+
+# read configuration for sequence variation analysis
+with open("data/sequence_variation_config.yaml") as f:
+    seq_var_config = yaml.YAML(typ="safe", pure=True).load(f)
+
+# Get list of analysis configurations (exclude common parameters)
+seq_var_analyses = [key for key in seq_var_config.keys()
+                        if key not in ['cell_entry_file', 'figures_dir']]
+
+
+rule find_variable_sites:
+    """Identify variable sites from RSV F sequence alignments and calculate cell entry effects."""
+    input:
+        alignment=lambda wc: seq_var_config[wc.analysis]["alignment_file"],
+        cell_entry=seq_var_config["cell_entry_file"],
+        nb="notebooks/sequence_variation/find_variable_sites.ipynb",
+    output:
+        variations_with_effects="results/sequence_variation/{analysis}_sequence_variations_with_effects.csv",
+        nb="results/notebooks/find_variable_sites_{analysis}.ipynb",
+    params:
+        reference_name=lambda wc: seq_var_config[wc.analysis]["reference_name"],
+        strain_label=lambda wc: seq_var_config[wc.analysis]["strain_label"],
+        analysis_description=lambda wc: seq_var_config[wc.analysis]["analysis_description"],
+        mutation_identified_relative_to=lambda wc: seq_var_config[wc.analysis]["mutation_identified_relative_to"],
+        effects_calculated_relative_to=lambda wc: seq_var_config[wc.analysis]["effects_calculated_relative_to"],
+        min_mutation_count=lambda wc: seq_var_config[wc.analysis]["min_mutation_count"],
+    log:
+        "results/logs/find_variable_sites_{analysis}.txt",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p strain {params.strain_label} \
+            -p alignment_file {input.alignment} \
+            -p output_file {output.variations_with_effects} \
+            -p cell_entry_file {input.cell_entry} \
+            -p reference_name {params.reference_name} \
+            -p analysis_description "{params.analysis_description}" \
+            -p mutation_identified_relative_to "{params.mutation_identified_relative_to}" \
+            -p effects_calculated_relative_to "{params.effects_calculated_relative_to}" \
+            -p min_mutation_count {params.min_mutation_count} \
+            &> {log}
+        """
+
+
+rule plot_sequence_variation_effects:
+    """Plot cell entry effects of naturally occurring sequence variation."""
+    input:
+        variations_with_effects="results/sequence_variation/{analysis}_sequence_variations_with_effects.csv",
+        nb="notebooks/sequence_variation/plot_effect_of_sequence_variations.ipynb",
+    output:
+        chart_html="results/sequence_variation/{analysis}_sequence_variation_effects.html",
+        nb="results/notebooks/plot_sequence_variation_effects_{analysis}.ipynb",
+    params:
+        strain_label=lambda wc: seq_var_config[wc.analysis]["strain_label"],
+        analysis_description=lambda wc: seq_var_config[wc.analysis]["analysis_description"],
+        mutation_identified_relative_to=lambda wc: seq_var_config[wc.analysis]["mutation_identified_relative_to"],
+        effects_calculated_relative_to=lambda wc: seq_var_config[wc.analysis]["effects_calculated_relative_to"],
+    log:
+        "results/logs/plot_sequence_variation_effects_{analysis}.txt",
+    conda:
+        os.path.join(config["pipeline_path"], "environment.yml"),
+    shell:
+        """
+        papermill {input.nb} {output.nb} \
+            -p strain {params.strain_label} \
+            -p variations_with_effects_file {input.variations_with_effects} \
+            -p output_html {output.chart_html} \
+            -p analysis_description "{params.analysis_description}" \
+            -p mutation_identified_relative_to "{params.mutation_identified_relative_to}" \
+            -p effects_calculated_relative_to "{params.effects_calculated_relative_to}" \
+            &> {log}
+        """
+
+
+docs["Sequence variation analysis"] = {
+    "Sequence variations with effects CSVs": {
+        analysis: rules.find_variable_sites.output.variations_with_effects.format(analysis=analysis)
+        for analysis in seq_var_analyses
+    },
+    "Interactive sequence variation plots": {
+        analysis: rules.plot_sequence_variation_effects.output.chart_html.format(analysis=analysis)
+        for analysis in seq_var_analyses
+    },
+    "Sequence variation analysis notebooks": {
+        f"find_variable_sites_{analysis}": rules.find_variable_sites.output.nb.format(analysis=analysis)
+        for analysis in seq_var_analyses
+    } | {
+        f"plot_sequence_variation_effects_{analysis}": rules.plot_sequence_variation_effects.output.nb.format(analysis=analysis)
+        for analysis in seq_var_analyses
+    },
+}

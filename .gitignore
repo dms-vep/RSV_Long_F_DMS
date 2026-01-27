@@ -75,3 +75,7 @@ results/summaries/*
 !results/dms-viz
 results/dms-viz/*/*
 !results/dms-viz/*/*.json
+
+!results/sequence_variation
+results/sequence_variation/*
+!results/sequence_variation/*_sequence_variations_with_effects.csv

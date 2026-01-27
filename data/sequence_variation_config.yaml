@@ -1,0 +1,32 @@
+# Configuration for sequence variation analysis notebooks
+# This file specifies parameters for analyzing RSV F protein sequence variation
+
+# Common parameters used by all analyses
+cell_entry_file: results/summaries/cell_entry.csv
+figures_dir: results/sequence_variation/figures
+
+# Reference strain definition
+# DMS Long strain: RSV_Long_F (strain used for deep mutational scanning)
+
+# Per-strain configuration:
+# "dms_ref" - Differences from DMS strain, effects relative to DMS strain
+
+RSV-A_dms_ref:
+  alignment_file: data/RSV_F_seqs/RSV-A_with_ref.fasta
+  reference_name: RSV_Long_F
+  analysis_type: differences_from_DMS
+  strain_label: RSV-A
+  analysis_description: Differences from Strain Used in Deep Mutational Scanning
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: RSV_Long_F
+  min_mutation_count: 4
+
+RSV-B_dms_ref:
+  alignment_file: data/RSV_F_seqs/RSV-B_with_ref.fasta
+  reference_name: RSV_Long_F
+  analysis_type: differences_from_DMS
+  strain_label: RSV-B
+  analysis_description: Differences from Strain Used in Deep Mutational Scanning
+  mutation_identified_relative_to: RSV_Long_F
+  effects_calculated_relative_to: RSV_Long_F
+  min_mutation_count: 4
