@@ -24,9 +24,7 @@ description: Deep mutational scanning of the F protein from RSV Long strain
 year: 2025
 authors: Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org/)
 
-# ----------------------------------------------------------------------------
-# Site numbering, mutation classification, and neut standards
-# ----------------------------------------------------------------------------
+build_vitepress_homepage: true
 
 # ----------------------------------------------------------------------------
 # Site numbering, mutation classification, and neut standards
