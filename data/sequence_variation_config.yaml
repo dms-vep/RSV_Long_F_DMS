@@ -19,7 +19,7 @@ RSV-A_dms_ref:
   analysis_description: Differences from Strain Used in Deep Mutational Scanning
   mutation_identified_relative_to: RSV_Long_F
   effects_calculated_relative_to: RSV_Long_F
-  min_mutation_count: 4
+  min_mutation_count: 3
 
 RSV-B_dms_ref:
   alignment_file: data/RSV_F_seqs/RSV-B_with_ref.fasta
@@ -29,4 +29,4 @@ RSV-B_dms_ref:
   analysis_description: Differences from Strain Used in Deep Mutational Scanning
   mutation_identified_relative_to: RSV_Long_F
   effects_calculated_relative_to: RSV_Long_F
-  min_mutation_count: 4
+  min_mutation_count: 3
