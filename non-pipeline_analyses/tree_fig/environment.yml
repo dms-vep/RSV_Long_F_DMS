@@ -1,0 +1,11 @@
+name: tree_fig
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - matplotlib
+  - numpy
+  - pip
+  - python=3.12

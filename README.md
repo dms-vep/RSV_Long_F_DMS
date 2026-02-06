@@ -53,3 +53,7 @@ To run the pipeline, build the conda environment `dms-vep-pipeline-3` in the `en
 To run on the Hutch cluster via [slurm](https://slurm.schedmd.com/), you can run the file [run_Hutch_cluster.bash](run_Hutch_cluster.bash):
 
     sbatch run_Hutch_cluster.bash
+
+## Additional analyses outside of main pipeline
+The [./non-pipeline_analyses/](non-pipeline_analyses) contains additional analyses that are not part of the main pipeline.
+See the README within that subdirectory for more details.
