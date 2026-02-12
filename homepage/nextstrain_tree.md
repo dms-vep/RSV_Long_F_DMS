@@ -27,7 +27,7 @@ Here are some links:
  - [RSV A F build colored by total nirsevimab escape measured with Fab](https://nextstrain.org/rsv/a/F/6y?c=Nirsevimab-Fab_total_escape) (so this tree is an unbiased subsample of F sequences)
 
 For each of these trees, you can change what property it is colored by (eg, clesrovimab versus nirsevimab, max versus total escape, etc) by using the *Color By* dropdown in the toolbar at left on the Nextstrain page.
-You can change which dataset is shown (eg, subtype, date range, build) using the *change dataset* dropdown in teh toolbar at left on the Nextstrain page.
+You can change which dataset is shown (eg, subtype, date range, build) using the *change dataset* dropdown in the toolbar at left on the Nextstrain page.
 The trees are also fully interactive, so mouse over points, make selections, etc.
 
 We recommend going to the separate standalone links above, but here is an embedded view if you prefer that:
