@@ -47,6 +47,8 @@ All the visualizations and data can be accessed by clicking on the gray boxes ab
     + [suptavumab](suptavumab_neutralization)
     + [RSM01](RSM01_neutralization)
 
+For a single CSV file with the numerical values of all the QC-ed mutation effects, see [here](https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/results/summaries/all_antibodies.csv).
+
 See [Simonich et al (2026)]() for full study details.
 
 ## Biosafety
