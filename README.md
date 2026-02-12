@@ -1,7 +1,10 @@
 # Pseudovirus deep mutational scanning of RSV Long F protein 
 Study by Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org).
 
-See [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS) for HTML rendering of the pipeline results.
+See [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS) for visualization of the results and links to various interactive plots and data files.
+
+All the computer code and raw and processed data (from sequencing counts to final mutation effects) are in this repository.
+For a single summary file of the QC-ed mutation effects, see [this CSV file](results/summaries/all_antibodies.csv).
 
 ## Organization of this repo
 
