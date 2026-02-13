@@ -16,7 +16,7 @@ export default defineConfig({
     ],
     socialLinks: [{ icon: "github", link: "https://github.com/dms-vep/RSV_Long_F_DMS" }],
     footer: {
-      message: 'Study led by Cassie Simonich and Teagan McMahon in the <a href="https://jbloomlab.org/">Bloom Lab</a>',
+      message: 'See <a href="https://www.biorxiv.org/content/10.64898/2026.02.12.705519">Simonich et al (2026)</a> for study details.',
     },
   },
   head: [
