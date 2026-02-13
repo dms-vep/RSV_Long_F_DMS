@@ -1,5 +1,6 @@
 # Pseudovirus deep mutational scanning of RSV Long F protein 
 Study by Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org).
+See [Simonich et al](https://www.biorxiv.org/content/10.64898/2026.02.12.705519) for the paper describing this study.
 
 See [https://dms-vep.org/RSV_Long_F_DMS/](https://dms-vep.org/RSV_Long_F_DMS) for visualization of the results and links to various interactive plots and data files.
 

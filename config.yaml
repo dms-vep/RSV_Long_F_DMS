@@ -21,8 +21,8 @@ github_repo_url: https://github.com/dms-vep/RSV_Long_F_DMS
 github_blob_url: https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/
 # Some descriptions and metadata about the analysis.
 description: Deep mutational scanning of the F protein from RSV Long strain
-year: 2025
-authors: Cassandra Simonich and Teagan McMahon in the [Bloom lab](https://jbloomlab.org/)
+year: 2026
+authors: "[Simonich et al](https://www.biorxiv.org/content/10.64898/2026.02.12.705519)"
 
 build_vitepress_homepage: true
 
