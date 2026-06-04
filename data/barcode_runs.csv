@@ -237,15 +237,6 @@ RSV-F-LibA-260429-hSerum_4-1,RSV-F-LibA,20260429,/shared/ngs/illumina/cabel/2605
 RSV-F-LibA-260429-hSerum_4-2,RSV-F-LibA,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibA-260429-1c2d36ab_2_S3_R1_001.fastq.gz
 RSV-F-LibA-260429-hSerum_4-3,RSV-F-LibA,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibA-260429-1c2d36ab_3_S4_R1_001.fastq.gz
 RSV-F-LibA-260429-NoSera,RSV-F-LibA,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibA-260429-NoSera_S1_R1_001.fastq.gz
-RSV-F-LibA-260428-A2-1,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-A2-1-GJ_S10_R1_001.fastq.gz
-RSV-F-LibA-260428-A2-2,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-A2-2-GJ_S11_R1_001.fastq.gz
-RSV-F-LibA-260428-A2-3,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-A2-3-GJ_S12_R1_001.fastq.gz
-RSV-F-LibA-260428-A2-4,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-A2-4-GJ_S13_R1_001.fastq.gz
-RSV-F-LibA-260428-B6-1,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-B6-1-GJ_S14_R1_001.fastq.gz
-RSV-F-LibA-260428-B6-2,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-B6-2-GJ_S15_R1_001.fastq.gz
-RSV-F-LibA-260428-B6-3,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-B6-3-GJ_S16_R1_001.fastq.gz
-RSV-F-LibA-260428-B6-4,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-B6-4-GJ_S17_R1_001.fastq.gz
-RSV-F-LibA-260428-NoAb,RSV-F-LibA,20260428,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260428-NoAb-GJ_S9_R1_001.fastq.gz
 RSV-F-LibB-260429-hSerum_4-1,RSV-F-LibB,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260429-1c2d36ab_1_S6_R1_001.fastq.gz
 RSV-F-LibB-260429-hSerum_4-2,RSV-F-LibB,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260429-1c2d36ab_2_S7_R1_001.fastq.gz
 RSV-F-LibB-260429-hSerum_4-3,RSV-F-LibB,20260429,/shared/ngs/illumina/cabel/260501_VH00319_616_AAJ5JG2M5/Unaligned/Project_cabel/RSVF-LibB-260429-1c2d36ab_3_S8_R1_001.fastq.gz

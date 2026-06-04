@@ -181,15 +181,16 @@ Clesrovimab_bound_F_cell_entry:
 
 1A2_bound_F_escape:
   pdb_id: 9lly
-  name: RSV bound to 1A2 and 1B6 w escape effects
+  name: RSV bound to 1A2 w escape effects
   pdb_type: biological_assembly
   data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/9lly_sitemap.csv
   melt_condition_metric_cols: [1A2-IgG escape, 1A2-Fab escape]
   metric: escape
-  opt_params: 
-    <<: *escape_opt_params 
-    included-chains: A B C 
+  opt_params:
+    <<: *escape_opt_params
+    included-chains: A B C
+    excluded-chains: D E F I K M  # hide 1B6 (only show 1A2)
 
 1A2_1B6_bound_F_cell_entry:
   pdb_id: 9lly
@@ -205,13 +206,14 @@ Clesrovimab_bound_F_cell_entry:
 
 1B6_bound_F_escape:
   pdb_id: 9lly
-  name: RSV bound to 1A2 and 1B6 w escape effects
+  name: RSV bound to 1B6 w escape effects
   pdb_type: biological_assembly
   data_csv: results/summaries/all_antibodies.csv
   sitemap_csv: data/pdb_inputs_for_dms-viz/9lly_sitemap.csv
   melt_condition_metric_cols: [1B6-IgG escape, 1B6-Fab escape]
   metric: escape
-  opt_params: 
-    <<: *escape_opt_params 
-    included-chains: A B C 
+  opt_params:
+    <<: *escape_opt_params
+    included-chains: A B C
+    excluded-chains: G H J L N O  # hide 1A2 (only show 1B6)
   

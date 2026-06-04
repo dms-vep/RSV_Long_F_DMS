@@ -168,16 +168,11 @@ Suptavumab:
 
 # escape from human sera (hSera)
 all_hSera:
-  min_times_seen: 2
-  min_frac_models: 0.67
-  alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]
-  init_floor_escape_at_zero: true
-  init_site_escape_stat: sum
+  <<: *cell_entry_default
   no_mean_lineplot: true
   scale_lineplot_height: 1
   selectable_per_antibody_heatmap: false
   lineplot_antibody_label_loc: top
-  other_phenotypes: {}
   antibody_escape:
     hSerum_1_hSera: &hSerum_1_hSera
       <<: *antibody_default
@@ -206,16 +201,11 @@ all_hSera:
 
 # averaged (mean) escape across all human sera
 hSera_average:
-  min_times_seen: 2
-  min_frac_models: 0.67
-  alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]
-  init_floor_escape_at_zero: true
-  init_site_escape_stat: sum
+  <<: *cell_entry_default
   no_mean_lineplot: false          # draws the mean-across-sera line
   scale_lineplot_height: 1
   selectable_per_antibody_heatmap: false
   lineplot_antibody_label_loc: top
-  other_phenotypes: {}             # sera-only
   antibody_escape:
     human sera:                    # single set => one mean line across the 4 sera
       <<: *antibody_default
@@ -229,91 +219,22 @@ hSera_average:
 
 # combined summary: individual sera + Fab antibodies with cell entry
 individual_sera_and_fabs:
-  min_times_seen: 2
-  min_frac_models: 0.67
-  alphabet: [A, C, D, E, F, G, H, I, K, L, M, N, P, Q, R, S, T, V, W, Y]
-  init_floor_escape_at_zero: true
-  init_site_escape_stat: sum
+  <<: *cell_entry_default
   no_mean_lineplot: true
   scale_lineplot_height: 1
   selectable_per_antibody_heatmap: false
   lineplot_antibody_label_loc: top
-  other_phenotypes:
-    cell entry:
-      csv: results/func_effects/averages/293T-TIM1_entry_func_effects.csv
-      stat: effect
-      color_scheme: purplegreen
-      max_at_least: 2
-      fixed_min: -3
-      init_min_value: -2.5
-      le_filters:
-        effect_std: 1.6
   antibody_escape:
-    # Individual Sera 
-    hSerum_1_hSera: &hSerum_1_hSera_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.25
-      antibody_list:
-        hSerum_1_hSera: results/antibody_escape/averages/hSerum_1_hSera_mut_effect.csv
-    hSerum_2_hSera: &hSerum_2_hSera_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.25
-      antibody_list:
-        hSerum_2_hSera: results/antibody_escape/averages/hSerum_2_hSera_mut_effect.csv
-    hSerum_3_hSera: &hSerum_3_hSera_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.25
-      antibody_list:
-        hSerum_3_hSera: results/antibody_escape/averages/hSerum_3_hSera_mut_effect.csv
-    hSerum_4_hSera: &hSerum_4_hSera_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.25
-      antibody_list:
-        hSerum_4_hSera: results/antibody_escape/averages/hSerum_4_hSera_mut_effect.csv
-    # Fab Antibodies (5 selections)
-    Nirsevimab-Fab: &Nirsevimab-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.75
-      antibody_list:
-        Nirsevimab-Fab: results/antibody_escape/averages/Nirsevimab-Fab_mut_effect.csv
-    RSM01-Fab: &RSM01-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 2.6
-      antibody_list:
-        RSM01-Fab: results/antibody_escape/averages/RSM01-Fab_mut_effect.csv
-    Clesrovimab-Fab: &Clesrovimab-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 2.55
-      antibody_list:
-        Clesrovimab-Fab: results/antibody_escape/averages/Clesrovimab-Fab_mut_effect.csv
-    Palivizumab-Fab: &Palivizumab-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 2.0
-      antibody_list:
-        Palivizumab-Fab: results/antibody_escape/averages/Palivizumab-Fab_mut_effect.csv
-    Suptavumab-Fab: &Suptavumab-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.65
-      antibody_list:
-        Suptavumab-Fab: results/antibody_escape/averages/Suptavumab-Fab_mut_effect.csv
-    1A2-Fab: &1A2-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 1.0
-      antibody_list:
-        1A2-Fab: results/antibody_escape/averages/1A2-Fab_mut_effect.csv 
-    1B6-Fab: &1B6-Fab_ref
-      <<: *antibody_default
-      le_filters:
-        escape_std: 2.0
-      antibody_list:
-        1B6-Fab: results/antibody_escape/averages/1B6-Fab_mut_effect.csv                
+    # Individual Sera
+    hSerum_1_hSera: *hSerum_1_hSera
+    hSerum_2_hSera: *hSerum_2_hSera
+    hSerum_3_hSera: *hSerum_3_hSera
+    hSerum_4_hSera: *hSerum_4_hSera
+    # Fab Antibodies
+    Nirsevimab-Fab: *Nirsevimab-Fab
+    RSM01-Fab: *RSM01-Fab
+    Clesrovimab-Fab: *Clesrovimab-Fab
+    Palivizumab-Fab: *Palivizumab-Fab
+    Suptavumab-Fab: *Suptavumab-Fab
+    1A2-Fab: *1A2-Fab
+    1B6-Fab: *1B6-Fab
