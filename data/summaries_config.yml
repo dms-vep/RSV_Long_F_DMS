@@ -198,8 +198,14 @@ all_hSera:
         escape_std: 1.25
       antibody_list:
         hSerum_4_hSera: results/antibody_escape/averages/hSerum_4_hSera_mut_effect.csv
+    hSerum_5_hSera: &hSerum_5_hSera
+      <<: *antibody_default
+      le_filters:
+        escape_std: 1.25
+      antibody_list:
+        hSerum_5_hSera: results/antibody_escape/averages/hSerum_5_hSera_mut_effect.csv
 
-# averaged (mean) escape across all human sera
+# averaged (mean) escape across all human sera hSerum_1-5
 hSera_average:
   <<: *cell_entry_default
   no_mean_lineplot: false          # draws the mean-across-sera line
@@ -207,7 +213,7 @@ hSera_average:
   selectable_per_antibody_heatmap: false
   lineplot_antibody_label_loc: top
   antibody_escape:
-    human sera:                    # single set => one mean line across the 4 sera
+    human sera:                    # single set => one mean line across the 5 sera
       <<: *antibody_default
       le_filters:
         escape_std: 1.25
@@ -216,6 +222,7 @@ hSera_average:
         hSerum_2_hSera: results/antibody_escape/averages/hSerum_2_hSera_mut_effect.csv
         hSerum_3_hSera: results/antibody_escape/averages/hSerum_3_hSera_mut_effect.csv
         hSerum_4_hSera: results/antibody_escape/averages/hSerum_4_hSera_mut_effect.csv
+        hSerum_5_hSera: results/antibody_escape/averages/hSerum_5_hSera_mut_effect.csv
 
 # combined summary: individual sera + Fab antibodies with cell entry
 individual_sera_and_fabs:
@@ -230,6 +237,7 @@ individual_sera_and_fabs:
     hSerum_2_hSera: *hSerum_2_hSera
     hSerum_3_hSera: *hSerum_3_hSera
     hSerum_4_hSera: *hSerum_4_hSera
+    hSerum_5_hSera: *hSerum_5_hSera
     # Fab Antibodies
     Nirsevimab-Fab: *Nirsevimab-Fab
     RSM01-Fab: *RSM01-Fab
