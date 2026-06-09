@@ -1258,7 +1258,51 @@ antibody_selections:
         use_in_fit: true  
       RSV-F-LibA-260505-1A2-Fab-5:
         concentration: 50
-        use_in_fit: true          
+        use_in_fit: true   
+
+  # hSerum_5
+  RSV-F-LibA-260422-hSerum_5:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibA-260422-NoSera
+    antibody_samples:
+     RSV-F-LibA-260422-hSerum_5-1: 
+      concentration: 0.000347167
+      use_in_fit: true
+     RSV-F-LibA-260422-hSerum_5-2: 
+      concentration: 0.001041501
+      use_in_fit: true
+     RSV-F-LibA-260422-hSerum_5-3: 
+      concentration: 0.003124503
+      use_in_fit: false
+     RSV-F-LibA-260422-hSerum_5-4: 
+      concentration: 0.006249006
+      use_in_fit: false
+
+  # hSerum_5
+  RSV-F-LibB-260422-hSerum_5:
+    neut_standard_name: neut_standard
+    prob_escape_filters: *prob_escape_filters_default
+    polyclonal_params: *polyclonal_params_default
+    escape_plot_kwargs: *escape_plot_kwargs_default
+    plot_hide_stats: *plot_hide_stats_default
+    no_antibody_sample: RSV-F-LibB-260422-NoSera
+    antibody_samples:
+     RSV-F-LibB-260422-hSerum_5-1: #IC 98
+      concentration: 0.000347167
+      use_in_fit: true
+     RSV-F-LibB-260422-hSerum_5-2: #IC 3*98
+      concentration: 0.001041501
+      use_in_fit: true
+     RSV-F-LibB-260422-hSerum_5-3: #IC 9*98
+      concentration: 0.003124503
+      use_in_fit: false
+     RSV-F-LibB-260422-hSerum_5-4: #IC 18*98
+      concentration: 0.006249006
+      use_in_fit: false                     
 
 # --------------------------------------------------------------------------------------
 # Configuration for averaging and plotting selections for the same antibody
@@ -1415,6 +1459,7 @@ avg_antibody_escape:
       - RSV-F-LibB-260406-hSerum_1
     escape_plot_kwargs:
       <<: *avg_escape_plot_kwargs_default
+      init_floor_at_zero: true
       addtl_slider_stats:
         times_seen: 2
         escape_std: 1.25        
@@ -1426,6 +1471,7 @@ avg_antibody_escape:
       - RSV-F-LibB-260422-hSerum_2
     escape_plot_kwargs:
       <<: *avg_escape_plot_kwargs_default
+      init_floor_at_zero: true
       addtl_slider_stats:
         times_seen: 2
         escape_std: 1.25               
@@ -1437,6 +1483,7 @@ avg_antibody_escape:
       - RSV-F-LibB-260422-hSerum_3
     escape_plot_kwargs:
       <<: *avg_escape_plot_kwargs_default
+      init_floor_at_zero: true
       addtl_slider_stats:
         times_seen: 2
         escape_std: 1.25    
@@ -1448,9 +1495,22 @@ avg_antibody_escape:
       - RSV-F-LibB-260429-hSerum_4
     escape_plot_kwargs:
       <<: *avg_escape_plot_kwargs_default
+      init_floor_at_zero: true
       addtl_slider_stats:
         times_seen: 2
-        escape_std: 1.25                 
+        escape_std: 1.25   
+
+  hSerum_5_hSera:
+    <<: *avg_antibody_escape_default
+    selections:
+      - RSV-F-LibA-260422-hSerum_5
+      - RSV-F-LibB-260422-hSerum_5
+    escape_plot_kwargs:
+      <<: *avg_escape_plot_kwargs_default
+      init_floor_at_zero: true
+      addtl_slider_stats:
+        times_seen: 2
+        escape_std: 1.25                           
 
   1A2-IgG:
     <<: *avg_antibody_escape_default
