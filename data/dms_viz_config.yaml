@@ -72,6 +72,24 @@ antibody_escape_on_prefusion_F:
     filter-limits: {cell entry: [-4, -2.5, 0]}
     heatmap-limits: "-2, 0, 2"
 
+human_sera_escape_on_prefusion_F:
+  pdb_id: data/pdb_inputs_for_dms-viz/5c6b_trimer.pdb
+  name: RSV F human sera escape (prefusion trimer)
+  pdb_type: file
+  data_csv: results/summaries/hSera_average.csv
+  sitemap_csv: data/pdb_inputs_for_dms-viz/5c6b_sitemap.csv
+  melt_condition_metric_cols: null
+  metric: human sera escape
+  opt_params:
+    included-chains: F
+    alphabet: RKHDEQNSTYWFAILMVGPC
+    floor: True
+    summary-stat: sum
+    tooltip-cols: {cell entry: cell entry, sequential_site: sequential site, region: region}
+    filter-cols: {cell entry: cell entry}
+    filter-limits: {cell entry: [-4, -2.5, 0]}
+    heatmap-limits: "-2, 0, 2"
+
 #---------------------------------------------------------------------------------------
 # Structure 3rrr
 #  - is post-fusion F from A2 strain
