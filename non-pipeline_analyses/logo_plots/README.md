@@ -10,9 +10,12 @@ Input data are read directly from the pipeline output directories:
 
 - `notebooks/` holds the plotting notebooks for each antibody or comparison.
 - `notebooks/escape_logos_*_color.py.ipynb` generate the colored logo plots and associated mutation tables.
+- `notebooks/escape_logos_*_comparison_color.py.ipynb` plot multiple antibodies side-by-side for the same isotype (one grid row per antibody). These include the Nirsevimab/RSM01, Nirsevimab/RSM01/1B6, and Clesrovimab/1A2 comparisons. Each comparison notebook also produces a combined grid figure (`*_all_comparison.*`) with one column per isotype (IgG, Fab) and one row per antibody.
 
 - `output/` contains rendered figures and the corresponding mutation tables used in the plots.
-- `output/*_combined.(pdf|svg)` are final logo figures for each antibody or comparison.
+- `output/*_combined.(pdf|svg)` are final logo figures for each single antibody.
+- `output/*_comparison.(pdf|svg)` are final logo figures comparing multiple antibodies for a given isotype.
+- `output/*_all_comparison.(pdf|svg)` are combined grid figures with all antibodies and isotypes (columns = isotype, rows = antibody).
 - `output/*_mutations_shown_in_logo.csv` lists the mutations included in each logo.
 - `output/scalebar_*.(pdf|svg)` are shared scale bars.
 

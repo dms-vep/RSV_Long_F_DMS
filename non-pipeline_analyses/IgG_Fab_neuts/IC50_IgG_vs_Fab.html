@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"domainColor": "black", "labelColor": "black", "labelFontSize": 16, "tickColor": "black", "titleColor": "black", "titleFontSize": 18}, "axisX": {"grid": false}, "axisY": {"gridColor": "lightgray", "gridWidth": 0.35}, "legend": {"labelFontSize": 15, "symbolSize": 220, "titleFontSize": 15}, "title": {"fontSize": 22}}, "data": {"name": "data-35da5987d3b13c6ae240f01e35063158"}, "mark": {"type": "point", "filled": true, "opacity": 1, "size": 200}, "encoding": {"color": {"field": "virus_format", "legend": {"title": null}, "scale": {"domain": ["RSV A Long IgG", "RSV A Long Fab", "RSV B B1 IgG", "RSV B B1 Fab"], "range": ["#0072B2", "#56B4E9", "#D55E00", "#E69F00"]}, "type": "nominal"}, "shape": {"field": "virus_format", "legend": {"title": null}, "scale": {"domain": ["RSV A Long IgG", "RSV A Long Fab", "RSV B B1 IgG", "RSV B B1 Fab"], "range": ["circle", "triangle-up", "circle", "triangle-up"]}, "type": "nominal"}, "tooltip": [{"field": "antibody", "title": "Antibody", "type": "nominal"}, {"field": "virus", "title": "Virus", "type": "nominal"}, {"field": "format", "title": "Format", "type": "nominal"}, {"field": "ic50_nM", "format": ".4f", "title": "IC50 (nM)", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45}, "field": "antibody", "sort": ["Nirsevimab", "RSM01", "1B6", "Clesrovimab", "1A2"], "title": null, "type": "nominal"}, "y": {"field": "ic50_nM", "scale": {"type": "log"}, "title": "IC50 (nM)", "type": "quantitative"}}, "height": 320, "title": "IC50 (nM): IgG vs Fab", "width": 300, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-35da5987d3b13c6ae240f01e35063158": [{"serum": "Clesrovimab IgG", "virus": "RSV A Long", "ic50_nM": 0.0013959116543246614, "antibody": "Clesrovimab", "format": "IgG", "virus_format": "RSV A Long IgG"}, {"serum": "Clesrovimab IgG", "virus": "RSV B B1", "ic50_nM": 0.00247317363559976, "antibody": "Clesrovimab", "format": "IgG", "virus_format": "RSV B B1 IgG"}, {"serum": "Clesrovimab Fab", "virus": "RSV A Long", "ic50_nM": 0.018153319158635516, "antibody": "Clesrovimab", "format": "Fab", "virus_format": "RSV A Long Fab"}, {"serum": "Clesrovimab Fab", "virus": "RSV B B1", "ic50_nM": 0.036790685881843005, "antibody": "Clesrovimab", "format": "Fab", "virus_format": "RSV B B1 Fab"}, {"serum": "1B6 IgG", "virus": "RSV A Long", "ic50_nM": 0.005136681217424019, "antibody": "1B6", "format": "IgG", "virus_format": "RSV A Long IgG"}, {"serum": "1B6 IgG", "virus": "RSV B B1", "ic50_nM": 0.008384148596946195, "antibody": "1B6", "format": "IgG", "virus_format": "RSV B B1 IgG"}, {"serum": "1B6 Fab", "virus": "RSV A Long", "ic50_nM": 0.422655809800825, "antibody": "1B6", "format": "Fab", "virus_format": "RSV A Long Fab"}, {"serum": "1B6 Fab", "virus": "RSV B B1", "ic50_nM": 0.034877313148781286, "antibody": "1B6", "format": "Fab", "virus_format": "RSV B B1 Fab"}, {"serum": "Nirsevimab IgG", "virus": "RSV A Long", "ic50_nM": 0.006835395759091416, "antibody": "Nirsevimab", "format": "IgG", "virus_format": "RSV A Long IgG"}, {"serum": "Nirsevimab IgG", "virus": "RSV B B1", "ic50_nM": 0.016504826548437924, "antibody": "Nirsevimab", "format": "IgG", "virus_format": "RSV B B1 IgG"}, {"serum": "Nirsevimab Fab", "virus": "RSV A Long", "ic50_nM": 0.01336340297245124, "antibody": "Nirsevimab", "format": "Fab", "virus_format": "RSV A Long Fab"}, {"serum": "Nirsevimab Fab", "virus": "RSV B B1", "ic50_nM": 2.1187671980727956, "antibody": "Nirsevimab", "format": "Fab", "virus_format": "RSV B B1 Fab"}, {"serum": "1A2 IgG", "virus": "RSV A Long", "ic50_nM": 0.002270880914708309, "antibody": "1A2", "format": "IgG", "virus_format": "RSV A Long IgG"}, {"serum": "1A2 IgG", "virus": "RSV B B1", "ic50_nM": 0.002311710736097582, "antibody": "1A2", "format": "IgG", "virus_format": "RSV B B1 IgG"}, {"serum": "1A2 Fab", "virus": "RSV A Long", "ic50_nM": 0.0010539661926949639, "antibody": "1A2", "format": "Fab", "virus_format": "RSV A Long Fab"}, {"serum": "1A2 Fab", "virus": "RSV B B1", "ic50_nM": 0.002089333762357105, "antibody": "1A2", "format": "Fab", "virus_format": "RSV B B1 Fab"}, {"serum": "RSM01 IgG", "virus": "RSV A Long", "ic50_nM": 0.013148395551790745, "antibody": "RSM01", "format": "IgG", "virus_format": "RSV A Long IgG"}, {"serum": "RSM01 IgG", "virus": "RSV B B1", "ic50_nM": 0.0621465956325855, "antibody": "RSM01", "format": "IgG", "virus_format": "RSV B B1 IgG"}, {"serum": "RSM01 Fab", "virus": "RSV A Long", "ic50_nM": 0.030994307240343674, "antibody": "RSM01", "format": "Fab", "virus_format": "RSV A Long Fab"}, {"serum": "RSM01 Fab", "virus": "RSV B B1", "ic50_nM": 0.6527961294976128, "antibody": "RSM01", "format": "Fab", "virus_format": "RSV B B1 Fab"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
