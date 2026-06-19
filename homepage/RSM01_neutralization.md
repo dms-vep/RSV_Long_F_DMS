@@ -4,12 +4,12 @@ aside: false
 
 # RSM01 neutralization
 
-This page shows how mutations to the F protein of RSV affect neutralization of pseudovirus by the IgG and Fab forms of RSM01.
+This page shows how mutations to the F protein of RSV affect neutralization of pseudovirus by the IgG and Fab forms of [RSM01](https://pubmed.ncbi.nlm.nih.gov/39627701/).
 
 [[toc]]
 
 ## Interactive heatmap of mutation effects on RSM01 neutralization
-Below is an interactive heatmap showing the effects of mutations on neutralization by both the IgG and Fab forms of RSM01.
+Below is an interactive heatmap showing the effects of mutations on neutralization by both the IgG and Fab forms of [RSM01](https://pubmed.ncbi.nlm.nih.gov/39627701/).
 
 The lineplots at top show the total effect of all mutations at each site on neutralization.
 The top two heatmaps show the effects of individual mutations on IgG or Fab neutralization, and the bottom heatmap shows the effects of mutations on F-mediated cell entry.

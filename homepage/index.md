@@ -24,6 +24,15 @@ features:
   - title: RSM01 neutralization
     details: Effects of F mutations on neutralization by RSM01 IgG and Fab
     link: /RSM01_neutralization
+  - title: 1A2 neutralization
+    details: Effects of F mutations on neutralization by 1A2 IgG and Fab
+    link: /1A2_neutralization
+  - title: 1B6 neutralization
+    details: Effects of F mutations on neutralization by 1B6 IgG and Fab
+    link: /1B6_neutralization
+  - title: Human sera neutralization
+    details: Effects of F mutations on neutralization by human sera
+    link: /human_sera_neutralization
   - title: Natural sequences with mutations that affect antibodies
     details: Nextstrain trees showing RSV sequences with mutations that affect antibody neutralization
     link: /nextstrain_tree
@@ -37,7 +46,7 @@ This website provides interactive visualizations and raw data about the effects 
 That study measured how mutations to F affect its ability to mediate pseudovirus entry into 293T-TIM1 cells, and its neutralization by key monoclonal antibodies.
 
 Because the datasets are so rich, the interactive visualizations here can be a better way to explore the data than the static figures in the paper.
-All the visualizations and data can be accessed by clicking on the gray boxes above for each type of measurement, namely:
+Visualizations and data can be accessed by clicking on the gray boxes above for each type of measurement, namely:
 
   - [cell entry](/cell_entry)
   - neutralization by monoclonal antibodies:
@@ -46,8 +55,11 @@ All the visualizations and data can be accessed by clicking on the gray boxes ab
     + [palivizumab](palivizumab_neutralization)
     + [suptavumab](suptavumab_neutralization)
     + [RSM01](RSM01_neutralization)
+    + [1A2](1A2_neutralization)
+    + [1B6](1B6_neutralization)
+  - [human sera neutralization](human_sera_neutralization)
 
-For a single CSV file with the numerical values of all the QC-ed mutation effects, see [here](https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/results/summaries/all_antibodies.csv).
+For a single CSV file with the numerical values of all the QC-ed mutation effects on cell entry and monoclonal antibody neutralization, see [here](https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/results/summaries/all_antibodies.csv). For a single CSV with numerical values of all the QC-ed mutation effects on human sera neutralization, see [here](https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/results/summaries/all_hSera.csv).
 
 See [Simonich et al (2026)](https://www.biorxiv.org/content/10.64898/2026.02.12.705519) for full study details.
 
