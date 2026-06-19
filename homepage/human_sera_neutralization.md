@@ -39,7 +39,7 @@ Additional heatmaps showing the same data:
  - [similar heatmap but showing a heatmap for each individual serum as well](htmls/all_hSera_faceted.html){target="_self"}
 
 ## Interactive structure colored by effects of mutations on serum neutralization (averaged across sera)
-Below is an interactive view of the F pre-fusion conformation ([PDB 5c6b](https://www.rcsb.org/structure/5c6b)) colored by mutation effects on RSM01 neutralization as rendered using [dms-viz](https://dms-viz.github.io/dms-viz-docs/).
+Below is an interactive view of the F pre-fusion conformation ([PDB 5c6b](https://www.rcsb.org/structure/5c6b)) colored by mutation effects on sera neutralization as rendered using [dms-viz](https://dms-viz.github.io/dms-viz-docs/).
 The structure is colored by the total effects of mutations at each site on neutralization, you can rotate and view the structure as well as click on sites in the line plot to see more details and adjust other interactive options.
 You can use the sidebar at left to select whether to show the IgG or Fab data.
 
