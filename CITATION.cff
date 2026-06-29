@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata from this file."
+title: "Pseudovirus deep mutational scanning of RSV Long F protein"
+type: software
+
+authors:
+  - family-names: Simonich
+    given-names: Cassandra A. L.
+    orcid: "https://orcid.org/0000-0001-6100-4652"
+  - family-names: Bloom
+    given-names: Jesse D.
+    orcid: "https://orcid.org/0000-0003-1267-3408"
+
+abstract: "Computer code, raw data, processed data, and analyses for pseudovirus deep mutational scanning of the F protein from respiratory syncytial virus subtype A Long strain."
+
+keywords:
+  - respiratory syncytial virus
+  - RSV
+  - fusion protein
+  - deep mutational scanning
+  - pseudovirus
+  - antibody escape
+  - viral entry
+
+license: MIT
+repository-code: "https://github.com/dms-vep/RSV_Long_F_DMS"
+url: "https://dms-vep.org/RSV_Long_F_DMS/"
+
+# Update these immediately before making the GitHub release.
+version: 1.0.0
+date-released: "2026-06-29"
+
+references:
+  - type: article
+    title: "Complete definition of how mutations affect antibodies used to prevent RSV"
+    authors:
+      - family-names: Simonich
+        given-names: Cassandra A. L.
+      - family-names: McMahon
+        given-names: Teagan E.
+      - family-names: Kampman
+        given-names: Lucas
+      - family-names: Chu
+        given-names: Helen Y.
+      - family-names: Bloom
+        given-names: Jesse D.
+    year: 2026
+    doi: "10.64898/2026.02.12.705519"
+    publisher:
+      name: bioRxiv
