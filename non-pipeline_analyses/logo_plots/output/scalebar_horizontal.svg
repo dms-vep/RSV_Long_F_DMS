@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-02-10T19:22:36.492163</dc:date>
+    <dc:date>2026-06-13T16:51:22.636714</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,48 +37,48 @@ L 31.5 3.456
 z
 " style="fill: #ffffff"/>
    </g>
-   <g clip-path="url(#pd135e441af)">
+   <g clip-path="url(#p6e11329f27)">
     <image xlink:href="data:image/png;base64,
-iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAABCUlEQVR4nO3UMVLDMBRF0Wc2xv43wF5o+BREsQ2eDHlpz5lJYcX6I7m42+fH+yTJzJZJMvkx2TKznvf/JlsyOT+vfXPbl1/7rubMvu804/7+dj7LYX3fd55zfLe90/FM7Z3+zCjvdD3niTvdz1/eadaIyUzyNZNZvwdrM7Ov3yZ+3daP716tXe1f53pp/8x5xhPnP65lzSj3z5rx4Pz//aZX7776TZ+5U5K8BaAkIEBNQICagAA1AQFqAgLUBASoCQhQExCgJiBATUCAmoAANQEBagIC1AQEqAkIUBMQoCYgQE1AgJqAADUBAWoCAtQEBKgJCFATEKAmIEBNQICagAA1AQFqAgLUvgFfdcaljH5FqAAAAABJRU5ErkJggg==" id="image662be28400" transform="scale(1 -1) translate(0 -22.32)" x="31.5" y="-3.312" width="195.84" height="22.32"/>
+iVBORw0KGgoAAAANSUhEUgAAARAAAAAfCAYAAAAvK5J0AAABCUlEQVR4nO3UMVLDMBRF0Wc2xv43wF5o+BREsQ2eDHlpz5lJYcX6I7m42+fH+yTJzJZJMvkx2TKznvf/JlsyOT+vfXPbl1/7rubMvu804/7+dj7LYX3fd55zfLe90/FM7Z3+zCjvdD3niTvdz1/eadaIyUzyNZNZvwdrM7Ov3yZ+3daP716tXe1f53pp/8x5xhPnP65lzSj3z5rx4Pz//aZX7776TZ+5U5K8BaAkIEBNQICagAA1AQFqAgLUBASoCQhQExCgJiBATUCAmoAANQEBagIC1AQEqAkIUBMQoCYgQE1AgJqAADUBAWoCAtQEBKgJCFATEKAmIEBNQICagAA1AQFqAgLUvgFfdcaljH5FqAAAAABJRU5ErkJggg==" id="imagee9bb58ada4" transform="scale(1 -1) translate(0 -22.32)" x="31.5" y="-3.312" width="195.84" height="22.32"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m3f67602603" d="M 0 0 
+       <path id="mc70987d2ad" d="M 0 0 
 L 0 3.5 
 " style="stroke: #000000; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m3f67602603" x="31.5" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mc70987d2ad" x="31.5" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font: 12px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="31.5" y="41.750125" transform="rotate(-0 31.5 41.750125)">≤-2</text>
+      <text style="font: 12px 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="31.5" y="41.32825" transform="rotate(-0 31.5 41.32825)">≤-2</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m3f67602603" x="129.15" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mc70987d2ad" x="129.15" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font: 12px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="129.15" y="41.750125" transform="rotate(-0 129.15 41.750125)">-1</text>
+      <text style="font: 12px 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="129.15" y="41.32825" transform="rotate(-0 129.15 41.32825)">-1</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use xlink:href="#m3f67602603" x="226.8" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
+       <use xlink:href="#mc70987d2ad" x="226.8" y="25.632" style="stroke: #000000; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font: 12px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="226.8" y="41.750125" transform="rotate(-0 226.8 41.750125)">≥0</text>
+      <text style="font: 12px 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="226.8" y="41.32825" transform="rotate(-0 226.8 41.32825)">≥0</text>
      </g>
     </g>
     <g id="text_4">
-     <text style="font: 17px 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="129.15" y="61.163094" transform="rotate(-0 129.15 61.163094)">effect on cell entry</text>
+     <text style="font: 17px 'Arial', 'Liberation Sans', 'DejaVu Sans', sans-serif; text-anchor: middle" x="129.15" y="60.137938" transform="rotate(-0 129.15 60.137938)">effect on cell entry</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -108,7 +108,7 @@ L 226.8 3.456
   </g>
  </g>
  <defs>
-  <clipPath id="pd135e441af">
+  <clipPath id="p6e11329f27">
    <rect x="31.5" y="3.456" width="195.3" height="22.176"/>
   </clipPath>
  </defs>
