@@ -26,8 +26,13 @@ license: MIT
 repository-code: "https://github.com/dms-vep/RSV_Long_F_DMS"
 url: "https://dms-vep.org/RSV_Long_F_DMS/"
 
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21049419
+    description: "Archived Zenodo record for this repository."
+
 # Update these immediately before making the GitHub release.
-version: 1.0.0
+version: revision_for_bioRxiv_v2
 date-released: "2026-06-29"
 
 references:
