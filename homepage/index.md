@@ -39,7 +39,7 @@ features:
 ---
 
 ## Overview
-This website provides interactive visualizations and raw data about the effects of mutations to the F protein of RSV as measured by the experiments described in [Simonich et al (2026)](https://www.biorxiv.org/content/10.64898/2026.02.12.705519).
+This website provides interactive visualizations and raw data about the effects of mutations to the F protein of RSV as measured by the experiments described in [Simonich et al (2026)](https://www.nature.com/articles/s41586-026-11030-4).
 That study measured how mutations to F affect its ability to mediate pseudovirus entry into 293T-TIM1 cells, and its neutralization by key monoclonal antibodies.
 
 Because the datasets are so rich, the interactive visualizations here can be a better way to explore the data than the static figures in the paper.
@@ -57,7 +57,7 @@ Visualizations and data can be accessed by clicking on the gray boxes above for 
 
 For a single CSV file with the numerical values of all the QC-ed mutation effects on cell entry and monoclonal antibody neutralization, see [here](https://github.com/dms-vep/RSV_Long_F_DMS/blob/main/results/summaries/all_antibodies.csv). 
 
-See [Simonich et al (2026)](https://www.biorxiv.org/content/10.64898/2026.02.12.705519) for full study details.
+See [Simonich et al (2026)](https://www.nature.com/articles/s41586-026-11030-4) for full study details.
 
 ## Biosafety
 The experimental measurements were made using [pseudovirus deep mutational scanning](https://doi.org/10.1016/j.cell.2023.02.001) with [lentiviral particles pseudotyped](https://blog.addgene.org/viral-vectors-101-pseudotyping) with RSV F.
